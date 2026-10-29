@@ -1,0 +1,1500 @@
+{"text": "아 그 뜨거운 바닐라 라떼 요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "hot"}]}
+{"text": "유자먹을게요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": null}]}
+{"text": "여기 유 커피1개 따뜻하게하고 유자 차 한잔 따뜻하게 하나 줘요", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": "hot"}, {"id": "yuja", "qty": 1, "temp": "hot"}]}
+{"text": "어 결제할게요", "intent": "checkout", "items": []}
+{"text": "여기 아니 그거 말고", "intent": "no", "items": []}
+{"text": "저 안 쓴 거 있어요", "intent": "menu", "items": []}
+{"text": "네 시 원한 코코아 이요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": "ice"}]}
+{"text": "음 다 취소해 주세요", "intent": "cancel", "items": []}
+{"text": "저 도움이 필요해요", "intent": "help", "items": []}
+{"text": "아 그 핫 우유 커피 세 개 로 주세요", "intent": "order", "items": [{"id": "latte", "qty": 3, "temp": "hot"}]}
+{"text": "음 딸기 두 개요 이랑 유자 차 1잔 요", "intent": "order", "items": [{"id": "smoothie", "qty": 2, "temp": null}, {"id": "yuja", "qty": 1, "temp": null}]}
+{"text": "네 딸기 스무디 좀 주세요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "저기요 달달한 거 뭐 있어요", "intent": "menu", "items": []}
+{"text": "코코아 취소해 주새요", "intent": "remove", "items": [{"id": "choco", "qty": 1, "temp": null}]}
+{"text": "어 차갑게바닐라에딸기스무디 한 개요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "ice"}, {"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "음 다 어요", "intent": "checkout", "items": []}
+{"text": " 유자 한장이랑 생강차 하나 이요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": null}, {"id": "ginger", "qty": 1, "temp": null}]}
+{"text": "저 따뜻 한 거 뭐 어요", "intent": "menu", "items": []}
+{"text": "생강차하나 이요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": null}]}
+{"text": "따뜻하게 바닐라 라떼 부탁드려요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "hot"}]}
+{"text": "저기요라떼 필요없어요", "intent": "remove", "items": [{"id": "latte", "qty": 1, "temp": null}]}
+{"text": "차갑게생강 차 킬게요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": "ice"}]}
+{"text": "시원하게 아메 하나 하 줘요", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": "ice"}]}
+{"text": "유자 2개", "intent": "order", "items": [{"id": "yuja", "qty": 2, "temp": null}]}
+{"text": "라테 나요에 닐라라테 하나  하나 줘요", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": null}, {"id": "vanilla", "qty": 1, "temp": null}]}
+{"text": "음 얼음  넣은 생강 차 석 잔좀 주세요", "intent": "order", "items": [{"id": "ginger", "qty": 3, "temp": "ice"}]}
+{"text": "음 따뜻한 아메리카노 네 잔에 따뜻하게 유자차 이요", "intent": "order", "items": [{"id": "americano", "qty": 4, "temp": "hot"}, {"id": "yuja", "qty": 1, "temp": "hot"}]}
+{"text": "처음으로", "intent": "cancel", "items": []}
+{"text": "아 그 뜨겁게 유자 하나요에 따뜻한 바닐라라테 주실래요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": "hot"}, {"id": "vanilla", "qty": 1, "temp": "hot"}]}
+{"text": "네 안 들려요", "intent": "repeat", "items": []}
+{"text": "어 핫 닐라 나떼 석 잔 이요", "intent": "order", "items": [{"id": "vanilla", "qty": 3, "temp": "hot"}]}
+{"text": "따뜻한 핫초코 1잔 으로 할게요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": "hot"}]}
+{"text": "어 핫 바닐라 라떼 한잔이랑 뜨거운 핫초코 3잔", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "hot"}, {"id": "choco", "qty": 3, "temp": "hot"}]}
+{"text": "여기 케이크 두 잔 요", "intent": "order", "items": [{"id": "cake", "qty": 2, "temp": null}]}
+{"text": "어 이제 계산", "intent": "checkout", "items": []}
+{"text": "저기요 카페라떼 빼 주세요", "intent": "remove", "items": [{"id": "latte", "qty": 1, "temp": null}]}
+{"text": "저기요 안 쓴 거 있어요", "intent": "menu", "items": []}
+{"text": "어디 눌러야 돼요", "intent": "help", "items": []}
+{"text": "결제해 주세요", "intent": "checkout", "items": []}
+{"text": "주문 완료", "intent": "checkout", "items": []}
+{"text": "여기  초릿 라떼 셋 ", "intent": "order", "items": [{"id": "choco", "qty": 3, "temp": null}]}
+{"text": "어 생강는 안 먹을래요", "intent": "remove", "items": [{"id": "ginger", "qty": 1, "temp": null}]}
+{"text": "아 그 처음부 터 다시", "intent": "cancel", "items": []}
+{"text": "따끈한 유자 1개 주세요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": "hot"}]}
+{"text": "아 그 유자 차 두  잔 하나 줘요", "intent": "order", "items": [{"id": "yuja", "qty": 2, "temp": null}]}
+{"text": "저 치즈케이크 한개요 그고 라테 1 따뜻하게", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}, {"id": "latte", "qty": 1, "temp": "hot"}]}
+{"text": "음아이스 생강 4개이랑 딸기 주스 하나요요", "intent": "order", "items": [{"id": "ginger", "qty": 4, "temp": "ice"}, {"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "핫초코 한 개", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": null}]}
+{"text": "치즈 케이크 석잔 주세요", "intent": "order", "items": [{"id": "cake", "qty": 3, "temp": null}]}
+{"text": "저기요 차갑게 유자 하나 줘요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": "ice"}]}
+{"text": "저기요 유자 먹을게요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": null}]}
+{"text": "다시요 ", "intent": "repeat", "items": []}
+{"text": "어따뜻한 아메리카노 한 잔, 치즈케이 시킬게요", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": "hot"}, {"id": "cake", "qty": 1, "temp": null}]}
+{"text": "네 생강차 두 개요 로 주세요", "intent": "order", "items": [{"id": "ginger", "qty": 2, "temp": null}]}
+{"text": "아 그 시원하게 생강 차 4잔 줘", "intent": "order", "items": [{"id": "ginger", "qty": 4, "temp": "ice"}]}
+{"text": "저 핫 우유 커피 4개, 케이크 이요", "intent": "order", "items": [{"id": "latte", "qty": 4, "temp": "hot"}, {"id": "cake", "qty": 1, "temp": null}]}
+{"text": "예 그렇게 해 주세요", "intent": "yes", "items": []}
+{"text": "네 따끈한 자차 주세요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": "hot"}]}
+{"text": "저 이제 계산", "intent": "checkout", "items": []}
+{"text": "예 그렇게 해 주세요", "intent": "yes", "items": []}
+{"text": "네 직원불러주세요", "intent": "help", "items": []}
+{"text": "저기요 결제해 주세요", "intent": "checkout", "items": []}
+{"text": "아이스로 유자 차 1개 주실래요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": "ice"}]}
+{"text": "저 아니", "intent": "no", "items": []}
+{"text": "네 카드로 할게요", "intent": "checkout", "items": []}
+{"text": "네블랙커피 1잔 하나 요", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": null}]}
+{"text": "아 그 아이스아메카노 빼줘", "intent": "remove", "items": [{"id": "americano", "qty": 1, "temp": null}]}
+{"text": "네치즈케이크 한 개 그니고 따뜻하게 커피 2잔 주문할게요", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}, {"id": "americano", "qty": 2, "temp": "hot"}]}
+{"text": "어 뜨겁게 바닐라라테 한 개요 주실래요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "hot"}]}
+{"text": "바닐라 라떼 먹을게요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": null}]}
+{"text": "아 그 라떼두 잔줘", "intent": "order", "items": [{"id": "latte", "qty": 2, "temp": null}]}
+{"text": "안 쓴 거 어요", "intent": "menu", "items": []}
+{"text": "저기요 유자 차 좀 주세요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": null}]}
+{"text": "어 아이스우유 커피이랑 아이스아메리가노하나 먹을게요", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": "ice"}, {"id": "americano", "qty": 1, "temp": "ice"}]}
+{"text": "어 다 됐어요", "intent": "checkout", "items": []}
+{"text": "저기요 유자 1잔, 시원한 초콜라떼 한 개 할게요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": null}, {"id": "choco", "qty": 1, "temp": "ice"}]}
+{"text": "저기요 어 맞아", "intent": "yes", "items": []}
+{"text": "유자 차 하나 요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": null}]}
+{"text": "블랙커피 하나 줘요", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": null}]}
+{"text": "여기 이제 계산", "intent": "checkout", "items": []}
+{"text": "네 케익 둘, 핫 생강차 2잔 먹을게요", "intent": "order", "items": [{"id": "cake", "qty": 2, "temp": null}, {"id": "ginger", "qty": 2, "temp": "hot"}]}
+{"text": "치즈 게이크한잔 좀 주세요", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}]}
+{"text": "아 그 바닐라라테  하나요 이요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": null}]}
+{"text": "안 들려요", "intent": "repeat", "items": []}
+{"text": "네 이대로주세요", "intent": "checkout", "items": []}
+{"text": "음 생강 한잔 먹을게요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": null}]}
+{"text": "시원하게 유자 차 부탁드려요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": "ice"}]}
+{"text": "다시", "intent": "repeat", "items": []}
+{"text": "음틀렸어요", "intent": "no", "items": []}
+{"text": "어 싫어요", "intent": "no", "items": []}
+{"text": "아니에요", "intent": "no", "items": []}
+{"text": "얼음 넣은 생강 차하고 그냥 커피 로 주세요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": "ice"}, {"id": "americano", "qty": 1, "temp": null}]}
+{"text": "아 그 라떼 빼줘", "intent": "remove", "items": [{"id": "latte", "qty": 1, "temp": null}]}
+{"text": "저 메뉴 알려 주세요", "intent": "menu", "items": []}
+{"text": "어 거운 라떼 주세요", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": "hot"}]}
+{"text": "초기 화면으로", "intent": "cancel", "items": []}
+{"text": "아뇨", "intent": "no", "items": []}
+{"text": "사람이 안 여요", "intent": "help", "items": []}
+{"text": "저 이걸로 주문할게요", "intent": "checkout", "items": []}
+{"text": "네 차가운 핫초코 하나, 스무디 할게요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": "ice"}, {"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "유자 빼줘", "intent": "remove", "items": [{"id": "yuja", "qty": 1, "temp": null}]}
+{"text": "여기 결제", "intent": "checkout", "items": []}
+{"text": "저기요 뭐 있어요", "intent": "menu", "items": []}
+{"text": "안들려요", "intent": "repeat", "items": []}
+{"text": "치즈케이크 네 잔 좀 주세요", "intent": "order", "items": [{"id": "cake", "qty": 4, "temp": null}]}
+{"text": "어다시 요", "intent": "repeat", "items": []}
+{"text": "네네 그걸로", "intent": "yes", "items": []}
+{"text": "저 르겠는데요", "intent": "help", "items": []}
+{"text": "음 다시 할게요", "intent": "cancel", "items": []}
+{"text": "결제할게요", "intent": "checkout", "items": []}
+{"text": "저기요 계산해 주세요", "intent": "checkout", "items": []}
+{"text": "아 그 딸기 주스 4잔랑 아메리카노 두 개 할게요", "intent": "order", "items": [{"id": "smoothie", "qty": 4, "temp": null}, {"id": "americano", "qty": 2, "temp": null}]}
+{"text": "계산할게요", "intent": "checkout", "items": []}
+{"text": "저기요 바닐라라테주세요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": null}]}
+{"text": "어 따뜻한 유자차 2잔 이요", "intent": "order", "items": [{"id": "yuja", "qty": 2, "temp": "hot"}]}
+{"text": "따뜻하게 바닐라라떼 하나요 로 주세요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "hot"}]}
+{"text": "음 케익 주실래요", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}]}
+{"text": "그거 아니에요", "intent": "no", "items": []}
+{"text": "사장님 불러 주세요", "intent": "help", "items": []}
+{"text": "아 그 네 그걸로", "intent": "yes", "items": []}
+{"text": "여기 처음으로", "intent": "cancel", "items": []}
+{"text": "아 그 직원 불 러주세요", "intent": "help", "items": []}
+{"text": "얼음 넣은 생강 둘 주세요", "intent": "order", "items": [{"id": "ginger", "qty": 2, "temp": "ice"}]}
+{"text": "네 따뜻하게 우유 들어간 커피 요", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": "hot"}]}
+{"text": "우유 커피", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": null}]}
+{"text": "어 여기 좀 와 주세요", "intent": "help", "items": []}
+{"text": "여기 처음으로", "intent": "cancel", "items": []}
+{"text": "저 바닐라라떼 세잔 주세요", "intent": "order", "items": [{"id": "vanilla", "qty": 3, "temp": null}]}
+{"text": "어 따끈한 우유 들어간 커 피 2잔 부탁해요", "intent": "order", "items": [{"id": "latte", "qty": 2, "temp": "hot"}]}
+{"text": "아이 아메 주세 요", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": "ice"}]}
+{"text": "걸로 주문할게요", "intent": "checkout", "items": []}
+{"text": "네  유자 차 2개 하고 딸기스무디 넷 시킬게요", "intent": "order", "items": [{"id": "yuja", "qty": 2, "temp": null}, {"id": "smoothie", "qty": 4, "temp": null}]}
+{"text": "여기 치즈 케이크 주실래요", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}]}
+{"text": "저기요 코코아 하나요 시킬요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": null}]}
+{"text": "아 그 아이스로 초코라떼 2개", "intent": "order", "items": [{"id": "choco", "qty": 2, "temp": "ice"}]}
+{"text": " 그 딸기스디 하나 줘요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "네 강차 하나요 그리고 라떼 두 개 로 주세요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": null}, {"id": "latte", "qty": 2, "temp": null}]}
+{"text": "어 시원한 초코 이요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": "ice"}]}
+{"text": "여 시원하게 생강 한 개요 그리고 케이크 할게요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": "ice"}, {"id": "cake", "qty": 1, "temp": null}]}
+{"text": "어 딸기 하나 부탁해요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "저 초기화면으로", "intent": "cancel", "items": []}
+{"text": "저 커피 말고 뭐 있어요", "intent": "menu", "items": []}
+{"text": "메뉴 알려 주세요", "intent": "menu", "items": []}
+{"text": "저 다 골랐어요", "intent": "checkout", "items": []}
+{"text": "아 그 직원분 좀", "intent": "help", "items": []}
+{"text": "여기다 골 랐어 요", "intent": "checkout", "items": []}
+{"text": "음얼음 넣은 유자 차 부탁해요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": "ice"}]}
+{"text": "생강차 하나 으로할게요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": null}]}
+{"text": "음 뜨거운 생강 차 주세요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": "hot"}]}
+{"text": "네 사람이 안 보여요", "intent": "help", "items": []}
+{"text": "어 아이스로 바닐라라떼 4잔 부탁드려요", "intent": "order", "items": [{"id": "vanilla", "qty": 4, "temp": "ice"}]}
+{"text": "케이크 하나요 세요", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}]}
+{"text": "여기 아뇨", "intent": "no", "items": []}
+{"text": "아 그 다시요", "intent": "repeat", "items": []}
+{"text": "음 떼하나 좀 주세요", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": null}]}
+{"text": "방금 뭐 했어요", "intent": "repeat", "items": []}
+{"text": "음 핫 블랙커피 하나, 카페라떼 차갑게 부탁드려요", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": "hot"}, {"id": "latte", "qty": 1, "temp": "ice"}]}
+{"text": "케익 네 개이랑 시원하게 초코 하나요 로 주세요", "intent": "order", "items": [{"id": "cake", "qty": 4, "temp": null}, {"id": "choco", "qty": 1, "temp": "ice"}]}
+{"text": "여기 뭐 팔아요", "intent": "menu", "items": []}
+{"text": "어 취소 취소", "intent": "cancel", "items": []}
+{"text": "네 얼음 넣은 카페라테 3잔 주세요", "intent": "order", "items": [{"id": "latte", "qty": 3, "temp": "ice"}]}
+{"text": "이제 됐어요 계산해 줘요", "intent": "checkout", "items": []}
+{"text": "저 스무디 로 주세요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "저기요 시원하게 유자 차 세 개이랑 아이스아메리카노 1개 줘", "intent": "order", "items": [{"id": "yuja", "qty": 3, "temp": "ice"}, {"id": "americano", "qty": 1, "temp": "ice"}]}
+{"text": "어 아이스로 초콜릿 라떼 4개 시킬게요", "intent": "order", "items": [{"id": "choco", "qty": 4, "temp": "ice"}]}
+{"text": "초코라떼 차갑게 부탁드려요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": "ice"}]}
+{"text": "음 카페라떼 석 잔 로 주세요", "intent": "order", "items": [{"id": "latte", "qty": 3, "temp": null}]}
+{"text": "네안 쓴 거 어요", "intent": "menu", "items": []}
+{"text": "아 그 유자차", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": null}]}
+{"text": "생강차 넉 잔 이요", "intent": "order", "items": [{"id": "ginger", "qty": 4, "temp": null}]}
+{"text": "음 스무디하나 빼요", "intent": "remove", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "저기요 핫 바닐 라 한 개, 라떼 부 탁해요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "hot"}, {"id": "latte", "qty": 1, "temp": null}]}
+{"text": "아 그 싫어요", "intent": "no", "items": []}
+{"text": "네딸기 스무디 1잔 주문할게요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "아이스로 바닐라 주문할게요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "ice"}]}
+{"text": "네 스무디 1잔 케이크 석잔좀 주세요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}, {"id": "cake", "qty": 3, "temp": null}]}
+{"text": "다시 할게요", "intent": "cancel", "items": []}
+{"text": "음 시원하게 유자차 2잔랑 아이스 초콜릿 라떼 세 잔 주세요", "intent": "order", "items": [{"id": "yuja", "qty": 2, "temp": "ice"}, {"id": "choco", "qty": 3, "temp": "ice"}]}
+{"text": "안 쓴 거 있어요", "intent": "menu", "items": []}
+{"text": "여기 아이스 우 유 커피 한 잔 로 주세요", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": "ice"}]}
+{"text": "아  이스 바닐라라떼 하나요좀 주세요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "ice"}]}
+{"text": "여기 치즈 케이크 2개 줘", "intent": "order", "items": [{"id": "cake", "qty": 2, "temp": null}]}
+{"text": "네 딸기 주스 좀 주세요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "저기요 뜨겁게 바닐라 라떼 줘", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "hot"}]}
+{"text": "아 그 계산할게요", "intent": "checkout", "items": []}
+{"text": "어 아뇨", "intent": "no", "items": []}
+{"text": "어 여기 좀 와 주세요", "intent": "help", "items": []}
+{"text": "음 메뉴 알려 주세요", "intent": "menu", "items": []}
+{"text": "어딸기스 무디 세잔이랑 시원한 카페라떼 세잔", "intent": "order", "items": [{"id": "smoothie", "qty": 3, "temp": null}, {"id": "latte", "qty": 3, "temp": "ice"}]}
+{"text": "저기요 얼음 넣은 생강 주세요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": "ice"}]}
+{"text": "음 케 이크 네 개에 유자 차 하나 따뜻하게 요", "intent": "order", "items": [{"id": "cake", "qty": 4, "temp": null}, {"id": "yuja", "qty": 1, "temp": "hot"}]}
+{"text": "저기요 바닐라 시킬게 요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": null}]}
+{"text": "저 따끈한 유자차 시킬게요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": "hot"}]}
+{"text": "저기요 아메 지워 주세요", "intent": "remove", "items": [{"id": "americano", "qty": 1, "temp": null}]}
+{"text": "저 딸기스무디 주문할게요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "어 시원하게 핫초코 주실래요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": "ice"}]}
+{"text": "네 다됐어요", "intent": "checkout", "items": []}
+{"text": "음 케익 로 주세요", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}]}
+{"text": "아스 유자 차1개 으로할게요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": "ice"}]}
+{"text": "음 핫 초릿 라떼 한장 우유커 부탁해요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": "hot"}, {"id": "latte", "qty": 1, "temp": null}]}
+{"text": "네 카페라테는 안 먹을래요", "intent": "remove", "items": [{"id": "latte", "qty": 1, "temp": null}]}
+{"text": "음 다시요", "intent": "repeat", "items": []}
+{"text": "음 생강 차 필요없어요", "intent": "remove", "items": [{"id": "ginger", "qty": 1, "temp": null}]}
+{"text": "차갑게카페라테 으로  할게요", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": "ice"}]}
+{"text": "이제 됐어요 계산해줘요", "intent": "checkout", "items": []}
+{"text": "어 주문  완료", "intent": "checkout", "items": []}
+{"text": "어 예 그렇게 해 주세요", "intent": "yes", "items": []}
+{"text": "어 유자 하나 빼요", "intent": "remove", "items": [{"id": "yuja", "qty": 1, "temp": null}]}
+{"text": "어 다시 한 읽어 주요", "intent": "repeat", "items": []}
+{"text": "저 사장님 불러 주세요", "intent": "help", "items": []}
+{"text": "저 메뉴 읽어 주새요", "intent": "menu", "items": []}
+{"text": "네 유자 차 하나 주문할게요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": null}]}
+{"text": "저기요 천천히 말해 주세요", "intent": "repeat", "items": []}
+{"text": "여기 첫화면으로 돌아가", "intent": "cancel", "items": []}
+{"text": "저기요뜨거운 바닐라, 라테하나 부탁드려요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "hot"}, {"id": "latte", "qty": 1, "temp": null}]}
+{"text": "음 뜨겁게 라테 두 잔하고 뜨거운 바닐라 라떼 한잔 요", "intent": "order", "items": [{"id": "latte", "qty": 2, "temp": "hot"}, {"id": "vanilla", "qty": 1, "temp": "hot"}]}
+{"text": "차갑게 카페라떼한 에 차 갑게 생강차 요", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": "ice"}, {"id": "ginger", "qty": 1, "temp": "ice"}]}
+{"text": "아 그 주문 완료", "intent": "checkout", "items": []}
+{"text": "네 주문 끝", "intent": "checkout", "items": []}
+{"text": "여기 사람 불러줘요", "intent": "help", "items": []}
+{"text": "음 유자 한잔 시킬게요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": null}]}
+{"text": "저 아이스 라떼 한 개 부탁해요", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": "ice"}]}
+{"text": "음 뜨겁게 카페라떼 한개 주실래 요", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": "hot"}]}
+{"text": "어 어디 눌러야돼요", "intent": "help", "items": []}
+{"text": "저기요 뜨거운 유자 3개 으로 할 게요", "intent": "order", "items": [{"id": "yuja", "qty": 3, "temp": "hot"}]}
+{"text": "네 아뇨", "intent": "no", "items": []}
+{"text": "아 그 생강는 안 먹을래요", "intent": "remove", "items": [{"id": "ginger", "qty": 1, "temp": null}]}
+{"text": "음 네 그걸로", "intent": "yes", "items": []}
+{"text": "계산할게요", "intent": "checkout", "items": []}
+{"text": "차갑게 바닐라라테 석 잔 할게요", "intent": "order", "items": [{"id": "vanilla", "qty": 3, "temp": "ice"}]}
+{"text": "뜨거운 초콜릿 라떼 두잔이랑얼음 넣은 바닐라라떼 4개 으로 할게요", "intent": "order", "items": [{"id": "choco", "qty": 2, "temp": "hot"}, {"id": "vanilla", "qty": 4, "temp": "ice"}]}
+{"text": "천천히 말해 주세요", "intent": "repeat", "items": []}
+{"text": "음 우유 들어간 커피 할게요", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": null}]}
+{"text": "음 결제해 주세요", "intent": "checkout", "items": []}
+{"text": "어 아이스로 코코아 부탁해요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": "ice"}]}
+{"text": "딸기 주스 빼 주세요", "intent": "remove", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "저기요 이걸로 주문할게요", "intent": "checkout", "items": []}
+{"text": "음 차갑게 바닐라라떼 두 개요에 치즈케이크 하나 으로 할게요", "intent": "order", "items": [{"id": "vanilla", "qty": 2, "temp": "ice"}, {"id": "cake", "qty": 1, "temp": null}]}
+{"text": "아이스아메리카노 두 개 주세요", "intent": "order", "items": [{"id": "americano", "qty": 2, "temp": "ice"}]}
+{"text": "어 차가운 초코라떼 부탁드려요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": "ice"}]}
+{"text": "시원한 유자차주세요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": "ice"}]}
+{"text": "음 따끈한 유자차 한잔 리고 우유 커피 세  할 게요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": "hot"}, {"id": "latte", "qty": 3, "temp": null}]}
+{"text": "저 핫 라테 하 실래요", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": "hot"}]}
+{"text": "여기  주 완료", "intent": "checkout", "items": []}
+{"text": "그거 아니에요", "intent": "no", "items": []}
+{"text": "저 시원한 카페라떼 한잔 이요", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": "ice"}]}
+{"text": "딸기스무디 한 개요 시킬게요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "네 다 빼 주세요", "intent": "cancel", "items": []}
+{"text": "음 다 됐어요", "intent": "checkout", "items": []}
+{"text": "음 직원 불러  주세 요", "intent": "help", "items": []}
+{"text": "저 우유 커피 한 개요주문할게요", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": null}]}
+{"text": "치 즈 케이크", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}]}
+{"text": "어 결제할게요", "intent": "checkout", "items": []}
+{"text": "치즈 케이크주세요", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}]}
+{"text": "아이스 어메리카노 1잔하고 뜨거운 유 자차 시킬게요", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": "ice"}, {"id": "yuja", "qty": 1, "temp": "hot"}]}
+{"text": "뜨거운 생강차 세잔이 랑 케익 먹을게요", "intent": "order", "items": [{"id": "ginger", "qty": 3, "temp": "hot"}, {"id": "cake", "qty": 1, "temp": null}]}
+{"text": "네 이제 됐어요 계산해줘요", "intent": "checkout", "items": []}
+{"text": "저기요 유자 한 개요에 우유 커피 한 개 시킬게요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": null}, {"id": "latte", "qty": 1, "temp": null}]}
+{"text": "생강 할게요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": null}]}
+{"text": "기 계산대에 사람없어요", "intent": "help", "items": []}
+{"text": "여기 따끈한 유자 주실래요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": "hot"}]}
+{"text": " 딸기무디 하나 줘요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "아 그 케이크하나 줘", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}]}
+{"text": "네 결제", "intent": "checkout", "items": []}
+{"text": "저 카드로 할게요", "intent": "checkout", "items": []}
+{"text": "음 얼음넣은우유 들 어간 커피 둘, 딸기스무디 하나요 좀 주세요", "intent": "order", "items": [{"id": "latte", "qty": 2, "temp": "ice"}, {"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "네 딸기 스무디 석 잔에 얼음 넣은 우유 들어간 커피 두 개요 할게요", "intent": "order", "items": [{"id": "smoothie", "qty": 3, "temp": null}, {"id": "latte", "qty": 2, "temp": "ice"}]}
+{"text": "여기 아이스우유 커피 두 잔 할게요", "intent": "order", "items": [{"id": "latte", "qty": 2, "temp": "ice"}]}
+{"text": "저기요 유자차 줘", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": null}]}
+{"text": "여기 초기 화면로", "intent": "cancel", "items": []}
+{"text": "저기요 취소 취소", "intent": "cancel", "items": []}
+{"text": "네 어떻게 해요", "intent": "help", "items": []}
+{"text": "아 그메뉴 알려 주세요", "intent": "menu", "items": []}
+{"text": "네 그냥 커피 네 개하고 치즈 케이크 1개 주세요", "intent": "order", "items": [{"id": "americano", "qty": 4, "temp": null}, {"id": "cake", "qty": 1, "temp": null}]}
+{"text": "처음으로", "intent": "cancel", "items": []}
+{"text": "저 핫 라떼 두잔 주문할게요", "intent": "order", "items": [{"id": "latte", "qty": 2, "temp": "hot"}]}
+{"text": "여기 다시 할게요", "intent": "cancel", "items": []}
+{"text": "딸기 스무디 한 잔 하나 줘요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "어 그 뭐라고요", "intent": "repeat", "items": []}
+{"text": "저 네 그걸로", "intent": "yes", "items": []}
+{"text": "아 그아메리노 네 개 차갑게 요", "intent": "order", "items": [{"id": "americano", "qty": 4, "temp": "ice"}]}
+{"text": "저 딸기스무디 주세요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "여기 바닐라 라떼두잔랑 뜨거운 생강 으로 게요", "intent": "order", "items": [{"id": "vanilla", "qty": 2, "temp": null}, {"id": "ginger", "qty": 1, "temp": "hot"}]}
+{"text": "네스무디 할게요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "아 그 유자  2개 요", "intent": "order", "items": [{"id": "yuja", "qty": 2, "temp": null}]}
+{"text": "어 카페라떼 세 개하고 바닐라라테 둘", "intent": "order", "items": [{"id": "latte", "qty": 3, "temp": null}, {"id": "vanilla", "qty": 2, "temp": null}]}
+{"text": "음 첫 화면 으로 돌아가", "intent": "cancel", "items": []}
+{"text": "아 그 핫 생강 차 한 개 주세요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": "hot"}]}
+{"text": "어 코코아 주세요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": null}]}
+{"text": "뭐라고요", "intent": "repeat", "items": []}
+{"text": "네 얼음 넣은 라테 부탁드려요", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": "ice"}]}
+{"text": "마실 거 뭐 있어요", "intent": "menu", "items": []}
+{"text": "카페라떼 부탁드려요", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": null}]}
+{"text": "음 카페라테 네개랑  생강 차 한 개 주세요", "intent": "order", "items": [{"id": "latte", "qty": 4, "temp": null}, {"id": "ginger", "qty": 1, "temp": null}]}
+{"text": "여기 직원 불러 주세요", "intent": "help", "items": []}
+{"text": "여기 결제", "intent": "checkout", "items": []}
+{"text": "저 치즈게이크 넷 주세요", "intent": "order", "items": [{"id": "cake", "qty": 4, "temp": null}]}
+{"text": "우유 들어간커피 두개, 아이스아메리카노 1개 먹을게요", "intent": "order", "items": [{"id": "latte", "qty": 2, "temp": null}, {"id": "americano", "qty": 1, "temp": "ice"}]}
+{"text": "어 전부 지워 세요", "intent": "cancel", "items": []}
+{"text": "저기요 뜨거운 초코라떼 4잔이요", "intent": "order", "items": [{"id": "choco", "qty": 4, "temp": "hot"}]}
+{"text": "네 유자 차 필요 없어요", "intent": "remove", "items": [{"id": "yuja", "qty": 1, "temp": null}]}
+{"text": "어 아 니 그거 말고", "intent": "no", "items": []}
+{"text": "유자한 잔 좀 주세요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": null}]}
+{"text": "첫 화면으로 돌아가", "intent": "cancel", "items": []}
+{"text": "아 그 전부지워 주세요", "intent": "cancel", "items": []}
+{"text": "여기 딸기 스무디 2개 요 ", "intent": "order", "items": [{"id": "smoothie", "qty": 2, "temp": null}]}
+{"text": "여기 렸어요", "intent": "no", "items": []}
+{"text": "저기요 메뉴 알려 주세요", "intent": "menu", "items": []}
+{"text": "따뜻한 아메리카노", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": "hot"}]}
+{"text": "저기요 마실거 뭐 있어 요", "intent": "menu", "items": []}
+{"text": "뜻하게 코코아두 잔 실래요", "intent": "order", "items": [{"id": "choco", "qty": 2, "temp": "hot"}]}
+{"text": "네 초코라떼 한랑 유자  차 두잔 따뜻하게 부탁드려요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": null}, {"id": "yuja", "qty": 2, "temp": "hot"}]}
+{"text": "저 케이크 주실래요", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}]}
+{"text": "네 처음부터 다시", "intent": "cancel", "items": []}
+{"text": "저기요 메뉴 읽어 주세요", "intent": "menu", "items": []}
+{"text": "싫어요", "intent": "no", "items": []}
+{"text": "그만할래요", "intent": "cancel", "items": []}
+{"text": "저 피에 음 넣은 생차 한 잔 주세 요", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": null}, {"id": "ginger", "qty": 1, "temp": "ice"}]}
+{"text": "저 카페라테 취해 주새요", "intent": "remove", "items": [{"id": "latte", "qty": 1, "temp": null}]}
+{"text": "뜨거운 핫초코한잔을게요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": "hot"}]}
+{"text": " 모르겠어요 ", "intent": "help", "items": []}
+{"text": "어 예", "intent": "yes", "items": []}
+{"text": "유자차 빼 주세요", "intent": "remove", "items": [{"id": "yuja", "qty": 1, "temp": null}]}
+{"text": "여기 뭐 있어요", "intent": "menu", "items": []}
+{"text": "저기요 유자 차 4개 차갑게, 바닐라라떼 하나 로 주세요", "intent": "order", "items": [{"id": "yuja", "qty": 4, "temp": "ice"}, {"id": "vanilla", "qty": 1, "temp": null}]}
+{"text": "여기 처음으로", "intent": "cancel", "items": []}
+{"text": "저기요 안 쓴 거 있어요", "intent": "menu", "items": []}
+{"text": "시원하게 우유 커피 1개 이요", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": "ice"}]}
+{"text": "아 그 초코라떼 넉 잔 줘", "intent": "order", "items": [{"id": "choco", "qty": 4, "temp": null}]}
+{"text": "아 그 카페라테 두 개 하나 줘요", "intent": "order", "items": [{"id": "latte", "qty": 2, "temp": null}]}
+{"text": "네 도와주세요", "intent": "help", "items": []}
+{"text": "사람 불러줘요", "intent": "help", "items": []}
+{"text": "다시요", "intent": "repeat", "items": []}
+{"text": "잘 모르어요", "intent": "help", "items": []}
+{"text": "전부 지워 주세요", "intent": "cancel", "items": []}
+{"text": "핫초코 하나요 차갑게 부탁드려요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": "ice"}]}
+{"text": "여기 결제", "intent": "checkout", "items": []}
+{"text": "어니그거말고", "intent": "no", "items": []}
+{"text": "바닐라라테 한잔 요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": null}]}
+{"text": "네 케익 두 개 할게요", "intent": "order", "items": [{"id": "cake", "qty": 2, "temp": null}]}
+{"text": "아니", "intent": "no", "items": []}
+{"text": "취소 취소", "intent": "cancel", "items": []}
+{"text": "저 딸기 스무디, 따끈한 그냥 커피 둘 요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}, {"id": "americano", "qty": 2, "temp": "hot"}]}
+{"text": "저 싫어요", "intent": "no", "items": []}
+{"text": "여기 아이스로 유자 넉 잔주세요", "intent": "order", "items": [{"id": "yuja", "qty": 4, "temp": "ice"}]}
+{"text": "네 생강차 한 개요 따뜻하게 이요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": "hot"}]}
+{"text": "네 치즈케이크 네 잔 주문할게요", "intent": "order", "items": [{"id": "cake", "qty": 4, "temp": null}]}
+{"text": "네 글씨가안 보여요", "intent": "help", "items": []}
+{"text": "어 방금 뭐라 했어요", "intent": "repeat", "items": []}
+{"text": "저기요 아이스 바닐라라떼로 주세요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "ice"}]}
+{"text": "저기요 안 쓴 거 있어요", "intent": "menu", "items": []}
+{"text": "어 마실 거 뭐 있어요", "intent": "menu", "items": []}
+{"text": "시원한 유자 차 1개 그리고 딸기 주스하 나 하나 요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": "ice"}, {"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "여기 우유 커피 두 개요 주실래요", "intent": "order", "items": [{"id": "latte", "qty": 2, "temp": null}]}
+{"text": "여기 그만할래요", "intent": "cancel", "items": []}
+{"text": "결제해 주세요", "intent": "checkout", "items": []}
+{"text": "아 그 강 차 2개 그리고 원하게 바닐라라떼 2잔 주실래 요", "intent": "order", "items": [{"id": "ginger", "qty": 2, "temp": null}, {"id": "vanilla", "qty": 2, "temp": "ice"}]}
+{"text": "저 바닐라라떼 주세요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": null}]}
+{"text": "달달한 거 뭐있어 요", "intent": "menu", "items": []}
+{"text": "음 아이스아메리카노 하나요 줘", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": "ice"}]}
+{"text": "저기요 바닐라라떼 네 개 차갑게 그리고 딸기 스무디 할게요", "intent": "order", "items": [{"id": "vanilla", "qty": 4, "temp": "ice"}, {"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "메뉴 읽어 주세요", "intent": "menu", "items": []}
+{"text": "저 초코 2개 하나줘요", "intent": "order", "items": [{"id": "choco", "qty": 2, "temp": null}]}
+{"text": "저기요 케이크 네 개 하나 줘요", "intent": "order", "items": [{"id": "cake", "qty": 4, "temp": null}]}
+{"text": "사람이 안 보요", "intent": "help", "items": []}
+{"text": "달달한 거 뭐 있어요", "intent": "menu", "items": []}
+{"text": "저  메뉴 읽어 주 세요", "intent": "menu", "items": []}
+{"text": "네 생강차 네 개이랑 아이스로 초코 한 잔 하나 줘요", "intent": "order", "items": [{"id": "ginger", "qty": 4, "temp": null}, {"id": "choco", "qty": 1, "temp": "ice"}]}
+{"text": "여기 따뜻한 카페라테 줘", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": "hot"}]}
+{"text": "네 그만할래요", "intent": "cancel", "items": []}
+{"text": "음 라떼, 스무디 줘", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": null}, {"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "저기요그거 아니에요", "intent": "no", "items": []}
+{"text": "아  그이제 됐요 계산해줘요", "intent": "checkout", "items": []}
+{"text": "어 핫초코랑 바닐라라테 4개 따뜻하게 으로 할게요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": null}, {"id": "vanilla", "qty": 4, "temp": "hot"}]}
+{"text": "음 치즈케이크 두 개요 줘", "intent": "order", "items": [{"id": "cake", "qty": 2, "temp": null}]}
+{"text": "음 사장님 불러 주세요 ", "intent": "help", "items": []}
+{"text": "도와주세요", "intent": "help", "items": []}
+{"text": "이제 됐어요 계산해줘요", "intent": "checkout", "items": []}
+{"text": "음 아이스아메리카노 그리고 라떼 세 잔 시킬게요", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": "ice"}, {"id": "latte", "qty": 3, "temp": null}]}
+{"text": "아 그 다  됐어요", "intent": "checkout", "items": []}
+{"text": "천천히말해주세요", "intent": "repeat", "items": []}
+{"text": " 이대로 주세요", "intent": "checkout", "items": []}
+{"text": "천천히 말해 주세요", "intent": "repeat", "items": []}
+{"text": "네 케익하나빼요", "intent": "remove", "items": [{"id": "cake", "qty": 1, "temp": null}]}
+{"text": "아 그 메뉴 알려  주세요", "intent": "menu", "items": []}
+{"text": "한 번 더요", "intent": "repeat", "items": []}
+{"text": "네 따뜻한 거 뭐 있어요", "intent": "menu", "items": []}
+{"text": "네 초코 요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": null}]}
+{"text": "딸기 스무디 1잔 부탁해요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "네 그걸로", "intent": "yes", "items": []}
+{"text": "아뇨", "intent": "no", "items": []}
+{"text": "네 초라이랑 바닐라 4잔 따뜻하게 먹을게요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": null}, {"id": "vanilla", "qty": 4, "temp": "hot"}]}
+{"text": "아 그 그래요", "intent": "yes", "items": []}
+{"text": " 초코 한 개요 차갑게", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": "ice"}]}
+{"text": "네 커피 2잔주세요", "intent": "order", "items": [{"id": "americano", "qty": 2, "temp": null}]}
+{"text": "저 유자 차 취소해 주세요", "intent": "remove", "items": [{"id": "yuja", "qty": 1, "temp": null}]}
+{"text": "여기 생강 한잔 줘", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": null}]}
+{"text": "여기 아이스로 초코라떼 2잔 줘", "intent": "order", "items": [{"id": "choco", "qty": 2, "temp": "ice"}]}
+{"text": "여기 마실 거 뭐 있어요", "intent": "menu", "items": []}
+{"text": "여기 따뜻한 유자 차4개 나 줘요", "intent": "order", "items": [{"id": "yuja", "qty": 4, "temp": "hot"}]}
+{"text": "어 케익 으로 할게요", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}]}
+{"text": "저 차가운 초코라떼 두잔 줘", "intent": "order", "items": [{"id": "choco", "qty": 2, "temp": "ice"}]}
+{"text": "아 그 잘 못 들었어요", "intent": "repeat", "items": []}
+{"text": "어 유자 한 잔 부탁해요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": null}]}
+{"text": "어 유자 4잔 부탁해요", "intent": "order", "items": [{"id": "yuja", "qty": 4, "temp": null}]}
+{"text": "저기요전부 취소", "intent": "cancel", "items": []}
+{"text": "이걸로주문할게요", "intent": "checkout", "items": []}
+{"text": "저 방금 시킨 유자 취소", "intent": "remove", "items": [{"id": "yuja", "qty": 1, "temp": null}]}
+{"text": "아 그 초기 화면으로", "intent": "cancel", "items": []}
+{"text": "어 뭐라고요", "intent": "repeat", "items": []}
+{"text": "네 따끈한 핫초코 두 개요 그리고 바닐라 주세요", "intent": "order", "items": [{"id": "choco", "qty": 2, "temp": "hot"}, {"id": "vanilla", "qty": 1, "temp": null}]}
+{"text": "저 이제 계산", "intent": "checkout", "items": []}
+{"text": "저기요 치즈케이크 한잔 주세요", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}]}
+{"text": "어안 쓴 거 있어요", "intent": "menu", "items": []}
+{"text": "아 그 차가운 생강차 주실래요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": "ice"}]}
+{"text": "여기 유자차 따뜻하게, 생강 차 넷 따뜻하게 로 주세요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": "hot"}, {"id": "ginger", "qty": 4, "temp": "hot"}]}
+{"text": "여기 치즈케이크 한 개하고 따뜻하게 초코 하나 로 주세요", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}, {"id": "choco", "qty": 1, "temp": "hot"}]}
+{"text": "저기요 바닐라 3개, 아이스 코코아 1잔 주세요", "intent": "order", "items": [{"id": "vanilla", "qty": 3, "temp": null}, {"id": "choco", "qty": 1, "temp": "ice"}]}
+{"text": "이제 계산", "intent": "checkout", "items": []}
+{"text": "음 사장님 불러 주세요", "intent": "help", "items": []}
+{"text": "케이크 주세 요", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}]}
+{"text": "다시 말해 주세요", "intent": "repeat", "items": []}
+{"text": "아 그 응", "intent": "yes", "items": []}
+{"text": "전부 취소", "intent": "cancel", "items": []}
+{"text": "여기 다 빼 주세요", "intent": "cancel", "items": []}
+{"text": "네 따뜻한 바닐라 이요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "hot"}]}
+{"text": "저기요 뭐라고요", "intent": "repeat", "items": []}
+{"text": "사람이 안 보여요", "intent": "help", "items": []}
+{"text": "네 이제 됐어요 계산해줘요", "intent": "checkout", "items": []}
+{"text": "네 도움이 필요해요", "intent": "help", "items": []}
+{"text": "저기요 뭐 팔아요", "intent": "menu", "items": []}
+{"text": "저기 요 딸기스무디 네 잔하고 시원한 바닐라 라떼 2개 부탁해", "intent": "order", "items": [{"id": "smoothie", "qty": 4, "temp": null}, {"id": "vanilla", "qty": 2, "temp": "ice"}]}
+{"text": "직원분 좀", "intent": "help", "items": []}
+{"text": "어 따끈한 생강차주세 요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": "hot"}]}
+{"text": "어 핫 우유 커피4개 이요", "intent": "order", "items": [{"id": "latte", "qty": 4, "temp": "hot"}]}
+{"text": "네 시원한 라테 두 개 시킬게요", "intent": "order", "items": [{"id": "latte", "qty": 2, "temp": "ice"}]}
+{"text": "아  전부 취소", "intent": "cancel", "items": []}
+{"text": "저기요 어 맞아", "intent": "yes", "items": []}
+{"text": "저 차가운 생강 좀 주세요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": "ice"}]}
+{"text": "글씨가 안 보여요", "intent": "help", "items": []}
+{"text": "저기요 시원하게 생강 차 하나 주세요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": "ice"}]}
+{"text": "치즈케이크 두 개요 부탁드려요", "intent": "order", "items": [{"id": "cake", "qty": 2, "temp": null}]}
+{"text": "바라라떼 하나 주세요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": null}]}
+{"text": "전부 지 주세 요", "intent": "cancel", "items": []}
+{"text": "음 치즈케이크 넉 잔 주세요", "intent": "order", "items": [{"id": "cake", "qty": 4, "temp": null}]}
+{"text": "여기 바닐라라테 으로 할게요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": null}]}
+{"text": "저 맞아요", "intent": "yes", "items": []}
+{"text": "결제해 주세요", "intent": "checkout", "items": []}
+{"text": "어 치즈케이크 한잔 주문할게요", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}]}
+{"text": "저기요 그만할래요", "intent": "cancel", "items": []}
+{"text": "음 아니요", "intent": "no", "items": []}
+{"text": "여기 어  맞", "intent": "yes", "items": []}
+{"text": "네 케이크 2잔 주문할게요", "intent": "order", "items": [{"id": "cake", "qty": 2, "temp": null}]}
+{"text": "한 번 더요", "intent": "repeat", "items": []}
+{"text": "음 취소 취소", "intent": "cancel", "items": []}
+{"text": "어 초코라떼한 개 부탁요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": null}]}
+{"text": "어 딸기스무디 한잔", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "아메 지워 주세요", "intent": "remove", "items": [{"id": "americano", "qty": 1, "temp": null}]}
+{"text": "네 뜨겁게 커피1개 주실래요", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": "hot"}]}
+{"text": "네 생강차 두 개요 하나 줘요", "intent": "order", "items": [{"id": "ginger", "qty": 2, "temp": null}]}
+{"text": "어 유자차이랑 시원하게 생강차 하나 줘요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": null}, {"id": "ginger", "qty": 1, "temp": "ice"}]}
+{"text": "아 그 네 그걸로", "intent": "yes", "items": []}
+{"text": "잘 모르겠어요", "intent": "help", "items": []}
+{"text": "음 차가운 바닐라 라떼 먹을게", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "ice"}]}
+{"text": "저기요 달달한  뭐 있어요", "intent": "menu", "items": []}
+{"text": "아 그 치즈 케이크 하나요이랑 블랙커피 네잔 먹을게요", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}, {"id": "americano", "qty": 4, "temp": null}]}
+{"text": "저 차갑게 유자차 두 잔 좀 주세요", "intent": "order", "items": [{"id": "yuja", "qty": 2, "temp": "ice"}]}
+{"text": "음 딸기스무 둘 주문할게요", "intent": "order", "items": [{"id": "smoothie", "qty": 2, "temp": null}]}
+{"text": "어 아메 2개 실래요", "intent": "order", "items": [{"id": "americano", "qty": 2, "temp": null}]}
+{"text": "아메 한잔 주세요", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": null}]}
+{"text": "저 커피 말고 뭐 있어요", "intent": "menu", "items": []}
+{"text": "저기요 아이스 바닐 라 으로 할게요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "ice"}]}
+{"text": "아 그 치즈 케이크 하나랑 유자 차", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}, {"id": "yuja", "qty": 1, "temp": null}]}
+{"text": "여기 딸기스무디 주실래요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "아니요", "intent": "no", "items": []}
+{"text": "네 다시 말해 주세요", "intent": "repeat", "items": []}
+{"text": "어 뭐 있어요", "intent": "menu", "items": []}
+{"text": "다시 할게요", "intent": "cancel", "items": []}
+{"text": "음 나테 4개 하나 줘요", "intent": "order", "items": [{"id": "latte", "qty": 4, "temp": null}]}
+{"text": "여기 어 맞아", "intent": "yes", "items": []}
+{"text": "저기요 초콜릿 라 네 개 그리고 차운 유자차", "intent": "order", "items": [{"id": "choco", "qty": 4, "temp": null}, {"id": "yuja", "qty": 1, "temp": "ice"}]}
+{"text": "네 치즈 케이크 빼줘", "intent": "remove", "items": [{"id": "cake", "qty": 1, "temp": null}]}
+{"text": "아 그 싫어요", "intent": "no", "items": []}
+{"text": "이 어려 워요", "intent": "help", "items": []}
+{"text": "음 직원 불러 주세요", "intent": "help", "items": []}
+{"text": "네 딸기스무디 빼 주세요", "intent": "remove", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "어 글씨가 안 보여요", "intent": "help", "items": []}
+{"text": "네  추천해 주세요", "intent": "menu", "items": []}
+{"text": "아 그 주문 완료", "intent": "checkout", "items": []}
+{"text": "우유 들어 커피 네개  부탁드려요", "intent": "order", "items": [{"id": "latte", "qty": 4, "temp": null}]}
+{"text": "계산대에 사람 없어요", "intent": "help", "items": []}
+{"text": "아 그 핫 블랙커피 둘 할게요", "intent": "order", "items": [{"id": "americano", "qty": 2, "temp": "hot"}]}
+{"text": "아 그 주문 안 할래요", "intent": "cancel", "items": []}
+{"text": "아 그 그래요 ", "intent": "yes", "items": []}
+{"text": "어 핫 카페테 3잔, 생강 차 차갑게 부탁해요", "intent": "order", "items": [{"id": "latte", "qty": 3, "temp": "hot"}, {"id": "ginger", "qty": 1, "temp": "ice"}]}
+{"text": "저기요 메뉴 알려 주세요", "intent": "menu", "items": []}
+{"text": "여기 케익이랑 아이스로 초콜릿 라떼 세 개 주세요", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}, {"id": "choco", "qty": 3, "temp": "ice"}]}
+{"text": "음 주문 완료", "intent": "checkout", "items": []}
+{"text": "저 유자하나요차갑게 주래요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": "ice"}]}
+{"text": "누구 없어요", "intent": "help", "items": []}
+{"text": "생강차하고얼음 넣은 바닐라 라떼 1잔 좀주세요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": null}, {"id": "vanilla", "qty": 1, "temp": "ice"}]}
+{"text": "저 딸기 주스 넉 잔이랑 따뜻한 걸로 카페라테 두 개요 주세요", "intent": "order", "items": [{"id": "smoothie", "qty": 4, "temp": null}, {"id": "latte", "qty": 2, "temp": "hot"}]}
+{"text": "음 케이크 넉 잔좀 주세요", "intent": "order", "items": [{"id": "cake", "qty": 4, "temp": null}]}
+{"text": "여기 뜨겁게 바닐라 세 잔 그리고 딸기 로 주세", "intent": "order", "items": [{"id": "vanilla", "qty": 3, "temp": "hot"}, {"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "네 뜨거운 초라떼 한 개  줘", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": "hot"}]}
+{"text": "맞아요", "intent": "yes", "items": []}
+{"text": "아 그 처음부터 다시", "intent": "cancel", "items": []}
+{"text": "음 얼음 넣은 카페라테, 스무디 하나요 줘", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": "ice"}, {"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "주문 완료", "intent": "checkout", "items": []}
+{"text": "아그 아이스 로 냥 피 두 개부탁드려요", "intent": "order", "items": [{"id": "americano", "qty": 2, "temp": "ice"}]}
+{"text": "여기뜨거운바닐라 라떼 3잔 주", "intent": "order", "items": [{"id": "vanilla", "qty": 3, "temp": "hot"}]}
+{"text": "음 스무디  하나요 좀 주세요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "저기요 커피 주실래요", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": null}]}
+{"text": "저기요 따끈한 커피 으로 할게요", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": "hot"}]}
+{"text": "핫초코 두잔이랑 유자 두잔 요", "intent": "order", "items": [{"id": "choco", "qty": 2, "temp": null}, {"id": "yuja", "qty": 2, "temp": null}]}
+{"text": "저기요 마실 거 뭐 어요", "intent": "menu", "items": []}
+{"text": "네 우유 들어간 커피 넉 잔 주문할게요", "intent": "order", "items": [{"id": "latte", "qty": 4, "temp": null}]}
+{"text": "커피 두 개 주세요", "intent": "order", "items": [{"id": "americano", "qty": 2, "temp": null}]}
+{"text": "음 초코라떼 두 잔 차갑게, 카페라테 차갑게 하나 줘요", "intent": "order", "items": [{"id": "choco", "qty": 2, "temp": "ice"}, {"id": "latte", "qty": 1, "temp": "ice"}]}
+{"text": "어 차가운 그냥 커 피 4잔 부탁드려요", "intent": "order", "items": [{"id": "americano", "qty": 4, "temp": "ice"}]}
+{"text": "이제 계산", "intent": "checkout", "items": []}
+{"text": "저기요 직원분 좀 ", "intent": "help", "items": []}
+{"text": "어 아이스로 바닐라 라떼 할게요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "ice"}]}
+{"text": "결제", "intent": "checkout", "items": []}
+{"text": "한 번 더요", "intent": "repeat", "items": []}
+{"text": "여기 맞아요", "intent": "yes", "items": []}
+{"text": "바닐라 셋 따뜻하게랑 생강 차 두 개 로 주세요", "intent": "order", "items": [{"id": "vanilla", "qty": 3, "temp": "hot"}, {"id": "ginger", "qty": 2, "temp": null}]}
+{"text": "네 뜨겁게 바닐라라테 할게요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "hot"}]}
+{"text": "아메 2개 주문할게요", "intent": "order", "items": [{"id": "americano", "qty": 2, "temp": null}]}
+{"text": "커피 둘 갑 게 먹을게", "intent": "order", "items": [{"id": "americano", "qty": 2, "temp": "ice"}]}
+{"text": "음 유자차 1잔 요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": null}]}
+{"text": "기 블랙커피 한 개 부탁요", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": null}]}
+{"text": "음 안 들려요", "intent": "repeat", "items": []}
+{"text": "메뉴 읽어 주세요", "intent": "menu", "items": []}
+{"text": "여기 콜릿 라떼 넉 잔 하나 줘요", "intent": "order", "items": [{"id": "choco", "qty": 4, "temp": null}]}
+{"text": "네 바라라떼 두 개", "intent": "order", "items": [{"id": "vanilla", "qty": 2, "temp": null}]}
+{"text": "여기 바닐라 라떼 3잔 차갑게 이요", "intent": "order", "items": [{"id": "vanilla", "qty": 3, "temp": "ice"}]}
+{"text": "다 골랐어요", "intent": "checkout", "items": []}
+{"text": "저기요 그냥 커피 지워 주새요", "intent": "remove", "items": [{"id": "americano", "qty": 1, "temp": null}]}
+{"text": "음 차가운 유자 차두 개요 부탁해요", "intent": "order", "items": [{"id": "yuja", "qty": 2, "temp": "ice"}]}
+{"text": "저기요 커피 하나요 줘", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": null}]}
+{"text": "어디 눌러야 돼요", "intent": "help", "items": []}
+{"text": "여기 그래요", "intent": "yes", "items": []}
+{"text": "초코라떼 한 개 할게요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": null}]}
+{"text": "여기 초코라떼 2개 주세요", "intent": "order", "items": [{"id": "choco", "qty": 2, "temp": null}]}
+{"text": "얼음 넣은 바닐라 1잔하고 우유 들어간 커피 좀주세요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "ice"}, {"id": "latte", "qty": 1, "temp": null}]}
+{"text": "따뜻한 거  있어요", "intent": "menu", "items": []}
+{"text": "네 결제할게요", "intent": "checkout", "items": []}
+{"text": "저 우유 커피 두잔 따뜻하게 이요", "intent": "order", "items": [{"id": "latte", "qty": 2, "temp": "hot"}]}
+{"text": "네딸기 한  개요  먹을게요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "치즈 케이크 로 주세요", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}]}
+{"text": "딸기 스무디 요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "네 여기 좀 와주세요", "intent": "help", "items": []}
+{"text": "네 케이크4잔 주세요", "intent": "order", "items": [{"id": "cake", "qty": 4, "temp": null}]}
+{"text": "음 따뜻한 라떼 둘 부탁해요", "intent": "order", "items": [{"id": "latte", "qty": 2, "temp": "hot"}]}
+{"text": "네 다시 한번 읽어 주세요", "intent": "repeat", "items": []}
+{"text": "여기 케이크 세 개 으로 할게요", "intent": "order", "items": [{"id": "cake", "qty": 3, "temp": null}]}
+{"text": "네 바닐라 라떼 한 잔 차갑게 시킬게요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "ice"}]}
+{"text": "저 아메 세 잔 차갑게 으로 할게요", "intent": "order", "items": [{"id": "americano", "qty": 3, "temp": "ice"}]}
+{"text": "우유 커피 두 개 주세요", "intent": "order", "items": [{"id": "latte", "qty": 2, "temp": null}]}
+{"text": "네딸기 주세요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "아 그  다 빼 주세요", "intent": "cancel", "items": []}
+{"text": "아 그 딸기 두잔 하나 줘요", "intent": "order", "items": [{"id": "smoothie", "qty": 2, "temp": null}]}
+{"text": "여기 이제 계산", "intent": "checkout", "items": []}
+{"text": "저기요 유자차 1개 주문할게요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": null}]}
+{"text": "음 처음으로", "intent": "cancel", "items": []}
+{"text": "저 카드로 할게요", "intent": "checkout", "items": []}
+{"text": "어 시원한 생강 1잔 하나 줘요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": "ice"}]}
+{"text": "초코라떼 취소해 주세요 ", "intent": "remove", "items": [{"id": "choco", "qty": 1, "temp": null}]}
+{"text": "저기요 생강 차 빼줘", "intent": "remove", "items": [{"id": "ginger", "qty": 1, "temp": null}]}
+{"text": "다시 할게 요", "intent": "cancel", "items": []}
+{"text": "뜨겁게 생강차 한 잔이랑 카페라떼이요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": "hot"}, {"id": "latte", "qty": 1, "temp": null}]}
+{"text": "생강 차 ", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": null}]}
+{"text": "저 방금 뭐라 했어요", "intent": "repeat", "items": []}
+{"text": "다시 번 읽어 주세요", "intent": "repeat", "items": []}
+{"text": "여기 계산대에 사람 없어요", "intent": "help", "items": []}
+{"text": "어 달달한 뭐 있어요", "intent": "menu", "items": []}
+{"text": "딸기 주스 주세요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "네 그걸로", "intent": "yes", "items": []}
+{"text": "케이크 네  시게요", "intent": "order", "items": [{"id": "cake", "qty": 4, "temp": null}]}
+{"text": "아 그 한 번더요", "intent": "repeat", "items": []}
+{"text": "기요 초코라떼 주문할게요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": null}]}
+{"text": "따뜻한바닐라 라떼 한개 좀 주세요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "hot"}]}
+{"text": "어 아이스 그냥 커피 세 잔 할게요", "intent": "order", "items": [{"id": "americano", "qty": 3, "temp": "ice"}]}
+{"text": "저 따뜻한 걸로 생강 하나 먹을게요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": "hot"}]}
+{"text": "어 누구 없어요", "intent": "help", "items": []}
+{"text": "저 다 골랐어요", "intent": "checkout", "items": []}
+{"text": "음 처음부터 다시", "intent": "cancel", "items": []}
+{"text": "저 아니", "intent": "no", "items": []}
+{"text": "저 아이아메리 카노 둘, 따뜻한 걸로 우유 커피하나 줘", "intent": "order", "items": [{"id": "americano", "qty": 2, "temp": "ice"}, {"id": "latte", "qty": 1, "temp": "hot"}]}
+{"text": "아 그 이제 계산", "intent": "checkout", "items": []}
+{"text": "아 그 글씨가 안 보여요", "intent": "help", "items": []}
+{"text": "네 따뜻한 초콜릿 라떼 넉 잔 줘", "intent": "order", "items": [{"id": "choco", "qty": 4, "temp": "hot"}]}
+{"text": "네 예", "intent": "yes", "items": []}
+{"text": "어 스무디한 잔하고 아이스아메리카노 1잔 로  주요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}, {"id": "americano", "qty": 1, "temp": "ice"}]}
+{"text": "저 기요 그냥  커피 나 줘", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": null}]}
+{"text": "저  여기 좀와 주세요", "intent": "help", "items": []}
+{"text": "전부 취소", "intent": "cancel", "items": []}
+{"text": "달달한 거 뭐 있어요", "intent": "menu", "items": []}
+{"text": "저기요 직원 불러 주세요 ", "intent": "help", "items": []}
+{"text": "아메 두 개요에 딸기스무디 2개 게요", "intent": "order", "items": [{"id": "americano", "qty": 2, "temp": null}, {"id": "smoothie", "qty": 2, "temp": null}]}
+{"text": "아 그 따뜻한 커피 한잔 주실래요", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": "hot"}]}
+{"text": "음 그만할래요", "intent": "cancel", "items": []}
+{"text": "저 갑게초콜릿 라떼랑 아이스로 생강 차 한 개 주문할게요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": "ice"}, {"id": "ginger", "qty": 1, "temp": "ice"}]}
+{"text": "네 안 쓴 거 있어요", "intent": "menu", "items": []}
+{"text": "네 라테두 개요 하나 줘요", "intent": "order", "items": [{"id": "latte", "qty": 2, "temp": null}]}
+{"text": "여기 코코아 소해  주세요", "intent": "remove", "items": [{"id": "choco", "qty": 1, "temp": null}]}
+{"text": "그 만래요", "intent": "cancel", "items": []}
+{"text": "여기 응", "intent": "yes", "items": []}
+{"text": "아 그 방금 뭐라 했어요", "intent": "repeat", "items": []}
+{"text": "어 차가운 그냥 커피 4잔랑 라테  주문할게요", "intent": "order", "items": [{"id": "americano", "qty": 4, "temp": "ice"}, {"id": "latte", "qty": 1, "temp": null}]}
+{"text": "저 아이스 우유커피넷 로 주세요", "intent": "order", "items": [{"id": "latte", "qty": 4, "temp": "ice"}]}
+{"text": "초코라떼 줘", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": null}]}
+{"text": "네 이제 계산", "intent": "checkout", "items": []}
+{"text": "저 처음으로", "intent": "cancel", "items": []}
+{"text": "음 따뜻하게 바닐라 그리고 딸기 주스 주실래요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "hot"}, {"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "음 따뜻한 걸로 우유 커피 1개 주실래요", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": "hot"}]}
+{"text": "어 다시 말해 주세요", "intent": "repeat", "items": []}
+{"text": "저 초코라떼 한 잔하고 생강차 두 잔 따뜻하게 로 주세요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": null}, {"id": "ginger", "qty": 2, "temp": "hot"}]}
+{"text": "저기요 얼음 넣은 그냥  둘 주세요", "intent": "order", "items": [{"id": "americano", "qty": 2, "temp": "ice"}]}
+{"text": "저 래요", "intent": "yes", "items": []}
+{"text": "음 메뉴 알려 주세요", "intent": "menu", "items": []}
+{"text": "핫초코 두 개 주실래요", "intent": "order", "items": [{"id": "choco", "qty": 2, "temp": null}]}
+{"text": "기 딸기스무디 한잔", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "저 안 쓴 거 있어요", "intent": "menu", "items": []}
+{"text": "네따한 바닐라 하나 줘요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "hot"}]}
+{"text": "음 다시 말해 주세요", "intent": "repeat", "items": []}
+{"text": "안 들려요", "intent": "repeat", "items": []}
+{"text": "아 그 생강 차 말 고요 빼주세요", "intent": "remove", "items": [{"id": "ginger", "qty": 1, "temp": null}]}
+{"text": "천천히 말해 주세요", "intent": "repeat", "items": []}
+{"text": "저기요 케익 그리고  아이스로 아메리카노 ", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}, {"id": "americano", "qty": 1, "temp": "ice"}]}
+{"text": "네 딸기 4개", "intent": "order", "items": [{"id": "smoothie", "qty": 4, "temp": null}]}
+{"text": "아 그 따뜻한 걸로 생강 차 둘, 아이스 바닐라라테 하나 로 주세요", "intent": "order", "items": [{"id": "ginger", "qty": 2, "temp": "hot"}, {"id": "vanilla", "qty": 1, "temp": "ice"}]}
+{"text": "아 그 글씨가 안 보여요", "intent": "help", "items": []}
+{"text": "어이스로 라테 한 잔 하나 줘요", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": "ice"}]}
+{"text": " 아니", "intent": "no", "items": []}
+{"text": "저 네 걸로", "intent": "yes", "items": []}
+{"text": "어 글씨가 안 보여요", "intent": "help", "items": []}
+{"text": "네 다시요", "intent": "repeat", "items": []}
+{"text": "네 메뉴 읽어 주세요", "intent": "menu", "items": []}
+{"text": "어 아니요", "intent": "no", "items": []}
+{"text": "라테 개요 주세요", "intent": "order", "items": [{"id": "latte", "qty": 2, "temp": null}]}
+{"text": "여기 자가운 유자  으로 할게요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": "ice"}]}
+{"text": "어아리카노 요", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": null}]}
+{"text": "따끈한 유자 주세요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": "hot"}]}
+{"text": "음달한 거 뭐 있어요", "intent": "menu", "items": []}
+{"text": "네 주문  할래요", "intent": "cancel", "items": []}
+{"text": "따끈한 유자 석 잔에 초콜릿 라떼 2개 하나 줘요", "intent": "order", "items": [{"id": "yuja", "qty": 3, "temp": "hot"}, {"id": "choco", "qty": 2, "temp": null}]}
+{"text": "강차하고 얼음 넣은 카페테 2잔 좀 주세요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": null}, {"id": "latte", "qty": 2, "temp": "ice"}]}
+{"text": "아 그 메뉴 읽어 주세요", "intent": "menu", "items": []}
+{"text": "저 블랙커피 셋랑 따끈한 생강 하나줘요", "intent": "order", "items": [{"id": "americano", "qty": 3, "temp": null}, {"id": "ginger", "qty": 1, "temp": "hot"}]}
+{"text": "아 그 이제계산 ", "intent": "checkout", "items": []}
+{"text": "예", "intent": "yes", "items": []}
+{"text": "계산할게요", "intent": "checkout", "items": []}
+{"text": "네 계산할게요", "intent": "checkout", "items": []}
+{"text": "음 이대로 주세요", "intent": "checkout", "items": []}
+{"text": "저 처음부터 다시", "intent": "cancel", "items": []}
+{"text": "여기 그냥 커피 취소해 주세요", "intent": "remove", "items": [{"id": "americano", "qty": 1, "temp": null}]}
+{"text": "시원하게 우유 커피 둘 주문할게요", "intent": "order", "items": [{"id": "latte", "qty": 2, "temp": "ice"}]}
+{"text": "저기요 결제", "intent": "checkout", "items": []}
+{"text": "저기요 유자차 1개 줘", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": null}]}
+{"text": "음 따뜻한 바닐라라테 둘 으로 할게요", "intent": "order", "items": [{"id": "vanilla", "qty": 2, "temp": "hot"}]}
+{"text": "음 어디 눌러야 돼요", "intent": "help", "items": []}
+{"text": "생강 차 주세요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": null}]}
+{"text": "네 한 번 더요", "intent": "repeat", "items": []}
+{"text": "저기요 뜨거운 유자 차 둘하고 케이크 한 개요 먹을게요", "intent": "order", "items": [{"id": "yuja", "qty": 2, "temp": "hot"}, {"id": "cake", "qty": 1, "temp": null}]}
+{"text": "음 딸기스무디 한잔 먹을게요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "못 하겠어요", "intent": "help", "items": []}
+{"text": "여기 아이스 초코라 할게요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": "ice"}]}
+{"text": "저 메뉴 읽어 주세요", "intent": "menu", "items": []}
+{"text": "여기 라떼 네 개", "intent": "order", "items": [{"id": "latte", "qty": 4, "temp": null}]}
+{"text": "아 그우유 들어간 커피 한 개요에 스무디 하나요 줘", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": null}, {"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "어 이제 됐 어요 계산해줘요", "intent": "checkout", "items": []}
+{"text": "초기 화면으로", "intent": "cancel", "items": []}
+{"text": "저기요 여기 좀 와 주세요", "intent": "help", "items": []}
+{"text": "음 스무디, 시원한 유자차 하나요 이요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}, {"id": "yuja", "qty": 1, "temp": "ice"}]}
+{"text": "아 그 초 코 하나 빼요", "intent": "remove", "items": [{"id": "choco", "qty": 1, "temp": null}]}
+{"text": "네 마실 거 뭐 있어요", "intent": "menu", "items": []}
+{"text": "메뉴 읽어 주세요", "intent": "menu", "items": []}
+{"text": "저 맨 처음으로 가요", "intent": "cancel", "items": []}
+{"text": "여기 치즈 게크  1개 먹을게요", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}]}
+{"text": "다시요", "intent": "repeat", "items": []}
+{"text": "따뜻하게 바닐라라테 줘", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "hot"}]}
+{"text": "저 마실 거 뭐 있어요", "intent": "menu", "items": []}
+{"text": "저기요 핫초코 한 개", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": null}]}
+{"text": "메 뉴 읽어 주세요", "intent": "menu", "items": []}
+{"text": "아니요", "intent": "no", "items": []}
+{"text": "저 뭐 있어요", "intent": "menu", "items": []}
+{"text": "아 그 핫 바닐라 라떼 부탁해요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "hot"}]}
+{"text": "드로 할게요", "intent": "checkout", "items": []}
+{"text": "음 우유 들어간 커피 2잔 로 주세요", "intent": "order", "items": [{"id": "latte", "qty": 2, "temp": null}]}
+{"text": "아뇨", "intent": "no", "items": []}
+{"text": "아 그아이스로 유자 세잔 할게요", "intent": "order", "items": [{"id": "yuja", "qty": 3, "temp": "ice"}]}
+{"text": "음 유자 차갑게 부탁드려요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": "ice"}]}
+{"text": "생강 이요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": null}]}
+{"text": "저 치즈 케이크 필요 없어요", "intent": "remove", "items": [{"id": "cake", "qty": 1, "temp": null}]}
+{"text": "뭐 있어요", "intent": "menu", "items": []}
+{"text": "어 아이스로생강 차이랑 바닐라1잔 하나 줘요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": "ice"}, {"id": "vanilla", "qty": 1, "temp": null}]}
+{"text": "저 유자 차빼줘", "intent": "remove", "items": [{"id": "yuja", "qty": 1, "temp": null}]}
+{"text": "여기 방금  페라떼 취소", "intent": "remove", "items": [{"id": "latte", "qty": 1, "temp": null}]}
+{"text": "어 코코아 넷 부탁드려요", "intent": "order", "items": [{"id": "choco", "qty": 4, "temp": null}]}
+{"text": "아그핫유 자차 할게요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": "hot"}]}
+{"text": "저 따뜻하게 바닐라 라떼 하나에 딸기 주스 주세요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "hot"}, {"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "저 카페라테 취소해 주세요", "intent": "remove", "items": [{"id": "latte", "qty": 1, "temp": null}]}
+{"text": "어 아이스아메리카노 한 개요부탁해요", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": "ice"}]}
+{"text": "뜨거운 생강 차주세요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": "hot"}]}
+{"text": "저 뜨겁게 유자차 한잔하고 아메리카노 하나요 이요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": "hot"}, {"id": "americano", "qty": 1, "temp": null}]}
+{"text": "음 딸기 1잔 으로 할게요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "어 차가운 라떼  개요하고 코코아 하나 이요", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": "ice"}, {"id": "choco", "qty": 1, "temp": null}]}
+{"text": "저기요달달한 거뭐있어요", "intent": "menu", "items": []}
+{"text": "음 딸기이랑 시원하게 초코 하나 줘요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}, {"id": "choco", "qty": 1, "temp": "ice"}]}
+{"text": "맞아요", "intent": "yes", "items": []}
+{"text": "저 달달한 거 뭐 있어요", "intent": "menu", "items": []}
+{"text": "저기요 다시 한번 읽어 주세요", "intent": "repeat", "items": []}
+{"text": "아 그 메뉴 읽어 주세요", "intent": "menu", "items": []}
+{"text": "카페라떼하나 빼요", "intent": "remove", "items": [{"id": "latte", "qty": 1, "temp": null}]}
+{"text": "저기요 차갑게 블랙커피 1잔, 바닐라 라떼 두 개 주세요", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": "ice"}, {"id": "vanilla", "qty": 2, "temp": null}]}
+{"text": "따끈한 그냥 커피 그리고 딸기 스무디 한 잔 이요", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": "hot"}, {"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "치즈 케이크 한잔 으로 할게요", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}]}
+{"text": "어 그 따끈한 초코, 아이스아메리카노 두 개 부탁해요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": "hot"}, {"id": "americano", "qty": 2, "temp": "ice"}]}
+{"text": "뜨거운 바닐라라떼 두 개요 주세 요", "intent": "order", "items": [{"id": "vanilla", "qty": 2, "temp": "hot"}]}
+{"text": "음 직원  불러 주세요", "intent": "help", "items": []}
+{"text": "저 네 그걸로", "intent": "yes", "items": []}
+{"text": "여기 아메리카노 부탁해요", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": null}]}
+{"text": "아 그 따뜻한 걸로 우 유 피하나 그리고 스무디 하나요 부탁드려요", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": "hot"}, {"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "기 어 맞아", "intent": "yes", "items": []}
+{"text": "블랙커피 1개 부탁드려요", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": null}]}
+{"text": "저기요 뜨겁게 우유커피 4개 주실래요", "intent": "order", "items": [{"id": "latte", "qty": 4, "temp": "hot"}]}
+{"text": "싫어", "intent": "no", "items": []}
+{"text": "저기요 다시 한번 읽어 주세요", "intent": "repeat", "items": []}
+{"text": "음 뜨겁게 생강 한 개 부탁드려요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": "hot"}]}
+{"text": "저 직원 불러 세요", "intent": "help", "items": []}
+{"text": "네 어 맞아", "intent": "yes", "items": []}
+{"text": "얼음 넣은 커피 한 잔 주문할게요", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": "ice"}]}
+{"text": "방금 시킨 생강 취소", "intent": "remove", "items": [{"id": "ginger", "qty": 1, "temp": null}]}
+{"text": "네 뜨겁게 우유 들어간커피 3잔 시킬게요", "intent": "order", "items": [{"id": "latte", "qty": 3, "temp": "hot"}]}
+{"text": "저기요 유자차 따뜻하게에 시원한 바닐라 라떼 한 개요 주문할게요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": "hot"}, {"id": "vanilla", "qty": 1, "temp": "ice"}]}
+{"text": "얼음 넣은 아메리카노 한 잔 이요", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": "ice"}]}
+{"text": "저기요 딸기하고 바닐라라테한 개요 할게요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}, {"id": "vanilla", "qty": 1, "temp": null}]}
+{"text": "저 아이스아메리카노 4개 부탁드려요", "intent": "order", "items": [{"id": "americano", "qty": 4, "temp": "ice"}]}
+{"text": "아 그케이크 둘 으로 할게요", "intent": "order", "items": [{"id": "cake", "qty": 2, "temp": null}]}
+{"text": "여기 생강 하나요 이요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": null}]}
+{"text": "저 유자차하나 빼요", "intent": "remove", "items": [{"id": "yuja", "qty": 1, "temp": null}]}
+{"text": "저기요따뜻한 걸로 우유 들어간 커피 석 잔이랑 코코어 1잔  로 주세요", "intent": "order", "items": [{"id": "latte", "qty": 3, "temp": "hot"}, {"id": "choco", "qty": 1, "temp": null}]}
+{"text": "아 안 들요", "intent": "repeat", "items": []}
+{"text": " 처음부터 다시", "intent": "cancel", "items": []}
+{"text": "여기 직원분 좀", "intent": "help", "items": []}
+{"text": "음 다됐어요", "intent": "checkout", "items": []}
+{"text": "초코 하나 따뜻하게 부탁해요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": "hot"}]}
+{"text": "딸기 한 개이 랑 생강 2개 을게요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}, {"id": "ginger", "qty": 2, "temp": null}]}
+{"text": "저 응", "intent": "yes", "items": []}
+{"text": "어뜨겁게 유자 둘 줘", "intent": "order", "items": [{"id": "yuja", "qty": 2, "temp": "hot"}]}
+{"text": " 그차가운 아메리카노 하나에 익 하나요세요", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": "ice"}, {"id": "cake", "qty": 1, "temp": null}]}
+{"text": "저 아이스로 아메 세 개 요", "intent": "order", "items": [{"id": "americano", "qty": 3, "temp": "ice"}]}
+{"text": "음 따끈한 바닐라 한 잔", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "hot"}]}
+{"text": "저기요 케익 한잔 으로 할게요", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}]}
+{"text": "네 따한 걸로 바닐라라떼 이요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "hot"}]}
+{"text": "초코 한잔 차갑 요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": "ice"}]}
+{"text": "딸기 둘", "intent": "order", "items": [{"id": "smoothie", "qty": 2, "temp": null}]}
+{"text": "어 그거 아니에요", "intent": "no", "items": []}
+{"text": "저기요 유자 차 석 잔 시킬게요", "intent": "order", "items": [{"id": "yuja", "qty": 3, "temp": null}]}
+{"text": "저 아이스로 카페라테 하나 으로 할게요", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": "ice"}]}
+{"text": "딸기스무디 필요 없어요", "intent": "remove", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "뜨거운 바닐라라테 세 잔하고 딸기스무디 한 개 주문할게요", "intent": "order", "items": [{"id": "vanilla", "qty": 3, "temp": "hot"}, {"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "어주안 할래요", "intent": "cancel", "items": []}
+{"text": "글씨가 안보여요", "intent": "help", "items": []}
+{"text": "어 뜨겁게 바닐라 라떼 주세", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "hot"}]}
+{"text": "네 아이스 생강 1개 주세요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": "ice"}]}
+{"text": "네 사람 불러줘요", "intent": "help", "items": []}
+{"text": "저기요 딸기 주스 좀주세요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "아 그 유자차 2잔 부탁드려요", "intent": "order", "items": [{"id": "yuja", "qty": 2, "temp": null}]}
+{"text": "예 그렇게 해 주세요", "intent": "yes", "items": []}
+{"text": "뜨거운 생강차 시킬게요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": "hot"}]}
+{"text": "네 차갑게 바닐라라테 네 개 주세요", "intent": "order", "items": [{"id": "vanilla", "qty": 4, "temp": "ice"}]}
+{"text": " 뜨거운 핫초코 1잔", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": "hot"}]}
+{"text": "저 따뜻한 블랙커피 두 개 주실래요", "intent": "order", "items": [{"id": "americano", "qty": 2, "temp": "hot"}]}
+{"text": "시원한 바닐라라떼 하나 할게요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "ice"}]}
+{"text": "따끈한 생강 차 한잔 이요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": "hot"}]}
+{"text": "딸기스무디 1잔 이요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "네 케익 주세요", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}]}
+{"text": "생강 한 개요부탁해 요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": null}]}
+{"text": "아  딸기1개 부탁해요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "아이스로 유자 차 부탁해요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": "ice"}]}
+{"text": "네 생강자 따뜻하게하고 따뜻 유자 차 두잔 이요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": "hot"}, {"id": "yuja", "qty": 2, "temp": "hot"}]}
+{"text": "아 그 맞아요", "intent": "yes", "items": []}
+{"text": "네 생강차 지워 주세요", "intent": "remove", "items": [{"id": "ginger", "qty": 1, "temp": null}]}
+{"text": "어 라떼 네 잔, 커피 하나요 주실래요", "intent": "order", "items": [{"id": "latte", "qty": 4, "temp": null}, {"id": "americano", "qty": 1, "temp": null}]}
+{"text": "케익 두 개요 좀 주세요", "intent": "order", "items": [{"id": "cake", "qty": 2, "temp": null}]}
+{"text": "저 딸기 한 개 먹을게요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "저기요 따뜻하게 코코아 두 개 요", "intent": "order", "items": [{"id": "choco", "qty": 2, "temp": "hot"}]}
+{"text": "네 초기 화면으로", "intent": "cancel", "items": []}
+{"text": "여 기 생강 부탁드요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": null}]}
+{"text": "차갑게 바닐라라테 요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "ice"}]}
+{"text": "여기 치즈 이크, 유자 차 두 잔 따뜻하게", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}, {"id": "yuja", "qty": 2, "temp": "hot"}]}
+{"text": "저기요 커피 말고뭐 있어요", "intent": "menu", "items": []}
+{"text": "아 그 네 맞아요", "intent": "yes", "items": []}
+{"text": "예", "intent": "yes", "items": []}
+{"text": "저 딸기스무디  부드려요", "intent": "order", "items": [{"id": "smoothie", "qty": 4, "temp": null}]}
+{"text": "계 산대에 사람 없어요", "intent": "help", "items": []}
+{"text": "어 바닐라 3잔 주문할게요", "intent": "order", "items": [{"id": "vanilla", "qty": 3, "temp": null}]}
+{"text": "아이스 초콜릿 라떼에  아스 바 좀주세요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": "ice"}, {"id": "vanilla", "qty": 1, "temp": "ice"}]}
+{"text": "아 그 취소 취소", "intent": "cancel", "items": []}
+{"text": "저기요그만 할래요", "intent": "cancel", "items": []}
+{"text": "마실거뭐 있어요", "intent": "menu", "items": []}
+{"text": " 따뜻한 초콜릿 라떼 4잔하고 아이스아메리카노 하나 좀 주세", "intent": "order", "items": [{"id": "choco", "qty": 4, "temp": "hot"}, {"id": "americano", "qty": 1, "temp": "ice"}]}
+{"text": "여기 아이스로 유자 차 두  개주세요", "intent": "order", "items": [{"id": "yuja", "qty": 2, "temp": "ice"}]}
+{"text": "아 그 치즈 케이크넷에 뜨겁게 핫초 코 주세요", "intent": "order", "items": [{"id": "cake", "qty": 4, "temp": null}, {"id": "choco", "qty": 1, "temp": "hot"}]}
+{"text": "어 뭐 있어요", "intent": "menu", "items": []}
+{"text": "여기 여기좀 와 주세요", "intent": "help", "items": []}
+{"text": "네 그거 아니에요", "intent": "no", "items": []}
+{"text": "음 딸기스무둘 주세요", "intent": "order", "items": [{"id": "smoothie", "qty": 2, "temp": null}]}
+{"text": "여기 방금 시킨 유자차 취소", "intent": "remove", "items": [{"id": "yuja", "qty": 1, "temp": null}]}
+{"text": "저 따뜻하게 카페라테 한 개요 주세요", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": "hot"}]}
+{"text": "어 메뉴 읽어 주세요", "intent": "menu", "items": []}
+{"text": "어 카라테 두 잔 차갑게하고 딸기셋 부탁해요", "intent": "order", "items": [{"id": "latte", "qty": 2, "temp": "ice"}, {"id": "smoothie", "qty": 3, "temp": null}]}
+{"text": "아 그 따끈한 바닐라라떼 하나 으로 할게", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "hot"}]}
+{"text": "따뜻한 걸로 바닐라라떼 넷이랑 시원하게 생강 하나요", "intent": "order", "items": [{"id": "vanilla", "qty": 4, "temp": "hot"}, {"id": "ginger", "qty": 1, "temp": "ice"}]}
+{"text": "저기요 케익 한 잔하고 시원한 초콜릿 라떼 두 잔 주세요", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}, {"id": "choco", "qty": 2, "temp": "ice"}]}
+{"text": "초콜릿 라떼 좀 주세요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": null}]}
+{"text": "여기뭐 있어요", "intent": "menu", "items": []}
+{"text": "아 그 차갑게 유자차 두 잔", "intent": "order", "items": [{"id": "yuja", "qty": 2, "temp": "ice"}]}
+{"text": "여기 달달한 거 뭐 있어요", "intent": "menu", "items": []}
+{"text": "저기요 딸기 하나요 주세요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "음 주문 끝", "intent": "checkout", "items": []}
+{"text": "여기 딸기 한 개에 뜨거운 바닐라라테 두 개요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}, {"id": "vanilla", "qty": 2, "temp": "hot"}]}
+{"text": "아그  그거 아에요", "intent": "no", "items": []}
+{"text": "바닐3잔하고 초콜릿라떼 주실래요", "intent": "order", "items": [{"id": "vanilla", "qty": 3, "temp": null}, {"id": "choco", "qty": 1, "temp": null}]}
+{"text": "여기 뭐 있어요", "intent": "menu", "items": []}
+{"text": "저 치즈케이크 한 잔 요", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}]}
+{"text": "음 네 맞아요", "intent": "yes", "items": []}
+{"text": "저기요 안 쓴 거 있어요", "intent": "menu", "items": []}
+{"text": "여기 핫 핫초코 한잔 이요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": "hot"}]}
+{"text": "커피 말고 뭐 있어요", "intent": "menu", "items": []}
+{"text": "저 다시 한번 읽어 주세요", "intent": "repeat", "items": []}
+{"text": "네 카드로 할게요", "intent": "checkout", "items": []}
+{"text": "여기 유자 넉 잔 차갑게 주세요", "intent": "order", "items": [{"id": "yuja", "qty": 4, "temp": "ice"}]}
+{"text": "", "intent": "yes", "items": []}
+{"text": "여기 뜨거 생강 1 주실래요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": "hot"}]}
+{"text": "생강차 한잔 으로 할게요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": null}]}
+{"text": "네  사장 불러 주세요", "intent": "help", "items": []}
+{"text": "음 바닐라 네 잔 부탁드려요", "intent": "order", "items": [{"id": "vanilla", "qty": 4, "temp": null}]}
+{"text": "음 따끈한 생강 한  잔 주문할게요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": "hot"}]}
+{"text": "저요 차갑 생강에 유자차 네 잔 주세요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": "ice"}, {"id": "yuja", "qty": 4, "temp": null}]}
+{"text": "우유 들어간 커피 말고요 빼주세요", "intent": "remove", "items": [{"id": "latte", "qty": 1, "temp": null}]}
+{"text": "여기 얼음 넣은 커피 세잔 부탁드요", "intent": "order", "items": [{"id": "americano", "qty": 3, "temp": "ice"}]}
+{"text": "네 스무디 한 잔", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "여기 잘 못 들었어요", "intent": "repeat", "items": []}
+{"text": "저기요 잘 못 들었어요", "intent": "repeat", "items": []}
+{"text": "네 아니요", "intent": "no", "items": []}
+{"text": "저 다시요", "intent": "repeat", "items": []}
+{"text": "커피 말고 뭐 있어요", "intent": "menu", "items": []}
+{"text": "아 그 방금 시킨 라떼 소", "intent": "remove", "items": [{"id": "latte", "qty": 1, "temp": null}]}
+{"text": "뜨겁게 바닐라라테하고 블랙커피 두 개요 줘", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "hot"}, {"id": "americano", "qty": 2, "temp": null}]}
+{"text": "네 생강자 한잔요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": null}]}
+{"text": "초코 하나시킬게요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": null}]}
+{"text": "다 됐어요", "intent": "checkout", "items": []}
+{"text": "아그 다 됐어요", "intent": "checkout", "items": []}
+{"text": "따끈한 생강하고 바닐라라테두 개 따뜻하게 할게요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": "hot"}, {"id": "vanilla", "qty": 2, "temp": "hot"}]}
+{"text": "저 뭐 팔아요", "intent": "menu", "items": []}
+{"text": "여기 우유 커피 3개 하나 줘요", "intent": "order", "items": [{"id": "latte", "qty": 3, "temp": null}]}
+{"text": "저기요 전부 취소", "intent": "cancel", "items": []}
+{"text": "저기요 다시요", "intent": "repeat", "items": []}
+{"text": "여기 잘 모르겠어요", "intent": "help", "items": []}
+{"text": "어 우유 들어간 커피 둘 줘", "intent": "order", "items": [{"id": "latte", "qty": 2, "temp": null}]}
+{"text": "저기 다 골랐어요", "intent": "checkout", "items": []}
+{"text": "네 따뜻한 걸로바 닐라 1개 그리고 뜨겁게 생강 2개 주세요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "hot"}, {"id": "ginger", "qty": 2, "temp": "hot"}]}
+{"text": "네 뜨거운 유자차 넷 하나 줘요", "intent": "order", "items": [{"id": "yuja", "qty": 4, "temp": "hot"}]}
+{"text": "맨 처음으로 가요", "intent": "cancel", "items": []}
+{"text": "여기 그거 어니에요", "intent": "no", "items": []}
+{"text": "케익 2개 으로할게요", "intent": "order", "items": [{"id": "cake", "qty": 2, "temp": null}]}
+{"text": "차가운 초코라떼  개요 부탁드려요", "intent": "order", "items": [{"id": "choco", "qty": 2, "temp": "ice"}]}
+{"text": "어 시원한 생강차 4잔 좀 주세요", "intent": "order", "items": [{"id": "ginger", "qty": 4, "temp": "ice"}]}
+{"text": "어 치즈케이크는 안 먹을래요", "intent": "remove", "items": [{"id": "cake", "qty": 1, "temp": null}]}
+{"text": "어디 눌러야 돼요", "intent": "help", "items": []}
+{"text": "딸기스무디 한 개요 요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "저기요 바닐라 1잔 줘", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": null}]}
+{"text": "네 치즈 케이크 두 잔 주세요", "intent": "order", "items": [{"id": "cake", "qty": 2, "temp": null}]}
+{"text": "네 이걸로 주문할게요", "intent": "checkout", "items": []}
+{"text": "네 케익  한 잔 문게요", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}]}
+{"text": "어 다시 할게요", "intent": "cancel", "items": []}
+{"text": "어 바닐라 라떼 한개 부탁드려요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": null}]}
+{"text": "주문 완료", "intent": "checkout", "items": []}
+{"text": "어케익 1잔", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}]}
+{"text": "방금 뭐라 했어요", "intent": "repeat", "items": []}
+{"text": "저기요 이걸로 주할게요", "intent": "checkout", "items": []}
+{"text": "여기 달달한 거 뭐 있어요", "intent": "menu", "items": []}
+{"text": "어 예", "intent": "yes", "items": []}
+{"text": "어 케이크 한잔 나 줘요", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}]}
+{"text": "저 뜨겁게 바닐라나떼 4개 주세요", "intent": "order", "items": [{"id": "vanilla", "qty": 4, "temp": "hot"}]}
+{"text": "어 뜨겁게 아메리카노 하나 주실래요", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": "hot"}]}
+{"text": "사장님 불러 주세요", "intent": "help", "items": []}
+{"text": "네 못 하겠어요", "intent": "help", "items": []}
+{"text": "저기요 시원한 블랙커피세잔 좀주세요", "intent": "order", "items": [{"id": "americano", "qty": 3, "temp": "ice"}]}
+{"text": "뜨겁게 아메 주세요", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": "hot"}]}
+{"text": "아 그 이제 됐어요 계산해줘요", "intent": "checkout", "items": []}
+{"text": "딸기스무디 한 개 이요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "어 코코아 로 주세요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": null}]}
+{"text": "생강 1개 주문할게요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": null}]}
+{"text": "네 생강차 두 개요 따뜻하게 시킬게요", "intent": "order", "items": [{"id": "ginger", "qty": 2, "temp": "hot"}]}
+{"text": "딸기 스무디 부탁해요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "음바닐라라떼빼줘", "intent": "remove", "items": [{"id": "vanilla", "qty": 1, "temp": null}]}
+{"text": "아 그 따뜻한 거 뭐 있어요", "intent": "menu", "items": []}
+{"text": "얼음넣은 코코아 줘", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": "ice"}]}
+{"text": "저 마실 거 뭐 있어요", "intent": "menu", "items": []}
+{"text": "따뜻하게 카라테 부탁해요", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": "hot"}]}
+{"text": "어 치즈 케이크는 안 먹을래요", "intent": "remove", "items": [{"id": "cake", "qty": 1, "temp": null}]}
+{"text": "어 초기화면으로", "intent": "cancel", "items": []}
+{"text": "결제", "intent": "checkout", "items": []}
+{"text": "음틀렸어요", "intent": "no", "items": []}
+{"text": "여기따뜻한 우유들어간 커피 한잔 부탁드려요", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": "hot"}]}
+{"text": "음이걸 주문할게요", "intent": "checkout", "items": []}
+{"text": "어 딸기 주스 3개 주세요", "intent": "order", "items": [{"id": "smoothie", "qty": 3, "temp": null}]}
+{"text": "여기아메이랑 시한 초콜릿 라떼 하나 좀 주세요", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": null}, {"id": "choco", "qty": 1, "temp": "ice"}]}
+{"text": "주문 완료", "intent": "checkout", "items": []}
+{"text": "처음으", "intent": "cancel", "items": []}
+{"text": "저 마실 거 뭐 있어요", "intent": "menu", "items": []}
+{"text": "네 케이크 한  개 시킬게요", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}]}
+{"text": "여기 유자 한 개요 그리고 얼음 넣은 라떼 두 개요 할게요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": null}, {"id": "latte", "qty": 2, "temp": "ice"}]}
+{"text": "여기 딸기스무디  한개요 할게요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "네 시원한 생강 차 주실래요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": "ice"}]}
+{"text": "치즈케이크 주실래요", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}]}
+{"text": "아 그 모르겠는요", "intent": "help", "items": []}
+{"text": "음 누구없요", "intent": "help", "items": []}
+{"text": "어 못하겠어요", "intent": "help", "items": []}
+{"text": "저기요 딸기 주스 세잔 로 주세요", "intent": "order", "items": [{"id": "smoothie", "qty": 3, "temp": null}]}
+{"text": "저 따뜻하게 그냥 커 주문할게요", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": "hot"}]}
+{"text": "네 얼음 넣은 핫초코 부탁드려요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": "ice"}]}
+{"text": "메뉴 읽어주세요", "intent": "menu", "items": []}
+{"text": "어떻게 해요", "intent": "help", "items": []}
+{"text": "딸기스무디에 케익 1개 하나 줘요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}, {"id": "cake", "qty": 1, "temp": null}]}
+{"text": "어 뜨겁게 라테한잔 이랑 아이스메리카 줘", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": "hot"}, {"id": "americano", "qty": 1, "temp": "ice"}]}
+{"text": "아 그 뜨겁게 생강 한 개 주세요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": "hot"}]}
+{"text": "저기요 바닐라 2잔 주세요", "intent": "order", "items": [{"id": "vanilla", "qty": 2, "temp": null}]}
+{"text": "저 이제됐어요계산해줘요", "intent": "checkout", "items": []}
+{"text": "그냥 커피 두 잔랑 생강차 하나요 따뜻하게 좀 주세요", "intent": "order", "items": [{"id": "americano", "qty": 2, "temp": null}, {"id": "ginger", "qty": 1, "temp": "hot"}]}
+{"text": "여기 네 맞아요", "intent": "yes", "items": []}
+{"text": "어 뭐 있어요", "intent": "menu", "items": []}
+{"text": "따뜻한 바닐라라 한 개 로 주세요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "hot"}]}
+{"text": "도와주세요", "intent": "help", "items": []}
+{"text": "유자 2개이랑얼음 넣은 카라테 줘", "intent": "order", "items": [{"id": "yuja", "qty": 2, "temp": null}, {"id": "latte", "qty": 1, "temp": "ice"}]}
+{"text": "안 들려요", "intent": "repeat", "items": []}
+{"text": "저 따뜻한 생강 차", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": "hot"}]}
+{"text": "저 따끈한  코코아 먹을게요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": "hot"}]}
+{"text": "유자 한 잔 하나 줘요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": null}]}
+{"text": "저도와주요", "intent": "help", "items": []}
+{"text": "카드로 할게요", "intent": "checkout", "items": []}
+{"text": "저기요 안 들려요", "intent": "repeat", "items": []}
+{"text": "저기요 방금 시킨 우유 들어간 커피 취소", "intent": "remove", "items": [{"id": "latte", "qty": 1, "temp": null}]}
+{"text": "어 딸기 1잔 할게요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "직원 불러 주세요", "intent": "help", "items": []}
+{"text": "아 그 메뉴 읽어 주세요", "intent": "menu", "items": []}
+{"text": "여기 딸기 주스 한 개이랑 블랙커피 이요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}, {"id": "americano", "qty": 1, "temp": null}]}
+{"text": "어 생강차 부탁 드요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": null}]}
+{"text": "글씨가 안 보여요", "intent": "help", "items": []}
+{"text": "네 주문 완료", "intent": "checkout", "items": []}
+{"text": "어결제", "intent": "checkout", "items": []}
+{"text": "여기 생강 1잔이랑 딸기한 개요 좀주세요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": null}, {"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "유자 셋 요", "intent": "order", "items": [{"id": "yuja", "qty": 3, "temp": null}]}
+{"text": "음 전부 지워 주세요", "intent": "cancel", "items": []}
+{"text": "어 어떻게 해요", "intent": "help", "items": []}
+{"text": "저기요 뜨거운 카페라떼 요", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": "hot"}]}
+{"text": "어 사람 불러줘요", "intent": "help", "items": []}
+{"text": "여기 어디눌러야 돼요", "intent": "help", "items": []}
+{"text": "다빼주세요", "intent": "cancel", "items": []}
+{"text": "여기 방금 시킨 유자차 취", "intent": "remove", "items": [{"id": "yuja", "qty": 1, "temp": null}]}
+{"text": "네 따뜻하게 유자 차 2잔, 치즈케이크 네 개 이요", "intent": "order", "items": [{"id": "yuja", "qty": 2, "temp": "hot"}, {"id": "cake", "qty": 4, "temp": null}]}
+{"text": "어 이대로주세요", "intent": "checkout", "items": []}
+{"text": "네 천천히 말해 주세요", "intent": "repeat", "items": []}
+{"text": "뭐 있어요", "intent": "menu", "items": []}
+{"text": "어 맨 처음으로 가요", "intent": "cancel", "items": []}
+{"text": "스무디 이요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "여기 주문 안 할래요", "intent": "cancel", "items": []}
+{"text": "여기 계산대에 사람 없어요", "intent": "help", "items": []}
+{"text": "저 직원분 좀", "intent": "help", "items": []}
+{"text": "네 계산해 주세요", "intent": "checkout", "items": []}
+{"text": "여기 싫어요", "intent": "no", "items": []}
+{"text": "여기 뭐 있어요", "intent": "menu", "items": []}
+{"text": "어 뜨겁게 유자 주문할게요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": "hot"}]}
+{"text": "저 그거 아니에요", "intent": "no", "items": []}
+{"text": "음 라떼 2그리고 생강차 주세요", "intent": "order", "items": [{"id": "latte", "qty": 2, "temp": null}, {"id": "ginger", "qty": 1, "temp": null}]}
+{"text": "어 아이스로 그냥 커피 4개 으로 할게요", "intent": "order", "items": [{"id": "americano", "qty": 4, "temp": "ice"}]}
+{"text": "어 바닐라라떼 하나요 좀 주세요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": null}]}
+{"text": "음 케이크 하나 줘요", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}]}
+{"text": "기요 얼넣은 라떼 로 주요", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": "ice"}]}
+{"text": "저 계산해 주세요", "intent": "checkout", "items": []}
+{"text": "저기요 모르겠는 데요", "intent": "help", "items": []}
+{"text": "직원 불러 주세요", "intent": "help", "items": []}
+{"text": "여기 뭐 팔어요", "intent": "menu", "items": []}
+{"text": "아 그 따뜻한 유자차 3장하고 차갑우유 들어간 커피 3잔로주세요", "intent": "order", "items": [{"id": "yuja", "qty": 3, "temp": "hot"}, {"id": "latte", "qty": 3, "temp": "ice"}]}
+{"text": "여기 스무디에 아이스아메리카노 하나요 먹을게요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}, {"id": "americano", "qty": 1, "temp": "ice"}]}
+{"text": "아 그 메뉴 읽어 주세요", "intent": "menu", "items": []}
+{"text": "네 아니 그거 말고", "intent": "no", "items": []}
+{"text": "저 생강 차 두 잔하고 치즈 케이크 두 개 요", "intent": "order", "items": [{"id": "ginger", "qty": 2, "temp": null}, {"id": "cake", "qty": 2, "temp": null}]}
+{"text": "저 직원분 좀", "intent": "help", "items": []}
+{"text": "그만할래요", "intent": "cancel", "items": []}
+{"text": "네 코코아 말고요 빼주세요", "intent": "remove", "items": [{"id": "choco", "qty": 1, "temp": null}]}
+{"text": "방금 뭐라 했어요", "intent": "repeat", "items": []}
+{"text": "여기 커피 3잔 주실래요", "intent": "order", "items": [{"id": "americano", "qty": 3, "temp": null}]}
+{"text": "저 예 그렇게 해 주세요", "intent": "yes", "items": []}
+{"text": "저기요 틀렸어요", "intent": "no", "items": []}
+{"text": "네 아니", "intent": "no", "items": []}
+{"text": "아 그 방금 시킨 아이스아메리카노 취소", "intent": "remove", "items": [{"id": "americano", "qty": 1, "temp": null}]}
+{"text": "저기요 유자 차 세잔랑 딸기 주스 석 잔 좀 주새요", "intent": "order", "items": [{"id": "yuja", "qty": 3, "temp": null}, {"id": "smoothie", "qty": 3, "temp": null}]}
+{"text": "전부 취소", "intent": "cancel", "items": []}
+{"text": "핫초코 두 개요 할게요", "intent": "order", "items": [{"id": "choco", "qty": 2, "temp": null}]}
+{"text": "어그 초코 세요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": null}]}
+{"text": "따끈한 유자차 세 개 주세요", "intent": "order", "items": [{"id": "yuja", "qty": 3, "temp": "hot"}]}
+{"text": "여기 딸기 주스 부탁해요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "어 이걸로 주문할게요", "intent": "checkout", "items": []}
+{"text": "우유 커피 취소해 주세요", "intent": "remove", "items": [{"id": "latte", "qty": 1, "temp": null}]}
+{"text": "여기 생강차 2개이랑 따뜻한 걸로 유자차 할게요", "intent": "order", "items": [{"id": "ginger", "qty": 2, "temp": null}, {"id": "yuja", "qty": 1, "temp": "hot"}]}
+{"text": "아 그 네 그걸로", "intent": "yes", "items": []}
+{"text": "바닐라 지워 주세요", "intent": "remove", "items": [{"id": "vanilla", "qty": 1, "temp": null}]}
+{"text": "저핫 유자차 셋 하나 줘요", "intent": "order", "items": [{"id": "yuja", "qty": 3, "temp": "hot"}]}
+{"text": "저기요 얼음 넣은 바닐라라테 2잔하고초코 한잔 할게요", "intent": "order", "items": [{"id": "vanilla", "qty": 2, "temp": "ice"}, {"id": "choco", "qty": 1, "temp": null}]}
+{"text": "여기 맨 처음으로 가요", "intent": "cancel", "items": []}
+{"text": "핫초코 1잔 그리고 스무디 1잔 부탁드려요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": null}, {"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "여기 바닐라라테4개 좀 주세요", "intent": "order", "items": [{"id": "vanilla", "qty": 4, "temp": null}]}
+{"text": "바닐라라테 한 잔", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": null}]}
+{"text": "천천히 말해 주세요", "intent": "repeat", "items": []}
+{"text": "아 그 메뉴알려 주세요", "intent": "menu", "items": []}
+{"text": "어 네", "intent": "yes", "items": []}
+{"text": "저 스무디 1개이랑 차가운 바닐라라떼이요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}, {"id": "vanilla", "qty": 1, "temp": "ice"}]}
+{"text": "여기 그만할래요", "intent": "cancel", "items": []}
+{"text": "여기 달달한 거 뭐 있어요", "intent": "menu", "items": []}
+{"text": "어 초기 화면으로", "intent": "cancel", "items": []}
+{"text": "생강차 두 잔 주세요", "intent": "order", "items": [{"id": "ginger", "qty": 2, "temp": null}]}
+{"text": "케익 두 개  주문할게요", "intent": "order", "items": [{"id": "cake", "qty": 2, "temp": null}]}
+{"text": "저기요 차갑게 바닐라라떼 주세요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "ice"}]}
+{"text": "기요 좋아요", "intent": "yes", "items": []}
+{"text": "예", "intent": "yes", "items": []}
+{"text": "음 따뜻한 유자 시킬게요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": "hot"}]}
+{"text": "아 그 추천해 주세요", "intent": "menu", "items": []}
+{"text": "음 도움이 필요해요", "intent": "help", "items": []}
+{"text": " 그 아니", "intent": "no", "items": []}
+{"text": "음 라테 필요 없어요", "intent": "remove", "items": [{"id": "latte", "qty": 1, "temp": null}]}
+{"text": "저기요따뜻하게 생 강 차 요 ", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": "hot"}]}
+{"text": "어 다 취소해 주세요", "intent": "cancel", "items": []}
+{"text": "아그 주문 완료", "intent": "checkout", "items": []}
+{"text": "좋아요", "intent": "yes", "items": []}
+{"text": "여기 어떻게 해요", "intent": "help", "items": []}
+{"text": "저기요 케이 크에 아이스로 유자 차 하나 줘요", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}, {"id": "yuja", "qty": 1, "temp": "ice"}]}
+{"text": "저 생강 차 빼 주세요", "intent": "remove", "items": [{"id": "ginger", "qty": 1, "temp": null}]}
+{"text": "저기요 딸기 두 잔 이요", "intent": "order", "items": [{"id": "smoothie", "qty": 2, "temp": null}]}
+{"text": "따뜻한 걸로 코코아 한 개요에 차갑게 유자 1개 먹을게요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": "hot"}, {"id": "yuja", "qty": 1, "temp": "ice"}]}
+{"text": "저기요 따끈한 핫초코 한 개요, 바닐라 라떼 시킬게요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": "hot"}, {"id": "vanilla", "qty": 1, "temp": null}]}
+{"text": "기요 따뜻한 바닐라 라떼하고 생강 차 로 주세요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "hot"}, {"id": "ginger", "qty": 1, "temp": null}]}
+{"text": "어 케익 석잔, 뜨겁게 바닐라 라떼 네  잔 주세요", "intent": "order", "items": [{"id": "cake", "qty": 3, "temp": null}, {"id": "vanilla", "qty": 4, "temp": "hot"}]}
+{"text": " 방금 뭐라 했어요", "intent": "repeat", "items": []}
+{"text": "여기아뇨", "intent": "no", "items": []}
+{"text": "네 처음부터 다시", "intent": "cancel", "items": []}
+{"text": "어 이제 계산", "intent": "checkout", "items": []}
+{"text": "사장님 불러 주세요", "intent": "help", "items": []}
+{"text": "어 다시 한번 읽어 주세요", "intent": "repeat", "items": []}
+{"text": "모르겠는데요", "intent": "help", "items": []}
+{"text": "네 못 하겠어요", "intent": "help", "items": []}
+{"text": "저 처음부터 다시", "intent": "cancel", "items": []}
+{"text": "어 유자 차 3개 주문할게요", "intent": "order", "items": [{"id": "yuja", "qty": 3, "temp": null}]}
+{"text": "아 그 시원한 아메리카노에 시원하게 바닐라라떼 주실래요", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": "ice"}, {"id": "vanilla", "qty": 1, "temp": "ice"}]}
+{"text": "네 바닐라라테 4개 주세요", "intent": "order", "items": [{"id": "vanilla", "qty": 4, "temp": null}]}
+{"text": "어 아이스 닐라 할게요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "ice"}]}
+{"text": "카페테 주세요", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": null}]}
+{"text": "어 따끈한 유자 한잔에 초코라떼 한개 주실래요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": "hot"}, {"id": "choco", "qty": 1, "temp": null}]}
+{"text": "저기요 따뜻한 거 뭐 있어요", "intent": "menu", "items": []}
+{"text": "네그걸로", "intent": "yes", "items": []}
+{"text": "아 그 직원분 좀", "intent": "help", "items": []}
+{"text": "아이스 카페라테 세 잔요", "intent": "order", "items": [{"id": "latte", "qty": 3, "temp": "ice"}]}
+{"text": "네 얼 넣은 코코아3잔에스무디두 개 시킬게요", "intent": "order", "items": [{"id": "choco", "qty": 3, "temp": "ice"}, {"id": "smoothie", "qty": 2, "temp": null}]}
+{"text": "여기 어떻게 해요", "intent": "help", "items": []}
+{"text": "결제할게요", "intent": "checkout", "items": []}
+{"text": "아니", "intent": "no", "items": []}
+{"text": "저기요 어 맞아", "intent": "yes", "items": []}
+{"text": "여기 생강차 하나요 부탁드려요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": null}]}
+{"text": "저 방금 뭐라 했어요", "intent": "repeat", "items": []}
+{"text": "여기 전부 취소", "intent": "cancel", "items": []}
+{"text": "어떻게 해요", "intent": "help", "items": []}
+{"text": "아 그 모르겠는데요", "intent": "help", "items": []}
+{"text": "여기 케익 한잔에아이스 유들어간 커피 한잔할게 요", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}, {"id": "latte", "qty": 1, "temp": "ice"}]}
+{"text": "저 핫 코코아, 아이스 아메리카노 하나 줘요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": "hot"}, {"id": "americano", "qty": 1, "temp": "ice"}]}
+{"text": "음 다시요", "intent": "repeat", "items": []}
+{"text": "저 결제", "intent": "checkout", "items": []}
+{"text": "어 차가운 핫초코 2개, 시원하게 유자 차 이요", "intent": "order", "items": [{"id": "choco", "qty": 2, "temp": "ice"}, {"id": "yuja", "qty": 1, "temp": "ice"}]}
+{"text": "저기요 이제 됐어요 계산해줘요", "intent": "checkout", "items": []}
+{"text": "저 모르겠는데요", "intent": "help", "items": []}
+{"text": "여기 틀렸어요", "intent": "no", "items": []}
+{"text": "저기요 뭐라고요", "intent": "repeat", "items": []}
+{"text": "음 결제", "intent": "checkout", "items": []}
+{"text": "네 케이크는 안 먹을래요", "intent": "remove", "items": [{"id": "cake", "qty": 1, "temp": null}]}
+{"text": "아 그케이크 넷 딸기스무디 한잔 시킬게요", "intent": "order", "items": [{"id": "cake", "qty": 4, "temp": null}, {"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "저기요 치즈케이크 안 먹을래요", "intent": "remove", "items": [{"id": "cake", "qty": 1, "temp": null}]}
+{"text": "네 이제 됐어요 계산해줘요", "intent": "checkout", "items": []}
+{"text": "케이크 세잔 줘", "intent": "order", "items": [{"id": "cake", "qty": 3, "temp": null}]}
+{"text": "음 유자 개 그리고 케이크 두 개 으로할게요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": null}, {"id": "cake", "qty": 2, "temp": null}]}
+{"text": "생강차 한 개요 부탁드려요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": null}]}
+{"text": "아그 이제 됐어요계해줘", "intent": "checkout", "items": []}
+{"text": "아  생강차 두 잔 부탁해요", "intent": "order", "items": [{"id": "ginger", "qty": 2, "temp": null}]}
+{"text": "음 치즈 케이크  먹을게요", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}]}
+{"text": " 아이스로 카페라떼 네 개 하나 줘요", "intent": "order", "items": [{"id": "latte", "qty": 4, "temp": "ice"}]}
+{"text": "다시 할게", "intent": "cancel", "items": []}
+{"text": "코코아 주실래요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": null}]}
+{"text": "누구 없어요", "intent": "help", "items": []}
+{"text": "저 따뜻하 초콜릿 라테 네잔랑 따끈한 생강차 한잔 줘", "intent": "order", "items": [{"id": "choco", "qty": 4, "temp": "hot"}, {"id": "ginger", "qty": 1, "temp": "hot"}]}
+{"text": "안 쓴 거 있어요", "intent": "menu", "items": []}
+{"text": "초코는 안 먹을래요", "intent": "remove", "items": [{"id": "choco", "qty": 1, "temp": null}]}
+{"text": "음 뭐 팔아요", "intent": "menu", "items": []}
+{"text": "저 차가운 바닐 주세요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "ice"}]}
+{"text": "아니", "intent": "no", "items": []}
+{"text": "다시 한번 읽어 주세요", "intent": "repeat", "items": []}
+{"text": "저기요 뭐 팔아요", "intent": "menu", "items": []}
+{"text": "마실 거 뭐 있어요", "intent": "menu", "items": []}
+{"text": "저 달달한 거뭐있어요", "intent": "menu", "items": []}
+{"text": "라테 1잔 부탁드려요", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": null}]}
+{"text": "네 따뜻하게 라떼 세잔", "intent": "order", "items": [{"id": "latte", "qty": 3, "temp": "hot"}]}
+{"text": "어 딸기 3잔 부탁드려요", "intent": "order", "items": [{"id": "smoothie", "qty": 3, "temp": null}]}
+{"text": "다 취소해 주세요", "intent": "cancel", "items": []}
+{"text": "초코 주문할게요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": null}]}
+{"text": "스무디 먹을게요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "네 방시킨 생강차 취소", "intent": "remove", "items": [{"id": "ginger", "qty": 1, "temp": null}]}
+{"text": "음 안 쓴 거 있어요", "intent": "menu", "items": []}
+{"text": "이제 됐어요 계산해줘요", "intent": "checkout", "items": []}
+{"text": "딸기 주스 주세요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "네 유자 지워 주세요", "intent": "remove", "items": [{"id": "yuja", "qty": 1, "temp": null}]}
+{"text": "저기요 유자 차 필요 없어요", "intent": "remove", "items": [{"id": "yuja", "qty": 1, "temp": null}]}
+{"text": "어 시원하게 바닐라라떼 하나 주세 요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "ice"}]}
+{"text": "저 네", "intent": "yes", "items": []}
+{"text": "예 그렇게 해 주세요", "intent": "yes", "items": []}
+{"text": "이대로 주세요", "intent": "checkout", "items": []}
+{"text": "저 아이스로 유자차 두 잔 부탁드려요", "intent": "order", "items": [{"id": "yuja", "qty": 2, "temp": "ice"}]}
+{"text": "저기요 누구 없어요", "intent": "help", "items": []}
+{"text": "아 그 뜨겁게 초코 세잔이랑 차갑게유자차 2잔", "intent": "order", "items": [{"id": "choco", "qty": 3, "temp": "hot"}, {"id": "yuja", "qty": 2, "temp": "ice"}]}
+{"text": "음 좋아요", "intent": "yes", "items": []}
+{"text": "치즈케이크 하나요에 따뜻하게 바닐라 라떼 이요", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}, {"id": "vanilla", "qty": 1, "temp": "hot"}]}
+{"text": "다 취소해 주세요", "intent": "cancel", "items": []}
+{"text": "어 바라 라떼 한 개요 따뜻하게 탁해요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "hot"}]}
+{"text": "저기요 따뜻한 걸로 유자 차 세 개에 스무디 네 잔 요", "intent": "order", "items": [{"id": "yuja", "qty": 3, "temp": "hot"}, {"id": "smoothie", "qty": 4, "temp": null}]}
+{"text": "저기요 케이크에 따끈한 우유 들어간  커피넉 잔 줘", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}, {"id": "latte", "qty": 4, "temp": "hot"}]}
+{"text": "케이크세 개 주세요", "intent": "order", "items": [{"id": "cake", "qty": 3, "temp": null}]}
+{"text": "음 메뉴 알려 주세요", "intent": "menu", "items": []}
+{"text": "아이스 우유 커피이랑 차가운 초코 한 개요 주문할게요", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": "ice"}, {"id": "choco", "qty": 1, "temp": "ice"}]}
+{"text": "음 딸기 스디말고요 빼주세요", "intent": "remove", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "아 그취소 취소", "intent": "cancel", "items": []}
+{"text": "어 차갑게 초코 한 개", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": "ice"}]}
+{"text": "그만할래", "intent": "cancel", "items": []}
+{"text": "처음으로", "intent": "cancel", "items": []}
+{"text": "아 그 네", "intent": "yes", "items": []}
+{"text": "음 아이스로 아메1잔 케익 한개요 요", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": "ice"}, {"id": "cake", "qty": 1, "temp": null}]}
+{"text": "도움이 필요 해요", "intent": "help", "items": []}
+{"text": "네 그 커피 하나 따뜻 하게 그리고 아이스생강 차 이", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": "hot"}, {"id": "ginger", "qty": 1, "temp": "ice"}]}
+{"text": "카페라떼 두 개 이요", "intent": "order", "items": [{"id": "latte", "qty": 2, "temp": null}]}
+{"text": "맨 처음으로 가요", "intent": "cancel", "items": []}
+{"text": "유자차말고요 빼주세요", "intent": "remove", "items": [{"id": "yuja", "qty": 1, "temp": null}]}
+{"text": "네 계산해 주세요", "intent": "checkout", "items": []}
+{"text": "어 아이스아메리카노 하나 빼요", "intent": "remove", "items": [{"id": "americano", "qty": 1, "temp": null}]}
+{"text": "여기 어떻게해요", "intent": "help", "items": []}
+{"text": "핫우유피 2잔요", "intent": "order", "items": [{"id": "latte", "qty": 2, "temp": "hot"}]}
+{"text": "어 유자자이랑 케이크 3개 주문할게요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": null}, {"id": "cake", "qty": 3, "temp": null}]}
+{"text": "아 그 유자 빼줘 ", "intent": "remove", "items": [{"id": "yuja", "qty": 1, "temp": null}]}
+{"text": "따끈한 라테 한 잔 그리고 시원하게 블랙커피 부탁해요", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": "hot"}, {"id": "americano", "qty": 1, "temp": "ice"}]}
+{"text": "방금 시킨 유자 차 취소", "intent": "remove", "items": [{"id": "yuja", "qty": 1, "temp": null}]}
+{"text": "아 그 응 ", "intent": "yes", "items": []}
+{"text": "어 아이스 코코아 한 잔 주세요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": "ice"}]}
+{"text": "딸기스무디 두잔  주세요", "intent": "order", "items": [{"id": "smoothie", "qty": 2, "temp": null}]}
+{"text": "네 직원분 좀", "intent": "help", "items": []}
+{"text": "네 좋아요", "intent": "yes", "items": []}
+{"text": "여기 카드로 할게요", "intent": "checkout", "items": []}
+{"text": "어떻게 해요", "intent": "help", "items": []}
+{"text": "스무디 한 개요 요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "어 치즈케이크 한 잔,초콜릿라떼 시킬게요", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}, {"id": "choco", "qty": 1, "temp": null}]}
+{"text": "따뜻하게 블랙커피 주세요", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": "hot"}]}
+{"text": "어 아메리카노하고 딸기 먹을게요", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": null}, {"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "저기요 치즈 케이크 하나  줘요", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}]}
+{"text": "시원하게 유자차 한 개요 부탁해요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": "ice"}]}
+{"text": "네 아니요", "intent": "no", "items": []}
+{"text": "이걸로 주문할게요", "intent": "checkout", "items": []}
+{"text": "어 처음으로", "intent": "cancel", "items": []}
+{"text": "여기 생강 한 개, 뜨거운 바닐라라떼 먹을게요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": null}, {"id": "vanilla", "qty": 1, "temp": "hot"}]}
+{"text": "네 뜨거운 라떼 으로 할게요", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": "hot"}]}
+{"text": "스무디 두 개 이요", "intent": "order", "items": [{"id": "smoothie", "qty": 2, "temp": null}]}
+{"text": "네 얼음 넣은 유자차 요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": "ice"}]}
+{"text": "아 그 유자차 2개이랑 스무디 두 개 주세요", "intent": "order", "items": [{"id": "yuja", "qty": 2, "temp": null}, {"id": "smoothie", "qty": 2, "temp": null}]}
+{"text": "다시게요", "intent": "cancel", "items": []}
+{"text": "어 코코아 따뜻하게에 스무디 네 개 줘", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": "hot"}, {"id": "smoothie", "qty": 4, "temp": null}]}
+{"text": "아 그 시원하게바닐라 세잔딸기 스무 주세요", "intent": "order", "items": [{"id": "vanilla", "qty": 3, "temp": "ice"}, {"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "여기 첫 면으로 돌아", "intent": "cancel", "items": []}
+{"text": "아 그 다 취소해 주세요", "intent": "cancel", "items": []}
+{"text": "저기요 따끈한 핫초코 시킬게요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": "hot"}]}
+{"text": "음 니요", "intent": "no", "items": []}
+{"text": "네 실 거 뭐 있어요", "intent": "menu", "items": []}
+{"text": "아 그 차가운 바닐라라떼 2잔 주세요", "intent": "order", "items": [{"id": "vanilla", "qty": 2, "temp": "ice"}]}
+{"text": "커피 넉잔하고따뜻한 우유 들어간 커피", "intent": "order", "items": [{"id": "americano", "qty": 4, "temp": null}, {"id": "latte", "qty": 1, "temp": "hot"}]}
+{"text": "이거 어려워요", "intent": "help", "items": []}
+{"text": "네 어 맞아", "intent": "yes", "items": []}
+{"text": "저기요 초코는 안 먹을래요", "intent": "remove", "items": [{"id": "choco", "qty": 1, "temp": null}]}
+{"text": "카드로 할게요", "intent": "checkout", "items": []}
+{"text": "저기요 카페라떼 2잔이랑 아이스로 생강 차 둘 할게요", "intent": "order", "items": [{"id": "latte", "qty": 2, "temp": null}, {"id": "ginger", "qty": 2, "temp": "ice"}]}
+{"text": "여기 아이스로 생강차 4잔 주문할게요", "intent": "order", "items": [{"id": "ginger", "qty": 4, "temp": "ice"}]}
+{"text": "저 어 맞아", "intent": "yes", "items": []}
+{"text": "네 맨 처음로 가요", "intent": "cancel", "items": []}
+{"text": "네 따뜻한  거 뭐있어요", "intent": "menu", "items": []}
+{"text": "음 주문 끝", "intent": "checkout", "items": []}
+{"text": "추천해 주세요", "intent": "menu", "items": []}
+{"text": "음 사람이 안 보여요", "intent": "help", "items": []}
+{"text": "어 초코라떼는 안 먹래요", "intent": "remove", "items": [{"id": "choco", "qty": 1, "temp": null}]}
+{"text": "아 그 뭐 있어요", "intent": "menu", "items": []}
+{"text": "네 달달한 거 뭐 있어요", "intent": "menu", "items": []}
+{"text": "저기요 따뜻한 아메리카노 넷 줘", "intent": "order", "items": [{"id": "americano", "qty": 4, "temp": "hot"}]}
+{"text": "음 그냥 커피 세잔랑 바닐라 3잔 이요", "intent": "order", "items": [{"id": "americano", "qty": 3, "temp": null}, {"id": "vanilla", "qty": 3, "temp": null}]}
+{"text": "어딸 기스무디이랑 치즈케이크 1잔세요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}, {"id": "cake", "qty": 1, "temp": null}]}
+{"text": "저 카 페라테 따뜻 하게 로 주세요", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": "hot"}]}
+{"text": "여기 방금 뭐라 했어요", "intent": "repeat", "items": []}
+{"text": "아 그 핫 카페라테 2잔 부탁드려요", "intent": "order", "items": [{"id": "latte", "qty": 2, "temp": "hot"}]}
+{"text": "치즈 케이크 그리고초코 두 잔 먹을게요", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}, {"id": "choco", "qty": 2, "temp": null}]}
+{"text": "어 아", "intent": "yes", "items": []}
+{"text": "아이스로 바닐라라떼 1잔 하나 줘요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "ice"}]}
+{"text": "음 차 가운 코코아에 치즈 케이크 으로 할게요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": "ice"}, {"id": "cake", "qty": 1, "temp": null}]}
+{"text": "음 아이스 바닐라라떼 네 잔 주세요", "intent": "order", "items": [{"id": "vanilla", "qty": 4, "temp": "ice"}]}
+{"text": "아 그 아이스로 그냥 커피 한 개 이요", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": "ice"}]}
+{"text": "네 따뜻한 걸로 생강차 먹을게요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": "hot"}]}
+{"text": "저 딸기 주스 그리고 이스아리카노  개  주세요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}, {"id": "americano", "qty": 2, "temp": "ice"}]}
+{"text": "여기 아이 스아메리카노네개 요", "intent": "order", "items": [{"id": "americano", "qty": 4, "temp": "ice"}]}
+{"text": "따뜻한생강차", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": "hot"}]}
+{"text": "블랙커피두 개요 줘", "intent": "order", "items": [{"id": "americano", "qty": 2, "temp": null}]}
+{"text": "네 뜨겁게 생강 차 하나요 로 주세요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": "hot"}]}
+{"text": " 방금 시 유자취소", "intent": "remove", "items": [{"id": "yuja", "qty": 1, "temp": null}]}
+{"text": "네 응", "intent": "yes", "items": []}
+{"text": "아이스 코코아 부탁해요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": "ice"}]}
+{"text": "네 시원하게 블랙커피", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": "ice"}]}
+{"text": "여기 유자 말고요빼주세요", "intent": "remove", "items": [{"id": "yuja", "qty": 1, "temp": null}]}
+{"text": "천천히 말해 주세요", "intent": "repeat", "items": []}
+{"text": "네 유자차 1개, 아이스 바닐라 라떼 한 개 주실래요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": null}, {"id": "vanilla", "qty": 1, "temp": "ice"}]}
+{"text": "어 겁게 생강 2잔 으로 게요", "intent": "order", "items": [{"id": "ginger", "qty": 2, "temp": "hot"}]}
+{"text": "저기요 생강차랑 아이스로유자  세잔 시킬게요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": null}, {"id": "yuja", "qty": 3, "temp": "ice"}]}
+{"text": "유자 1부탁해", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": null}]}
+{"text": "초기 화면으로", "intent": "cancel", "items": []}
+{"text": "어 케이크 셋 부탁해요", "intent": "order", "items": [{"id": "cake", "qty": 3, "temp": null}]}
+{"text": "저 유자 한 개에 차가운 바닐라라테2잔 실래요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": null}, {"id": "vanilla", "qty": 2, "temp": "ice"}]}
+{"text": "저 유 들어간 커피 취소해 주세요", "intent": "remove", "items": [{"id": "latte", "qty": 1, "temp": null}]}
+{"text": "네안 들려", "intent": "repeat", "items": []}
+{"text": "생강 3잔 그리고 케이크 네 잔 요", "intent": "order", "items": [{"id": "ginger", "qty": 3, "temp": null}, {"id": "cake", "qty": 4, "temp": null}]}
+{"text": "음 처음으로", "intent": "cancel", "items": []}
+{"text": "어 그냥 커피 말고요 빼주세요", "intent": "remove", "items": [{"id": "americano", "qty": 1, "temp": null}]}
+{"text": "아 그 아이스아메리카노 하나요 이요", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": "ice"}]}
+{"text": "어 뭐 있어요", "intent": "menu", "items": []}
+{"text": "음 차갑게 우유 들어 커두 개에 따뜻한 걸로 그냥 커도 잔 먹을게요", "intent": "order", "items": [{"id": "latte", "qty": 2, "temp": "ice"}, {"id": "americano", "qty": 2, "temp": "hot"}]}
+{"text": "이제 됐어요 계산해줘요", "intent": "checkout", "items": []}
+{"text": "차가운 생강 차 둘 좀 주세요", "intent": "order", "items": [{"id": "ginger", "qty": 2, "temp": "ice"}]}
+{"text": "음 다시 할게요", "intent": "cancel", "items": []}
+{"text": "아 그 딸기 스무디랑 아메 2개 부탁드려 요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}, {"id": "americano", "qty": 2, "temp": null}]}
+{"text": "저 사장님 불러 주세요", "intent": "help", "items": []}
+{"text": "딸기 스무 디에 따뜻한 생강 차 하나요 부탁해요 ", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}, {"id": "ginger", "qty": 1, "temp": "hot"}]}
+{"text": "여 예 그렇  해 요", "intent": "yes", "items": []}
+{"text": "어 우유 커피 두개 주세요", "intent": "order", "items": [{"id": "latte", "qty": 2, "temp": null}]}
+{"text": "저 치즈케이크  잔 좀 주세요", "intent": "order", "items": [{"id": "cake", "qty": 3, "temp": null}]}
+{"text": "어 추천해 주세요", "intent": "menu", "items": []}
+{"text": "다시말해 주세요 ", "intent": "repeat", "items": []}
+{"text": "아 그 모르겠는데요", "intent": "help", "items": []}
+{"text": "시원하게 라테 둘,  아이스로 생강 차 할게요", "intent": "order", "items": [{"id": "latte", "qty": 2, "temp": "ice"}, {"id": "ginger", "qty": 1, "temp": "ice"}]}
+{"text": "뭐 있어요", "intent": "menu", "items": []}
+{"text": "어 처음부터 다시", "intent": "cancel", "items": []}
+{"text": "뜨거운 유자차", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": "hot"}]}
+{"text": "메뉴 읽어 주세요", "intent": "menu", "items": []}
+{"text": "아 그 따뜻한 걸로 생강 차 주문할게요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": "hot"}]}
+{"text": "아 그 딸기 스무디 주세요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "저 뜨겁게 카페라떼 이요", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": "hot"}]}
+{"text": "음 시원하게 생강 하나요하고 라떼두잔 주요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": "ice"}, {"id": "latte", "qty": 2, "temp": null}]}
+{"text": "음뜨 겁게 우유 커피 이요", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": "hot"}]}
+{"text": "여기 맞아요", "intent": "yes", "items": []}
+{"text": "음 생강차 빼 주세요", "intent": "remove", "items": [{"id": "ginger", "qty": 1, "temp": null}]}
+{"text": "네아이스로 바닐라라테하나 주실래요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "ice"}]}
+{"text": "어 차가운 유자", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": "ice"}]}
+{"text": "저 추천해 주세요", "intent": "menu", "items": []}
+{"text": "저 처음으로", "intent": "cancel", "items": []}
+{"text": "어 딸기 주스 1개에 초코 둘 할게요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}, {"id": "choco", "qty": 2, "temp": null}]}
+{"text": "저 천천히 말해 주세요", "intent": "repeat", "items": []}
+{"text": "저기요 따뜻하게 커피 한 개요 로 주세요", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": "hot"}]}
+{"text": "음 잘 못 들었어요", "intent": "repeat", "items": []}
+{"text": "저기요 예", "intent": "yes", "items": []}
+{"text": "저 다 취소해 주세요 ", "intent": "cancel", "items": []}
+{"text": "여기 네 맞아요", "intent": "yes", "items": []}
+{"text": "저 유자차 둘하고핫 우유 들어간 커피 시킬게", "intent": "order", "items": [{"id": "yuja", "qty": 2, "temp": null}, {"id": "latte", "qty": 1, "temp": "hot"}]}
+{"text": "달달한 거 뭐 있어요", "intent": "menu", "items": []}
+{"text": "어 케이크 석 장에 생강차 한 개 줘", "intent": "order", "items": [{"id": "cake", "qty": 3, "temp": null}, {"id": "ginger", "qty": 1, "temp": null}]}
+{"text": "천천히 말해주세요", "intent": "repeat", "items": []}
+{"text": "어 안 들려요", "intent": "repeat", "items": []}
+{"text": "음 뜨거운 바닐라라테 그리고 케이크 하나요 부탁해요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "hot"}, {"id": "cake", "qty": 1, "temp": null}]}
+{"text": "아 그 시원하게 유자 차 넉 잔, 딸기 스무디 한 개 좀 주세요", "intent": "order", "items": [{"id": "yuja", "qty": 4, "temp": "ice"}, {"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "저 이제 됐어요 계산해줘요", "intent": "checkout", "items": []}
+{"text": "어 시원하게 생강 차 4잔, 따뜻한 걸로 커피 둘 주실래요", "intent": "order", "items": [{"id": "ginger", "qty": 4, "temp": "ice"}, {"id": "americano", "qty": 2, "temp": "hot"}]}
+{"text": "저 기 라테 네 개 그리고아이스 유자 한잔주실래요", "intent": "order", "items": [{"id": "latte", "qty": 4, "temp": null}, {"id": "yuja", "qty": 1, "temp": "ice"}]}
+{"text": "맨 처음으로 가요", "intent": "cancel", "items": []}
+{"text": "저 치즈케이크  두 잔 먹을게요", "intent": "order", "items": [{"id": "cake", "qty": 2, "temp": null}]}
+{"text": "결제", "intent": "checkout", "items": []}
+{"text": "한 번 더요", "intent": "repeat", "items": []}
+{"text": "어 글씨가 안 보여요", "intent": "help", "items": []}
+{"text": "여기 차갑게 바닐라 라떼 한잔 줘", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "ice"}]}
+{"text": "여기 그냥 커피 취소해 주세요", "intent": "remove", "items": [{"id": "americano", "qty": 1, "temp": null}]}
+{"text": "뭐라고요", "intent": "repeat", "items": []}
+{"text": "어 초코 말고요 빼주세요", "intent": "remove", "items": [{"id": "choco", "qty": 1, "temp": null}]}
+{"text": "어 차갑게 생강 차 이요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": "ice"}]}
+{"text": " 잘 못 들었어요", "intent": "repeat", "items": []}
+{"text": "저 딸기 스무디 두잔 으로 할게요", "intent": "order", "items": [{"id": "smoothie", "qty": 2, "temp": null}]}
+{"text": "어다 빼 주세요", "intent": "cancel", "items": []}
+{"text": "어 아뇨", "intent": "no", "items": []}
+{"text": "음딸기스무디에 가운 생강 차하나요으로 할게", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}, {"id": "ginger", "qty": 1, "temp": "ice"}]}
+{"text": "여기 직원분 좀", "intent": "help", "items": []}
+{"text": "저기 커피 말고 뭐 있어요", "intent": "menu", "items": []}
+{"text": "음 케익 한 잔 주세요", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}]}
+{"text": "아 그 어맞아", "intent": "yes", "items": []}
+{"text": "어 이제 됐어요 계산해줘요", "intent": "checkout", "items": []}
+{"text": "저 뜨겁게 바닐라라테 줘", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "hot"}]}
+{"text": "저기요 결제할게요", "intent": "checkout", "items": []}
+{"text": "네 글씨가 안 보여요", "intent": "help", "items": []}
+{"text": "여기 아이스아메리카노 하나요 그니고 스무디 두 개 줘", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": "ice"}, {"id": "smoothie", "qty": 2, "temp": null}]}
+{"text": "저 모르겠는데요", "intent": "help", "items": []}
+{"text": "다 됐어요", "intent": "checkout", "items": []}
+{"text": "여기 아이스아메리노 두 잔 로주세요", "intent": "order", "items": [{"id": "americano", "qty": 2, "temp": "ice"}]}
+{"text": "저 치즈케이크 4개하고 유자 1잔 시킬게요", "intent": "order", "items": [{"id": "cake", "qty": 4, "temp": null}, {"id": "yuja", "qty": 1, "temp": null}]}
+{"text": "아 그 못 하겠어요", "intent": "help", "items": []}
+{"text": "핫 바닐라라테 부탁해요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "hot"}]}
+{"text": "음 딸기 스 지워 주세요", "intent": "remove", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "여기 딸기 스무디4개 주세요", "intent": "order", "items": [{"id": "smoothie", "qty": 4, "temp": null}]}
+{"text": "여기 못 하겠어요", "intent": "help", "items": []}
+{"text": "아 그 예", "intent": "yes", "items": []}
+{"text": "주문 완료", "intent": "checkout", "items": []}
+{"text": "딸기 스무디 한 잔랑 시원하게 생강 차두 잔 줘", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}, {"id": "ginger", "qty": 2, "temp": "ice"}]}
+{"text": "아 그 딸주스 먹을게요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "저 이제 됐요 산해줘요", "intent": "checkout", "items": []}
+{"text": "어 얼음 넣은 바닐라테 개이랑 얼음 넣은 유자 차 하나요 부탁해요", "intent": "order", "items": [{"id": "vanilla", "qty": 2, "temp": "ice"}, {"id": "yuja", "qty": 1, "temp": "ice"}]}
+{"text": "여기 얼음 넣은 생강 차 셋 시킬게요", "intent": "order", "items": [{"id": "ginger", "qty": 3, "temp": "ice"}]}
+{"text": "저기요방금  시킨 생강차 취소", "intent": "remove", "items": [{"id": "ginger", "qty": 1, "temp": null}]}
+{"text": "아  코코아 로 주세요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": null}]}
+{"text": "여기 직원 불러 주세요", "intent": "help", "items": []}
+{"text": "아 그 아니 그 거 말고", "intent": "no", "items": []}
+{"text": "케익 두잔 하나 줘요", "intent": "order", "items": [{"id": "cake", "qty": 2, "temp": null}]}
+{"text": "저기요잘 못 들었어요", "intent": "repeat", "items": []}
+{"text": "어 차가운 블랙커피 네 개에 라떼 3개 따뜻하게 로 주세요", "intent": "order", "items": [{"id": "americano", "qty": 4, "temp": "ice"}, {"id": "latte", "qty": 3, "temp": "hot"}]}
+{"text": "차가운 유자 차 한잔 먹을게요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": "ice"}]}
+{"text": "저 싫어요", "intent": "no", "items": []}
+{"text": "음스무디 한 개요 요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "음 바닐라 라떼 말고요 빼주세요", "intent": "remove", "items": [{"id": "vanilla", "qty": 1, "temp": null}]}
+{"text": "달달한 거 뭐 있어요", "intent": "menu", "items": []}
+{"text": "저 아이스아메리카노 넉 잔, 따뜻하게 우유 들어간 커피 하나요 할게요", "intent": "order", "items": [{"id": "americano", "qty": 4, "temp": "ice"}, {"id": "latte", "qty": 1, "temp": "hot"}]}
+{"text": "여기 치즈 케이크 이요", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}]}
+{"text": "저 아뇨", "intent": "no", "items": []}
+{"text": "네 맞아요", "intent": "yes", "items": []}
+{"text": "저 치즈 케이크 두 개 좀 주세요", "intent": "order", "items": [{"id": "cake", "qty": 2, "temp": null}]}
+{"text": "달달한 거 뭐 있어요", "intent": "menu", "items": []}
+{"text": "네 따뜻한 거 뭐 있어요", "intent": "menu", "items": []}
+{"text": "네 차가운 유자 3잔 할게요", "intent": "order", "items": [{"id": "yuja", "qty": 3, "temp": "ice"}]}
+{"text": "아메1개 하나 줘요", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": null}]}
+{"text": "네 마실 거 뭐 어요", "intent": "menu", "items": []}
+{"text": "저기요 아이스아메리카노 세 개 요", "intent": "order", "items": [{"id": "americano", "qty": 3, "temp": "ice"}]}
+{"text": "아  네", "intent": "yes", "items": []}
+{"text": "블랙커피 로 주세요", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": null}]}
+{"text": "여기 아이스아메리카노 3개랑 생강차 로 주세요", "intent": "order", "items": [{"id": "americano", "qty": 3, "temp": "ice"}, {"id": "ginger", "qty": 1, "temp": null}]}
+{"text": "초기 화면으로", "intent": "cancel", "items": []}
+{"text": "저 이거 어려워요", "intent": "help", "items": []}
+{"text": "딸기 주스 주세요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "어 네 맞아요", "intent": "yes", "items": []}
+{"text": "여기 이대로 주세요", "intent": "checkout", "items": []}
+{"text": "아니에요", "intent": "no", "items": []}
+{"text": "페테 좀 주세요", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": null}]}
+{"text": "커피 한 개요 차갑게 주문할게요", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": "ice"}]}
+{"text": "초콜릿 라떼 하나요 주실래요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": null}]}
+{"text": "음 이제 됐어요 계산해줘요", "intent": "checkout", "items": []}
+{"text": "아 그 주문 안 할래요", "intent": "cancel", "items": []}
+{"text": "저 맨 처음으로 가요", "intent": "cancel", "items": []}
+{"text": "아 그 잘 못 들었어요", "intent": "repeat", "items": []}
+{"text": "음 커피 2개 이요", "intent": "order", "items": [{"id": "americano", "qty": 2, "temp": null}]}
+{"text": "유자랑 초코 따뜻하게 부탁해요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": null}, {"id": "choco", "qty": 1, "temp": "hot"}]}
+{"text": "아 그 뜨겁게 유자 차", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": "hot"}]}
+{"text": "딸기 으로 할게요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "안 쓴  거 어요", "intent": "menu", "items": []}
+{"text": "뭐있어요", "intent": "menu", "items": []}
+{"text": "라떼이랑 바닐라라떼 두 개 주문할게요", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": null}, {"id": "vanilla", "qty": 2, "temp": null}]}
+{"text": "어 얼음 넣은 생강차 한 개요 줘", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": "ice"}]}
+{"text": "아 그 블랙커피 한잔 따뜻하게 이요", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": "hot"}]}
+{"text": "아그 따뜻거 뭐 있어요", "intent": "menu", "items": []}
+{"text": "음 바닐라라떼 4잔 부탁 해요", "intent": "order", "items": [{"id": "vanilla", "qty": 4, "temp": null}]}
+{"text": "달달한 거 뭐 있어요", "intent": "menu", "items": []}
+{"text": "음 뭐 팔아요", "intent": "menu", "items": []}
+{"text": "아 그 생강 차 1잔 할게요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": null}]}
+{"text": "뜻한거 뭐있어요", "intent": "menu", "items": []}
+{"text": "네 메뉴 읽어 주세요", "intent": "menu", "items": []}
+{"text": "아 그따뜻한 걸로 유자 부탁해요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": "hot"}]}
+{"text": "여기 생강이랑 따뜻한 걸로 아메리카노 두잔 이요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": null}, {"id": "americano", "qty": 2, "temp": "hot"}]}
+{"text": "아 그 이제 계산", "intent": "checkout", "items": []}
+{"text": "음 네 그걸로", "intent": "yes", "items": []}
+{"text": "여기 케이크 네 개 으로 할게요", "intent": "order", "items": [{"id": "cake", "qty": 4, "temp": null}]}
+{"text": "네이걸로 주문할게요", "intent": "checkout", "items": []}
+{"text": "저 딸스무줘", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": " 딸기 주스 1개 할게요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "어 케익는 안 먹을래요", "intent": "remove", "items": [{"id": "cake", "qty": 1, "temp": null}]}
+{"text": "아 그 따뜻한 걸로 생강 4개 그리고 초콜릿 라떼 셋 으로 할게요", "intent": "order", "items": [{"id": "ginger", "qty": 4, "temp": "hot"}, {"id": "choco", "qty": 3, "temp": null}]}
+{"text": "어전부 지워 주세요", "intent": "cancel", "items": []}
+{"text": "저기 요주문 끝", "intent": "checkout", "items": []}
+{"text": "시원한 바닐라라떼 두잔에 그냥 커피 두 개요 이요", "intent": "order", "items": [{"id": "vanilla", "qty": 2, "temp": "ice"}, {"id": "americano", "qty": 2, "temp": null}]}
+{"text": "생강 차 하나 줘 요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": null}]}
+{"text": "음 생강 차 차 갑게, 따뜻하게 유자차 1개이요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": "ice"}, {"id": "yuja", "qty": 1, "temp": "hot"}]}
+{"text": "아 그 첫 화면으로 돌가 ", "intent": "cancel", "items": []}
+{"text": "저  따뜻한 유자 이요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": "hot"}]}
+{"text": "음 다시 할게요", "intent": "cancel", "items": []}
+{"text": "어 다 골랐어요", "intent": "checkout", "items": []}
+{"text": "저기요 딸기 스무디 빼 주세요", "intent": "remove", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "여기 코코아하고 뜨거운 바닐라라떼 한 잔 주실래요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": null}, {"id": "vanilla", "qty": 1, "temp": "hot"}]}
+{"text": "시원한 초콜릿 라 1개 하나 줘요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": "ice"}]}
+{"text": "음 다시 한번 읽어 주세요", "intent": "repeat", "items": []}
+{"text": "아  핫 생강에따끈한 초콜릿라떼 1잔 부탁해요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": "hot"}, {"id": "choco", "qty": 1, "temp": "hot"}]}
+{"text": "차운 생강차 2개 로 주세요", "intent": "order", "items": [{"id": "ginger", "qty": 2, "temp": "ice"}]}
+{"text": "따뜻한 바닐나라테 둘  부탁해요", "intent": "order", "items": [{"id": "vanilla", "qty": 2, "temp": "hot"}]}
+{"text": "여기 좀 와 주세요", "intent": "help", "items": []}
+{"text": "치즈 이크 1개이랑 뜨거운 생 3잔 먹을게요", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}, {"id": "ginger", "qty": 3, "temp": "hot"}]}
+{"text": "저 사람 불러줘요", "intent": "help", "items": []}
+{"text": "여 케익 세 잔 주세요", "intent": "order", "items": [{"id": "cake", "qty": 3, "temp": null}]}
+{"text": "음 어디 눌러야 돼요", "intent": "help", "items": []}
+{"text": "바닐나랑 아이스 초코 3개 요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": null}, {"id": "choco", "qty": 3, "temp": "ice"}]}
+{"text": "아 그 다시 한번 읽어 주세요", "intent": "repeat", "items": []}
+{"text": "추천해 주세요", "intent": "menu", "items": []}
+{"text": "어 치즈 케이크 넉 잔 부탁드려요", "intent": "order", "items": [{"id": "cake", "qty": 4, "temp": null}]}
+{"text": "누구  없어요", "intent": "help", "items": []}
+{"text": "어 글 씨가 안 보여요", "intent": "help", "items": []}
+{"text": "여기 따뜻한걸로 생강 차 세 개 주세요", "intent": "order", "items": [{"id": "ginger", "qty": 3, "temp": "hot"}]}
+{"text": "차갑게 초코라떼 한잔 요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": "ice"}]}
+{"text": "여기 생강 말고요 빼주세요", "intent": "remove", "items": [{"id": "ginger", "qty": 1, "temp": null}]}
+{"text": "차가운초코떼 두개", "intent": "order", "items": [{"id": "choco", "qty": 2, "temp": "ice"}]}
+{"text": "계산대에 사람 없어요", "intent": "help", "items": []}
+{"text": "아그 뜻한 걸로 유자 4개부탁드려요", "intent": "order", "items": [{"id": "yuja", "qty": 4, "temp": "hot"}]}
+{"text": "그냥 커피 으로할게요", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": null}]}
+{"text": "아 그 아니요", "intent": "no", "items": []}
+{"text": "다 골랐어요", "intent": "checkout", "items": []}
+{"text": "이제 계산", "intent": "checkout", "items": []}
+{"text": "음 라떼 하나요 주실래요", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": null}]}
+{"text": "저기 요메 뉴읽어 주세요", "intent": "menu", "items": []}
+{"text": "사람이 안 보여요", "intent": "help", "items": []}
+{"text": "저기 뭐 있어요", "intent": "menu", "items": []}
+{"text": "어 뜨겁게 유자랑 아이스아메리카노 1개요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": "hot"}, {"id": "americano", "qty": 1, "temp": "ice"}]}
+{"text": "아 그 얼음 넣은 유자 두 잔 하나 줘요", "intent": "order", "items": [{"id": "yuja", "qty": 2, "temp": "ice"}]}
+{"text": "아 그 따뜻한 커피하고 카페라테 세잔 차갑게 으로 할게요", "intent": "order", "items": [{"id": "americano", "qty": 1, "temp": "hot"}, {"id": "latte", "qty": 3, "temp": "ice"}]}
+{"text": "아 그 케이크랑 차가운 유자 할게요", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}, {"id": "yuja", "qty": 1, "temp": "ice"}]}
+{"text": "저기요 유자 나요 이요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": null}]}
+{"text": "생강차 한 개요에 케익 넉  잔 로 주세요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": null}, {"id": "cake", "qty": 4, "temp": null}]}
+{"text": "아 그 이제 됐어요계산해줘요", "intent": "checkout", "items": []}
+{"text": "네 예", "intent": "yes", "items": []}
+{"text": "네 따뜻한 걸로 핫초코 이요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": "hot"}]}
+{"text": "딸 기 주스 한개요 줘", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "여기 첫화으로 돌아가", "intent": "cancel", "items": []}
+{"text": "아 그 이걸로 주문할게요", "intent": "checkout", "items": []}
+{"text": "사장님 불러 주요", "intent": "help", "items": []}
+{"text": "저기요 케이크 세잔 주세요", "intent": "order", "items": [{"id": "cake", "qty": 3, "temp": null}]}
+{"text": "딸기 주스 할게요", "intent": "order", "items": [{"id": "smoothie", "qty": 1, "temp": null}]}
+{"text": "저 누구 없어요", "intent": "help", "items": []}
+{"text": "네", "intent": "yes", "items": []}
+{"text": "케익 한 개 주문할게요", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}]}
+{"text": "아 그 처음부터 다시", "intent": "cancel", "items": []}
+{"text": "아이스 초코라떼 부탁해요", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": "ice"}]}
+{"text": "저 방 뭐라 했어요", "intent": "repeat", "items": []}
+{"text": "어 주 문 안 할래요", "intent": "cancel", "items": []}
+{"text": "그래요", "intent": "yes", "items": []}
+{"text": "그만할래요", "intent": "cancel", "items": []}
+{"text": "처음부터 다시", "intent": "cancel", "items": []}
+{"text": "네 생강 차 하나이랑 치즈 케이크 셋 주문할게요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": null}, {"id": "cake", "qty": 3, "temp": null}]}
+{"text": "음 이제 계산", "intent": "checkout", "items": []}
+{"text": " 따뜻하게 유자 자 하나요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": "hot"}]}
+{"text": "어 케이크 세 개 시킬게요", "intent": "order", "items": [{"id": "cake", "qty": 3, "temp": null}]}
+{"text": "저기요 처음으로", "intent": "cancel", "items": []}
+{"text": "아 그 바닐라라테 이요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": null}]}
+{"text": "카페라테 하나요 주실래요", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": null}]}
+{"text": "유자 한 개요 로 주세요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": null}]}
+{"text": "음 생강 취소해 주세요", "intent": "remove", "items": [{"id": "ginger", "qty": 1, "temp": null}]}
+{"text": "아 그 생강 빼 주세요", "intent": "remove", "items": [{"id": "ginger", "qty": 1, "temp": null}]}
+{"text": " 아뇨", "intent": "no", "items": []}
+{"text": "케이크 네  개 할게요", "intent": "order", "items": [{"id": "cake", "qty": 4, "temp": null}]}
+{"text": "저기요 글씨가 안보여요", "intent": "help", "items": []}
+{"text": "유자 셋 줘", "intent": "order", "items": [{"id": "yuja", "qty": 3, "temp": null}]}
+{"text": "저기요 바닐라라떼 그리고 케이크 한 개 할게요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": null}, {"id": "cake", "qty": 1, "temp": null}]}
+{"text": "싫어요", "intent": "no", "items": []}
+{"text": "음 싫어요", "intent": "no", "items": []}
+{"text": "저 이제 계산", "intent": "checkout", "items": []}
+{"text": "네 커피 고 뭐 어요", "intent": "menu", "items": []}
+{"text": "생강차 시킬게요", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": null}]}
+{"text": "아 그 유자 차2개 따뜻하게먹을게요", "intent": "order", "items": [{"id": "yuja", "qty": 2, "temp": "hot"}]}
+{"text": "어도움이 필요해요", "intent": "help", "items": []}
+{"text": "음 사장님 불러 주세요", "intent": "help", "items": []}
+{"text": "네 초기 화면으로", "intent": "cancel", "items": []}
+{"text": "저기요 차갑게 유자 차 줘", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": "ice"}]}
+{"text": "여기 네 맞아요", "intent": "yes", "items": []}
+{"text": "음 계산해 주세요", "intent": "checkout", "items": []}
+{"text": "여기이제 계산", "intent": "checkout", "items": []}
+{"text": "여기 핫 유자차 한 개랑 케이크 으로 할게요", "intent": "order", "items": [{"id": "yuja", "qty": 1, "temp": "hot"}, {"id": "cake", "qty": 1, "temp": null}]}
+{"text": "아 그 글씨가안 보여요", "intent": "help", "items": []}
+{"text": "저기요 생강 차 하나요 따하게", "intent": "order", "items": [{"id": "ginger", "qty": 1, "temp": "hot"}]}
+{"text": "저기요 핫코 한", "intent": "order", "items": [{"id": "choco", "qty": 1, "temp": null}]}
+{"text": "어 안 쓴 거 있어요", "intent": "menu", "items": []}
+{"text": "좋아요", "intent": "yes", "items": []}
+{"text": "카페라테 하나하고 따뜻한걸로바닐라 2개 먹을게요", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": null}, {"id": "vanilla", "qty": 2, "temp": "hot"}]}
+{"text": "어 얼음 넣은 바닐라라테 하나요, 라떼 1잔 부탁드려요", "intent": "order", "items": [{"id": "vanilla", "qty": 1, "temp": "ice"}, {"id": "latte", "qty": 1, "temp": null}]}
+{"text": "저 아니에요", "intent": "no", "items": []}
+{"text": "바닐라라떼 빼줘", "intent": "remove", "items": [{"id": "vanilla", "qty": 1, "temp": null}]}
+{"text": "저기요 케이크 로 주세요", "intent": "order", "items": [{"id": "cake", "qty": 1, "temp": null}]}
+{"text": "저기요 카페라테 으로 할게요", "intent": "order", "items": [{"id": "latte", "qty": 1, "temp": null}]}

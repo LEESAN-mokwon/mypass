@@ -1,0 +1,40 @@
+{"text":"따뜻한 라떼 큰 걸로 하나","intent":"order","items":[{"id":"latte","qty":1,"temp":"hot"}]}
+{"text":"우리 둘이 먹게 유자차 두 잔","intent":"order","items":[{"id":"yuja","qty":2,"temp":null}]}
+{"text":"얼음 많이 아메리카노 하나요","intent":"order","items":[{"id":"americano","qty":1,"temp":"ice"}]}
+{"text":"스무디 한 컵이랑 케이크","intent":"order","items":[{"id":"smoothie","qty":1,"temp":null},{"id":"cake","qty":1,"temp":null}]}
+{"text":"생강차 뜨겁게 해서 하나 주세요","intent":"order","items":[{"id":"ginger","qty":1,"temp":"hot"}]}
+{"text":"코코아 한 잔 마실게요","intent":"order","items":[{"id":"choco","qty":1,"temp":null}]}
+{"text":"아이스 바닐라 하나","intent":"order","items":[{"id":"vanilla","qty":1,"temp":"ice"}]}
+{"text":"아메리카노 하나 더요","intent":"order","items":[{"id":"americano","qty":1,"temp":null}]}
+{"text":"카페라떼로 바꿀래요","intent":"order","items":[{"id":"latte","qty":1,"temp":null}]}
+{"text":"치즈 케이크 한 조각","intent":"order","items":[{"id":"cake","qty":1,"temp":null}]}
+{"text":"스무디 빼","intent":"remove","items":[{"id":"smoothie","qty":1,"temp":null}]}
+{"text":"아메리카노 하나 취소해 주세요","intent":"remove","items":[{"id":"americano","qty":1,"temp":null}]}
+{"text":"생강차는 됐어요 빼 주세요","intent":"remove","items":[{"id":"ginger","qty":1,"temp":null}]}
+{"text":"계산 부탁해요","intent":"checkout","items":[]}
+{"text":"결제하기","intent":"checkout","items":[]}
+{"text":"다 됐으니 계산","intent":"checkout","items":[]}
+{"text":"주문할게요 이걸로 끝","intent":"checkout","items":[]}
+{"text":"전체 취소","intent":"cancel","items":[]}
+{"text":"처음부터 할래요","intent":"cancel","items":[]}
+{"text":"다 없던 걸로 해 주세요","intent":"cancel","items":[]}
+{"text":"사람 좀 와 주세요","intent":"help","items":[]}
+{"text":"이거 할 줄 몰라요","intent":"help","items":[]}
+{"text":"직원분 계세요","intent":"help","items":[]}
+{"text":"도움 좀 주세요","intent":"help","items":[]}
+{"text":"다시 들려 주세요","intent":"repeat","items":[]}
+{"text":"방금 말 다시","intent":"repeat","items":[]}
+{"text":"천천히 한 번 더 말해 주세요","intent":"repeat","items":[]}
+{"text":"네네","intent":"yes","items":[]}
+{"text":"맞아 그거","intent":"yes","items":[]}
+{"text":"예 그렇게요","intent":"yes","items":[]}
+{"text":"아니요 다른 거","intent":"no","items":[]}
+{"text":"그거 아니야","intent":"no","items":[]}
+{"text":"무슨 메뉴 있어요","intent":"menu","items":[]}
+{"text":"추천 메뉴 뭐예요","intent":"menu","items":[]}
+{"text":"따뜻한 차 뭐 있어요","intent":"menu","items":[]}
+{"text":"달달한 음료 알려 주세요","intent":"menu","items":[]}
+{"text":"라떼 한 잔 아이스 그리고 케이크 두 개","intent":"order","items":[{"id":"latte","qty":1,"temp":"ice"},{"id":"cake","qty":2,"temp":null}]}
+{"text":"뜨거운 초코 두 잔하고 아메리카노 한 잔","intent":"order","items":[{"id":"choco","qty":2,"temp":"hot"},{"id":"americano","qty":1,"temp":null}]}
+{"text":"유자차 세 잔 따뜻하게 부탁드립니다","intent":"order","items":[{"id":"yuja","qty":3,"temp":"hot"}]}
+{"text":"아이스 아메 두 개","intent":"order","items":[{"id":"americano","qty":2,"temp":"ice"}]}

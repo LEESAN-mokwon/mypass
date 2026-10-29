@@ -1,0 +1,50 @@
+{"text":"할머니는 따뜻한 생강차 하나 주고 나는 아이스 라떼","intent":"order","items":[{"id":"ginger","qty":1,"temp":"hot"},{"id":"latte","qty":1,"temp":"ice"}]}
+{"text":"뜨끈한 유자차 한 잔만요","intent":"order","items":[{"id":"yuja","qty":1,"temp":"hot"}]}
+{"text":"아메리카노 연하게 한 잔","intent":"order","items":[{"id":"americano","qty":1,"temp":null}]}
+{"text":"케이크 하나 포장이요","intent":"order","items":[{"id":"cake","qty":1,"temp":null}]}
+{"text":"차가운 바닐라 라테 하나랑 따뜻한 바닐라 라테 하나","intent":"order","items":[{"id":"vanilla","qty":1,"temp":"ice"},{"id":"vanilla","qty":1,"temp":"hot"}]}
+{"text":"초코라떼 아이스로 두 잔","intent":"order","items":[{"id":"choco","qty":2,"temp":"ice"}]}
+{"text":"딸기스무디 세 개","intent":"order","items":[{"id":"smoothie","qty":3,"temp":null}]}
+{"text":"그 쌉쌀한 커피 한 잔요","intent":"order","items":[{"id":"americano","qty":1,"temp":null}]}
+{"text":"라떼 2잔 아이스","intent":"order","items":[{"id":"latte","qty":2,"temp":"ice"}]}
+{"text":"생강차랑 유자차 하나씩","intent":"order","items":[{"id":"ginger","qty":1,"temp":null},{"id":"yuja","qty":1,"temp":null}]}
+{"text":"아메리카노 아이스 한잔 주세용","intent":"order","items":[{"id":"americano","qty":1,"temp":"ice"}]}
+{"text":"치즈케익 두 개 주세요","intent":"order","items":[{"id":"cake","qty":2,"temp":null}]}
+{"text":"핫 아메리카노 하나","intent":"order","items":[{"id":"americano","qty":1,"temp":"hot"}]}
+{"text":"카페 라떼 뜨겁게 세 잔이요","intent":"order","items":[{"id":"latte","qty":3,"temp":"hot"}]}
+{"text":"유자차 하나 시원하게 해줄 수 있어요","intent":"order","items":[{"id":"yuja","qty":1,"temp":"ice"}]}
+{"text":"케이크 빼고요","intent":"remove","items":[{"id":"cake","qty":1,"temp":null}]}
+{"text":"초코는 취소할게요","intent":"remove","items":[{"id":"choco","qty":1,"temp":null}]}
+{"text":"유자차 지워","intent":"remove","items":[{"id":"yuja","qty":1,"temp":null}]}
+{"text":"바닐라라떼 빼 줄래요","intent":"remove","items":[{"id":"vanilla","qty":1,"temp":null}]}
+{"text":"얼마예요 계산해 주세요","intent":"checkout","items":[]}
+{"text":"이대로 결제","intent":"checkout","items":[]}
+{"text":"이제 다 했어요","intent":"checkout","items":[]}
+{"text":"주문 넣어 주세요","intent":"checkout","items":[]}
+{"text":"돈 어떻게 내요 계산할래요","intent":"checkout","items":[]}
+{"text":"다 취소하고 다시 할게요","intent":"cancel","items":[]}
+{"text":"주문 안 해요","intent":"cancel","items":[]}
+{"text":"처음으로 돌려줘","intent":"cancel","items":[]}
+{"text":"장바구니 다 비워 주세요","intent":"cancel","items":[]}
+{"text":"여기요 좀 도와주실래요","intent":"help","items":[]}
+{"text":"기계가 어려워요","intent":"help","items":[]}
+{"text":"사람 있어요","intent":"help","items":[]}
+{"text":"직원 호출","intent":"help","items":[]}
+{"text":"뭘 눌러야 할지 모르겠어","intent":"help","items":[]}
+{"text":"다시 말해 줄래요","intent":"repeat","items":[]}
+{"text":"너무 빨라요 다시요","intent":"repeat","items":[]}
+{"text":"한 번 더 알려 줘","intent":"repeat","items":[]}
+{"text":"뭐라는지 모르겠네","intent":"repeat","items":[]}
+{"text":"네 그거 맞아요","intent":"yes","items":[]}
+{"text":"그렇죠","intent":"yes","items":[]}
+{"text":"오케이 좋아","intent":"yes","items":[]}
+{"text":"아니 다시","intent":"no","items":[]}
+{"text":"그거 말고요","intent":"no","items":[]}
+{"text":"아니야","intent":"no","items":[]}
+{"text":"단 거 있어요","intent":"menu","items":[]}
+{"text":"커피 종류 뭐 있어요","intent":"menu","items":[]}
+{"text":"카페인 없는 거 있나요","intent":"menu","items":[]}
+{"text":"차 종류 알려줘요","intent":"menu","items":[]}
+{"text":"아이들 먹을 거 뭐 있어요","intent":"menu","items":[]}
+{"text":"아메리카노 두 잔이랑 케이크 하나 주세요","intent":"order","items":[{"id":"americano","qty":2,"temp":null},{"id":"cake","qty":1,"temp":null}]}
+{"text":"따뜻한 카페라떼 하나 차가운 아메리카노 하나","intent":"order","items":[{"id":"latte","qty":1,"temp":"hot"},{"id":"americano","qty":1,"temp":"ice"}]}

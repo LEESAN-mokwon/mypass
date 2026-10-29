@@ -1,0 +1,970 @@
+<title>내 방식 패스</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@500;600;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap">
+<style>
+/* 화면 구성: 위 안내 → 왼쪽 '내 휴대폰'(프로필 만들기·QR) / 오른쪽 '카페 키오스크' → 아래 'AI 확인'과 '시험 기록'.
+   키오스크는 기본 모드(작은 글씨·영어 섞인 메뉴·시간 제한)와 내 방식 모드를 같은 화면에서 비교한다. */
+:root{
+  --bg:#EFF2EE; --surface:#FFFFFF; --ink:#16201B; --muted:#56635C; --line:#D3DBD5; --soft:#F6F8F6;
+  --accent:#1F6F54; --accent-ink:#FFFFFF; --accent-soft:#DCEFE6; --warn:#A35B00; --warn-soft:#FCEFD9; --bad:#B3261E; --bad-soft:#FBE4E2;
+  --phone:#121A16; --kbody:#2A2F33; --kscreen:#FAFAF7; --kink:#1C1C1C; --kmuted:#6B6B6B; --kline:#DDDDD7; --kbrand:#7B4B2A;
+  --display:"IBM Plex Sans KR","Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --body:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0F1512; --surface:#18211D; --ink:#E6EEE9; --muted:#9DAAA3; --line:#2B3832; --soft:#1D2823;
+  --accent:#5FC59C; --accent-ink:#0F1512; --accent-soft:#173A2D; --warn:#F0B95A; --warn-soft:#3A2D14; --bad:#F2877E; --bad-soft:#3D1D1B;
+  --phone:#05080A; color-scheme:dark }}
+:root[data-theme="dark"]{
+  --bg:#0F1512; --surface:#18211D; --ink:#E6EEE9; --muted:#9DAAA3; --line:#2B3832; --soft:#1D2823;
+  --accent:#5FC59C; --accent-ink:#0F1512; --accent-soft:#173A2D; --warn:#F0B95A; --warn-soft:#3A2D14; --bad:#F2877E; --bad-soft:#3D1D1B;
+  --phone:#05080A; color-scheme:dark }
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);line-height:1.55;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-top:20px;padding-bottom:56px}
+.wrap{max-width:1240px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
+h1{font-family:var(--display);font-size:clamp(26px,3.8vw,38px);line-height:1.2;margin:6px 0 4px;text-wrap:balance}
+h2{font-family:var(--display);font-size:20px;margin:0}
+h3{font-family:var(--display);font-size:16px;margin:0}
+p{margin:0}
+.lede{color:var(--muted);max-width:74ch}
+.tag{display:inline-block;font-size:12.5px;font-weight:700;color:var(--warn);background:var(--warn-soft);padding:3px 10px;border-radius:999px}
+.howto{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.howto span{font-size:13.5px;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:4px 12px}
+.stage{display:grid;grid-template-columns:minmax(0,360px) minmax(0,1fr);gap:22px;align-items:start}
+@media (max-width:900px){.stage{grid-template-columns:minmax(0,1fr)}}
+.label{font-size:13px;font-weight:700;color:var(--muted);letter-spacing:.04em;margin:0 0 8px}
+button{font:inherit;cursor:pointer}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.btn{border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:10px 14px;font-weight:700}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+
+/* ---------- 휴대폰 ---------- */
+.phone{width:min(360px,100%);margin:0 auto;background:var(--phone);border-radius:38px;padding:12px}
+.pscreen{background:var(--surface);color:var(--ink);border-radius:28px;min-height:640px;padding:22px 18px;display:flex;flex-direction:column;gap:14px;position:relative;overflow:hidden}
+.pbar{font-size:12px;color:var(--muted);display:flex;justify-content:space-between}
+.ptitle{font-family:var(--display);font-size:22px;font-weight:700;line-height:1.35}
+.pbtn{width:100%;font-size:18px;padding:14px;border-radius:14px}
+.steps{display:flex;gap:6px}
+.steps i{flex:1;height:5px;border-radius:3px;background:var(--line)}
+.steps i.on{background:var(--accent)}
+.sample{border:1px dashed var(--line);border-radius:12px;padding:14px;text-align:center;min-height:120px;display:grid;place-items:center;font-weight:700}
+.tarea{position:relative;height:260px;border:1px solid var(--line);border-radius:12px;background:var(--soft)}
+.target{position:absolute;width:44px;height:44px;border-radius:50%;background:var(--accent);border:0}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-size:13px;font-weight:700;background:var(--accent-soft);color:var(--ink);border-radius:999px;padding:4px 10px}
+.toggle{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 12px;border:1px solid var(--line);border-radius:12px;font-weight:600}
+.toggle input{width:22px;height:22px;accent-color:var(--accent)}
+.toggle select{font:inherit;padding:6px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink)}
+.qrbox{background:#fff;border-radius:14px;padding:12px;align-self:center}
+.presets{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.presets button{font-size:13.5px;padding:10px 8px;border-radius:10px;border:1px solid var(--line);background:var(--soft);color:var(--ink);font-weight:600;text-align:left}
+.note{font-size:12.5px;color:var(--muted)}
+
+/* ---------- 키오스크 ---------- */
+.kwrap{display:flex;flex-direction:column;align-items:center;gap:10px}
+.kiosk{width:min(620px,100%);background:var(--kbody);border-radius:22px;padding:16px 16px 22px;box-shadow:0 14px 34px rgba(0,0,0,.18)}
+.kcam{display:flex;justify-content:space-between;align-items:center;color:#cfd3d6;font-size:12px;margin:0 6px 10px}
+.kscreen{--fs:1;--bs:1;background:var(--kscreen);color:var(--kink);border-radius:10px;height:720px;overflow:hidden;display:flex;flex-direction:column;position:relative;font-size:calc(12px*var(--fs));transition:font-size .4s}
+.kscreen.hc{--kscreen:#000;--kink:#FFF34D;--kmuted:#FFFFFF;--kline:#FFF34D;--kbrand:#FFF34D;background:#000;color:#FFF34D}
+.ktop{display:flex;justify-content:space-between;align-items:center;padding:8px 12px;border-bottom:1px solid var(--kline);gap:4px 8px;flex-wrap:wrap}
+.kbrand{font-weight:900;color:var(--kbrand);font-size:1.2em;letter-spacing:.02em}
+.ktimer{font-size:.95em;color:#B3261E;font-weight:700;font-variant-numeric:tabular-nums}
+.kscreen.hc .ktimer{color:#FFF34D}
+.kbody{flex:1;overflow:auto;padding:10px 12px;display:flex;flex-direction:column;gap:10px}
+.kscreen.low .kbody{justify-content:flex-end}
+.kfoot{border-top:1px solid var(--kline);padding:8px 12px;display:flex;gap:8px;align-items:center;justify-content:space-between}
+.kb{font:inherit;font-weight:700;border-radius:calc(6px*var(--bs));border:1px solid var(--kline);background:#fff;color:var(--kink);padding:calc(6px*var(--bs)) calc(10px*var(--bs));min-height:calc(28px*var(--bs))}
+.kscreen.hc .kb{background:#000;color:#FFF34D;border:2px solid #FFF34D}
+.kb.main{background:var(--kbrand);border-color:var(--kbrand);color:#fff}
+.kscreen.hc .kb.main{background:#FFF34D;color:#000}
+.kb.ghost{background:transparent}
+.ktabs{display:flex;gap:4px}
+.ktabs .kb{font-size:.9em;padding:4px 8px}
+.ktabs .kb.on{background:#222;color:#fff}
+.kgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.kitem{font:inherit;border:1px solid var(--kline);border-radius:8px;background:#fff;color:var(--kink);padding:8px 6px;text-align:center;display:flex;flex-direction:column;gap:4px;align-items:center;cursor:pointer}
+.kscreen.hc .kitem{background:#000;border:2px solid #FFF34D;color:#FFF34D}
+.kitem .ic{font-size:2em;line-height:1}
+.kitem .nm{font-weight:700;line-height:1.25}
+.kitem .pr{color:var(--kmuted)}
+.mine .kgrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.mine .kitem{padding:14px 10px;border-width:2px}
+.mine .kitem .ic{font-size:2.2em}
+.mine .kitem{padding:10px 8px}
+.mine .kgrid{gap:10px}
+.mine .kfoot{flex-wrap:wrap}
+.mine .kfoot .kb{flex:1 1 30%;white-space:nowrap;font-size:.9em;padding:calc(8px*var(--bs)) 6px}
+.mine .kbody{padding:10px 14px}
+.kpager{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:6px 12px;border-top:1px solid var(--kline)}
+.mine .kitem .ds{font-size:.72em;color:var(--kmuted);line-height:1.35}
+.kmodal{position:absolute;inset:0;background:rgba(0,0,0,.45);display:flex;align-items:center;justify-content:center;padding:14px;z-index:5}
+.kpanel{background:var(--kscreen);color:var(--kink);border-radius:10px;padding:14px;width:100%;max-width:520px;display:flex;flex-direction:column;gap:10px;max-height:100%;overflow:auto;border:1px solid var(--kline)}
+.kscreen.hc .kpanel{border:2px solid #FFF34D}
+.krow{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.kbig{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.kbig .kb{padding:18px 10px;font-size:1.2em}
+.kcart{display:flex;flex-direction:column;gap:6px}
+.kcart .line{display:flex;justify-content:space-between;gap:8px;border-bottom:1px dashed var(--kline);padding:6px 0}
+.ktoast{position:absolute;left:50%;top:60px;transform:translateX(-50%);background:#222;color:#fff;padding:8px 14px;border-radius:10px;font-size:13px;z-index:9;max-width:90%;text-align:center}
+.khelp{border:2px solid #E0A100;background:#FFF6DA;color:#3A2A00;border-radius:10px;padding:10px;display:flex;flex-direction:column;gap:8px;font-size:14px}
+.kqr{border:2px dashed #9AA19C;border-radius:10px;padding:8px 10px;display:flex;align-items:center;gap:10px;font-size:.95em;color:var(--kmuted)}
+.kscreen.hc .kqr{border-color:#FFF34D;color:#FFF34D}
+.kapply{position:absolute;inset:0;display:grid;place-items:center;background:rgba(31,111,84,.92);color:#fff;font-size:22px;font-weight:900;z-index:20;text-align:center;padding:20px}
+.vbox{display:flex;flex-direction:column;gap:10px}
+.mic{width:110px;height:110px;border-radius:50%;border:0;background:var(--kbrand);color:#fff;font-size:44px;align-self:center}
+.mic.on{animation:pulse 1s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(123,75,42,.6)}100%{box-shadow:0 0 0 22px rgba(123,75,42,0)}}
+@media (prefers-reduced-motion:reduce){.mic.on{animation:none}.kscreen{transition:none}}
+.heard{border:1px solid var(--kline);border-radius:8px;padding:8px 10px}
+.vtext{display:flex;gap:6px}
+.vtext input{flex:1;font:inherit;padding:8px;border-radius:8px;border:1px solid var(--kline);min-width:0}
+.vchips{display:flex;flex-wrap:wrap;gap:6px}
+.vchips button{font:inherit;font-size:.85em;border:1px solid var(--kline);background:#fff;border-radius:999px;padding:4px 10px;color:#1c1c1c}
+
+/* ---------- 아래 패널 ---------- */
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.grid2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px}
+@media (max-width:900px){.grid2{grid-template-columns:minmax(0,1fr)}}
+.bars{display:flex;flex-direction:column;gap:5px}
+.bar{display:grid;grid-template-columns:76px minmax(0,1fr) 52px;gap:8px;align-items:center;font-size:13px}
+.bar .t{height:10px;border-radius:5px;background:var(--line);overflow:hidden}
+.bar .t b{display:block;height:100%;background:var(--accent)}
+.bar .v{text-align:right;font-variant-numeric:tabular-nums;color:var(--muted)}
+table{border-collapse:collapse;width:100%;font-size:13.5px}
+th,td{border-bottom:1px solid var(--line);padding:7px 6px;text-align:left}
+th{color:var(--muted);font-weight:600}
+.scroll{overflow-x:auto}
+.kv{display:grid;grid-template-columns:max-content 1fr;gap:4px 12px;font-size:13.5px}
+.kv b{color:var(--muted);font-weight:600}
+.ain{display:flex;gap:8px}
+.ain input{flex:1;font:inherit;padding:10px;border-radius:10px;border:1px solid var(--line);background:var(--soft);color:var(--ink);min-width:0}
+.ktabs2{display:flex;gap:6px;flex-wrap:wrap;align-self:stretch;justify-content:center}
+.ktabs2 button{font:inherit;font-size:14px;font-weight:700;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:7px 14px}
+.ktabs2 button[aria-selected=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.ktabs2 small{font-weight:500;opacity:.8}
+/* 무인 민원발급기 (원래 화면 그대로, SDK만 붙임) */
+.gov{background:#EEF2F7;color:#1B2433;height:720px;border-radius:10px;overflow:hidden;font-family:"Malgun Gothic","Noto Sans KR",sans-serif;font-size:12px;display:flex;flex-direction:column}
+.gov .ghd{background:#0B4EA2;color:#fff;padding:8px 12px;display:flex;justify-content:space-between;align-items:center}
+.gov .ghd b{font-size:15px}
+.gov .gtm{color:#FFE27A;font-weight:700}
+.gov .gbd{flex:1;padding:12px;display:flex;flex-direction:column;gap:10px;overflow:auto}
+.gov .gq{font-size:14px;font-weight:700;border-left:4px solid #0B4EA2;padding-left:8px}
+.gov .ggrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+.gov button{font:inherit;background:#fff;color:#1B2433;border:1px solid #B8C3D3;border-radius:4px;padding:8px 4px;cursor:pointer}
+.gov button.gp{background:#0B4EA2;color:#fff;border-color:#0B4EA2}
+.gov .gft{display:flex;gap:6px;justify-content:space-between;padding:8px 12px;background:#DDE4EE}
+.gov .grow{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.gov .gbox{background:#fff;border:1px solid #B8C3D3;border-radius:4px;padding:8px;display:flex;flex-direction:column;gap:6px}
+.gov .gnote{font-size:11px;color:#5A6577}
+/* 망설임 지수 */
+.meter{display:grid;grid-template-columns:110px minmax(0,1fr) 46px;gap:8px;align-items:center;font-size:13px}
+.meter .t{height:12px;border-radius:6px;background:var(--line);overflow:hidden}
+.meter .t b{display:block;height:100%;background:var(--warn);transition:width .4s}
+.sig{display:flex;flex-wrap:wrap;gap:6px;font-size:12.5px}
+.sig span{border:1px solid var(--line);border-radius:999px;padding:2px 9px;color:var(--muted)}
+/* 종이 카드 */
+.cardov{position:fixed;inset:0;background:rgba(0,0,0,.55);display:grid;place-items:center;z-index:50;padding:16px}
+.cardbox{background:var(--surface);color:var(--ink);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:12px;align-items:center;max-width:560px;width:100%}
+.pcard{width:340px;max-width:100%;aspect-ratio:85.6/54;background:#fff;color:#111;border:2px solid #1F6F54;border-radius:12px;display:grid;grid-template-columns:auto 1fr;gap:10px;padding:10px;align-items:center}
+.pcard .qr svg{width:120px;height:120px;display:block}
+.pcard h4{margin:0;font:900 18px/1.25 var(--display);color:#1F6F54}
+.pcard p{margin:0;font-size:12px;line-height:1.4}
+.pcard .big{font-size:15px;font-weight:900}
+@media print{ body *{visibility:hidden} .pcard,.pcard *{visibility:visible} .pcard{position:fixed;left:10mm;top:10mm;width:85.6mm;height:54mm} }
+.tourcap{position:fixed;left:50%;top:12px;transform:translateX(-50%);z-index:80;background:rgba(12,28,21,.94);color:#fff;border-radius:14px;padding:12px 16px;display:flex;gap:12px;align-items:center;width:min(760px,calc(100% - 32px));box-shadow:0 10px 30px rgba(0,0,0,.3)}
+.tourcap p{flex:1;font-weight:700;font-size:16px;line-height:1.45}
+.tourcap small{display:block;font-weight:500;font-size:13px;color:#BFE3D2}
+.tourcap button{font:inherit;font-weight:700;border:1px solid #fff;background:transparent;color:#fff;border-radius:10px;padding:8px 12px;white-space:nowrap}
+.tourhl{outline:4px solid #FF6A00 !important;outline-offset:3px;transition:outline-color .2s}
+.foot{font-size:12.5px;color:var(--muted);max-width:110ch}
+</style>
+
+<div class="wrap">
+  <header>
+    <span class="tag">시제품 · 가상 카페 · 실제 결제와 개인정보 없음</span>
+    <h1>내 방식 패스: 키오스크가 나에게 맞춰집니다</h1>
+    <p class="lede">휴대폰에서 약 30초 진단으로 ‘내 방식’(큰 글씨, 쉬운 말, 소리 안내, 말로 주문, 시간 제한 없음 등)을 만들고, QR을 키오스크에 보여주면 화면이 그 방식으로 바로 바뀝니다. 말로 하는 주문은 직접 학습시킨 AI가 브라우저 안에서 알아듣습니다.</p>
+    <div class="krow" style="margin-top:12px"><button class="btn primary" id="tourBtn" style="font-size:17px;padding:12px 20px">▶ 1분 자동 시연 보기</button><span class="note">누르면 처음부터 끝까지 자동으로 보여 드려요. 그다음 직접 해 보세요.</span></div>
+    <div class="howto">
+      <span>① 왼쪽 휴대폰에서 ‘내 방식 만들기’ 또는 예시 고르기</span>
+      <span>② ‘키오스크에 보여주기’ 누르기</span>
+      <span>③ 오른쪽 키오스크에서 주문해 보기 (🎤 말로 주문)</span>
+      <span>④ 기본 화면과 시간·터치 수 비교</span>
+    </div>
+  </header>
+
+  <div class="stage">
+    <section aria-label="내 휴대폰">
+      <p class="label">내 휴대폰</p>
+      <div class="phone"><div class="pscreen" id="phone"></div></div>
+    </section>
+    <section aria-label="카페 키오스크" class="kwrap">
+      <p class="label" style="align-self:flex-start">키오스크 <span id="kmode" class="chip" style="margin-left:6px">기본 화면</span></p>
+      <div class="ktabs2" role="tablist">
+        <button role="tab" aria-selected="true" data-kt="cafe">☕ 카페 주문기 <small>· 깊은 연동: 말로 주문</small></button>
+        <button role="tab" aria-selected="false" data-kt="gov">🏛 무인 민원발급기 <small>· 스크립트 한 줄 연동</small></button>
+      </div>
+      <div class="kiosk">
+        <div class="kcam"><span>● 카메라·QR 리더</span><span id="kscanbtnwrap" style="display:flex;gap:6px"><button class="btn" id="kpadBtn" style="padding:4px 10px;font-size:12px">🔢 번호로 적용</button></span></div>
+        <div class="kscreen" id="ks" aria-live="polite"></div>
+        <div class="gov" id="gov" hidden></div>
+      </div>
+      <p class="note" id="ktabnote" style="max-width:620px">카페 주문기는 ‘내 방식’에 맞춰 처음부터 설계한 화면입니다(말로 주문 포함).</p>
+      <p class="note" style="max-width:620px">※ ‘기본 화면’은 실제 키오스크에서 흔한 불편(작은 글씨, 영어 메뉴, 시간 제한, 품절 칸, 많은 옵션)을 일부러 재현한 것입니다.</p>
+    </section>
+  </div>
+
+  <div class="grid2">
+    <section class="panel" aria-label="AI 확인">
+      <h2>AI가 알아듣는 과정 보기</h2>
+      <p class="note">키오스크의 ‘말로 주문’에 쓰이는 모델입니다. 문장을 넣으면 무엇을 원하는지(의도)와 메뉴·수량·온도를 뽑아냅니다. 문장 이해는 인터넷 서버로 보내지 않고 이 브라우저 안에서 계산합니다. (음성→글자 변환은 브라우저 음성인식 기능을 쓰며, 크롬에서는 이 단계가 구글 서버를 거칩니다. 실제 키오스크에서는 기기 안 음성인식으로 바꿀 수 있습니다.)</p>
+      <div class="ain"><input id="aiIn" value="할머니는 따뜻한 생강차 하나 주고 나는 아이스 라떼" aria-label="시험 문장"><button class="btn primary" id="aiGo">분석</button></div>
+      <div class="vchips" id="aiChips"></div>
+      <div id="aiOut"></div>
+      <h3 style="margin-top:6px">망설임 감지 (기본 화면에서 작동)</h3>
+      <p class="note">멈춰 있는 시간, 버튼 옆을 잘못 누른 횟수, 뒤로·닫기 반복, 남은 시간을 합쳐 점수를 냅니다. 1을 넘으면 키오스크가 먼저 도움을 제안합니다.</p>
+      <div class="meter"><span>망설임 지수</span><span class="t"><b id="mBar" style="width:0%"></b></span><span id="mVal" class="v">0.00</span></div>
+      <div class="sig" id="mSig"></div>
+      <div class="kv">
+        <b>모델</b><span>글자 1~3그램 해시 특징(4,096차원) + 다항 로지스틱 회귀, 9가지 의도</span>
+        <b>학습</b><span>카페 주문 문장 14,000개(조합 생성 + 음성인식 오류 흉내)로 직접 학습</span>
+        <b>메뉴 찾기</b><span>정확 일치 → 자모 단위 유사도(‘아메리카로’, ‘까페라떼’ 같은 오인식 허용)</span>
+        <b>평가</b><span id="evalTxt">학습 문장과 겹치지 않는 문장만 셈 · 모델 고정 후 새로 쓴 50문장(사투리 포함): 의도 98.0%, 의도·메뉴·수량·온도 완전 일치 92.0% · 음성인식 오류를 섞은 합성 965문장: 의도 99.6%, 완전 일치 90.6%</span>
+        <b>되묻기</b><span>메뉴를 못 찾으면 소리가 가장 비슷한 메뉴로 “혹시 ○○ 말씀이세요?”라고 되묻습니다</span>
+        <b>범용 연동</b><span>웹 화면 키오스크는 연동 도구(SDK)를 붙여 화면 코드 수정 없이 글씨·버튼·쉬운 말·소리·시간을 바꿉니다 (민원발급기 탭, 시연용 모형)</span>
+        <b>망설임 감지</b><span>현재는 행동 신호를 합친 규칙 기반 점수이며, 실제 사용 기록이 쌓이면 학습 모델로 바꿀 계획입니다</span>
+      </div>
+    </section>
+    <section class="panel" aria-label="시험 기록">
+      <h2>시험 기록 (같은 주문, 두 화면 비교)</h2>
+      <p class="note">과제 예: “따뜻한 유자차 두 잔을 주문하세요.” 기본 화면과 내 방식 화면에서 각각 해 보면 걸린 시간과 터치 수가 자동으로 기록됩니다. 가족·지인과 해 보고 결과를 복사해 두세요.</p>
+      <div class="scroll"><table><thead><tr><th>#</th><th>기기</th><th>화면</th><th>결과</th><th>걸린 시간</th><th>터치</th><th>처음으로 튕김</th><th>말로 주문</th></tr></thead><tbody id="logBody"></tbody></table></div>
+      <div class="krow"><button class="btn" id="logCopy">기록 복사</button><button class="btn" id="logClear">기록 지우기</button><span class="note" id="logMsg"></span></div>
+    </section>
+  </div>
+  <p class="foot">이 페이지는 공모전 제출용 시제품입니다. 메뉴의 ‘쉬운 말’과 영어·베트남어·중국어 표기는 생성형 AI로 만든 뒤 사람이 검수한 문장이며, 실제 매장에서는 메뉴를 등록할 때 한 번 변환해 둡니다. 소리 안내와 음성 인식은 브라우저 기능(크롬 권장)을 씁니다(크롬 음성 인식은 구글 서버를 거침). QR에는 이름이나 장애 여부 같은 개인정보 없이 ‘필요한 방식’만 들어 있고, 키오스크는 주문이 끝나면 이를 지웁니다.</p>
+</div>
+
+<script>/*__QR__*/</script>
+<script>/*__AI__*/</script>
+<script>/*__SDK__*/</script>
+<script>
+"use strict";
+/* =================== 데이터 =================== */
+const MENU = [
+  {id:'americano', cat:'coffee', ic:'☕', price:3000, temp:'both', name:'Americano', easy:'쓴 커피 (아메리카노)', desc:'진한 커피에 물을 탔어요. 맛이 써요.', en:'Americano', vi:'Cà phê Americano', zh:'美式咖啡'},
+  {id:'latte', cat:'coffee', ic:'🥛', price:3800, temp:'both', name:'Café Latte', easy:'우유 커피 (카페라떼)', desc:'커피에 우유를 넣었어요. 부드러워요.', en:'Café latte', vi:'Cà phê sữa (latte)', zh:'拿铁咖啡'},
+  {id:'vanilla', cat:'coffee', ic:'🍦', price:4300, temp:'both', name:'Vanilla Latte', easy:'달콤한 우유 커피 (바닐라라떼)', desc:'우유 커피에 단맛을 더했어요.', en:'Vanilla latte', vi:'Latte vani', zh:'香草拿铁'},
+  {id:'yuja', cat:'tea', ic:'🍋', price:4000, temp:'both', name:'Citron Tea', easy:'유자차', desc:'유자로 만든 차예요. 커피가 없어요. 새콤달콤해요.', en:'Citron tea (yuja)', vi:'Trà thanh yên', zh:'柚子茶'},
+  {id:'ginger', cat:'tea', ic:'🍵', price:4000, temp:'both', name:'Ginger Tea', easy:'생강차', desc:'생강으로 만든 차예요. 커피가 없어요. 조금 매워요.', en:'Ginger tea', vi:'Trà gừng', zh:'生姜茶'},
+  {id:'choco', cat:'tea', ic:'🍫', price:4200, temp:'both', name:'Choco Latte', easy:'초콜릿 우유 (초코라떼)', desc:'초콜릿을 넣은 달콤한 우유예요. 커피가 없어요.', en:'Chocolate latte', vi:'Sô-cô-la sữa', zh:'巧克力拿铁'},
+  {id:'smoothie', cat:'tea', ic:'🍓', price:4800, temp:'ice', name:'Strawberry Smoothie', easy:'딸기 얼음 음료 (딸기스무디)', desc:'딸기를 얼음과 함께 갈았어요. 차가워요.', en:'Strawberry smoothie', vi:'Sinh tố dâu', zh:'草莓冰沙'},
+  {id:'cake', cat:'dessert', ic:'🍰', price:5500, temp:'none', name:'NY Cheesecake', easy:'치즈 케이크 (빵)', desc:'부드러운 치즈 케이크 한 조각이에요.', en:'Cheesecake', vi:'Bánh phô mai', zh:'芝士蛋糕'},
+];
+const M = Object.fromEntries(MENU.map(m=>[m.id,m]));
+const TX = {
+  ko:{start:'주문하려면 화면을 눌러 주세요', qr:'내 방식 QR을 보여 주세요', pick:'무엇을 드릴까요?', hot:'따뜻하게', ice:'차갑게', how:'따뜻하게 드릴까요, 차갑게 드릴까요?', qty:'몇 개 드릴까요?', add:'담기', cart:'담은 것', pay:'결제하기', payQ:'이대로 계산할까요?', yes:'네', no:'아니요', back:'뒤로', prev:'이전', next:'다음', staff:'직원 부르기', staffMsg:'직원을 불렀어요. 잠시만 기다려 주세요.', card:'카드를 아래 구멍에 넣어 주세요', cardBtn:'카드 넣기 (시연)', done:'주문이 끝났어요', num:'주문 번호', wiped:'내 방식 정보는 키오스크에서 지웠어요.', voice:'말로 주문하기', listen:'말씀해 주세요', total:'모두', won:'원', empty:'아직 담은 것이 없어요', notime:'시간 제한 없음', confirm:'이렇게 주문할까요?', more:'더 고르기', remove:'빼기', heard:'들은 말', unknown:'잘 못 알아들었어요. 다시 말씀해 주세요.', menuRead:'메뉴를 읽어 드릴게요.', cancelDone:'처음부터 다시 할게요.'},
+  en:{start:'Touch the screen to order', qr:'Show your My-Way QR', pick:'What would you like?', hot:'Hot', ice:'Iced', how:'Hot or iced?', qty:'How many?', add:'Add', cart:'Your order', pay:'Pay', payQ:'Pay for this order?', yes:'Yes', no:'No', back:'Back', prev:'Prev', next:'Next', staff:'Call staff', staffMsg:'Staff has been called. Please wait.', card:'Please insert your card below', cardBtn:'Insert card (demo)', done:'Your order is complete', num:'Order number', wiped:'Your settings were erased from this kiosk.', voice:'Order by voice', listen:'Please speak', total:'Total', won:'won', empty:'Nothing added yet', notime:'No time limit', confirm:'Order this?', more:'Add more', remove:'Remove', heard:'Heard', unknown:'Sorry, please say it again.', menuRead:'Here is the menu.', cancelDone:'Starting over.'},
+  vi:{start:'Chạm vào màn hình để gọi món', qr:'Đưa mã QR của bạn', pick:'Bạn muốn gọi gì?', hot:'Nóng', ice:'Lạnh', how:'Nóng hay lạnh?', qty:'Bao nhiêu?', add:'Thêm', cart:'Món đã chọn', pay:'Thanh toán', payQ:'Thanh toán đơn này?', yes:'Có', no:'Không', back:'Quay lại', prev:'Trước', next:'Tiếp', staff:'Gọi nhân viên', staffMsg:'Đã gọi nhân viên. Vui lòng chờ.', card:'Vui lòng đưa thẻ vào khe bên dưới', cardBtn:'Đưa thẻ (thử)', done:'Đã đặt món xong', num:'Số thứ tự', wiped:'Cài đặt của bạn đã được xóa khỏi máy.', voice:'Gọi món bằng giọng nói', listen:'Xin mời nói', total:'Tổng', won:'won', empty:'Chưa chọn món', notime:'Không giới hạn thời gian', confirm:'Đặt món này?', more:'Chọn thêm', remove:'Bỏ', heard:'Đã nghe', unknown:'Xin nói lại.', menuRead:'Đây là thực đơn.', cancelDone:'Bắt đầu lại.'},
+  zh:{start:'请触摸屏幕点餐', qr:'请出示您的二维码', pick:'您想要什么？', hot:'热的', ice:'冰的', how:'要热的还是冰的？', qty:'要几个？', add:'加入', cart:'已选', pay:'付款', payQ:'就这样付款吗？', yes:'是', no:'不是', back:'返回', prev:'上一页', next:'下一页', staff:'呼叫店员', staffMsg:'已呼叫店员，请稍等。', card:'请将卡插入下方', cardBtn:'插卡（演示）', done:'点餐完成', num:'取餐号', wiped:'您的设置已从本机删除。', voice:'语音点餐', listen:'请说话', total:'合计', won:'韩元', empty:'还没有选择', notime:'无时间限制', confirm:'就这样点吗？', more:'继续选', remove:'删除', heard:'听到', unknown:'请再说一遍。', menuRead:'为您读菜单。', cancelDone:'重新开始。'}
+};
+const LANG_NAME = {ko:'한국어', en:'English', vi:'Tiếng Việt', zh:'中文'};
+const SPEECH_LANG = {ko:'ko-KR', en:'en-US', vi:'vi-VN', zh:'zh-CN'};
+const won = n => n.toLocaleString('ko-KR');
+
+/* =================== 공용 =================== */
+const $ = id => document.getElementById(id);
+function store(k, v){ try{ if(v===undefined) return JSON.parse(localStorage.getItem(k)); localStorage.setItem(k, JSON.stringify(v)); }catch(e){ return null; } }
+let speakOn = false, speakLang = 'ko-KR', speakRate = 1;
+function say(text){
+  if(!speakOn || !text) return;
+  try{ speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(text); u.lang = speakLang; u.rate = speakRate; speechSynthesis.speak(u); }catch(e){}
+}
+
+/* =================== 휴대폰: 내 방식 만들기 =================== */
+const P = { step:'intro', fontIdx:0, taps:[], misses:0, tStart:0, draft:{}, profile: store('mbp-profile') };
+const FONT_LV = [1,1.25,1.5,1.9,2.3,2.75], BTN_LV = [1,1.3,1.6,1.9];
+const FONT_STEPS = FONT_LV.map(f=>Math.round(16*f));
+const PRESETS = {
+  elder:{label:'78세 어르신', p:{f:1.9,b:1.6,t:0,v:1,e:1,h:0,w:0,s:1,l:'ko'}},
+  blind:{label:'시각장애인 (화면이 안 보여요)', p:{f:1.9,b:1.6,t:0,v:1,e:0,h:1,w:0,s:1,r:1,l:'ko'}},
+  wheel:{label:'휠체어 이용자', p:{f:1.25,b:1.3,t:2,v:0,e:0,h:0,w:1,s:0,l:'ko'}},
+  foreign:{label:'외국인 노동자 (베트남어)', p:{f:1.5,b:1.3,t:2,v:1,e:1,h:0,w:0,s:0,l:'vi'}},
+};
+function encodeProfile(p){ return `MBP1;f=${p.f};b=${p.b};t=${p.t};v=${p.v};e=${p.e};h=${p.h};w=${p.w};s=${p.s};r=${p.r||0};l=${p.l}`; }
+function decodeProfile(s){
+  if(!/^MBP1;/.test(s)) return null; const o = {};
+  s.split(';').slice(1).forEach(kv=>{ const [k,v] = kv.split('='); o[k] = k==='l' ? v : parseFloat(v); });
+  return o;
+}
+function profileChips(p){
+  const c = [];
+  if(p.f>1.05) c.push(`글씨 ${Math.round(p.f*100)}%`);
+  if(p.b>1.05) c.push('버튼 크게');
+  c.push(p.t===0 ? '시간 제한 없음' : (p.t>1 ? `시간 ${p.t}배` : '시간 보통'));
+  if(p.v) c.push('소리로 안내');
+  if(p.e) c.push('쉬운 말');
+  if(p.h) c.push('진한 화면');
+  if(p.w) c.push('버튼 아래쪽');
+  if(p.s) c.push('말로 주문');
+  if(p.r) c.push('한 번 누르면 읽기');
+  if(p.l!=='ko') c.push(LANG_NAME[p.l]);
+  return c;
+}
+function qrSVG(text){
+  const q = new QRCodeLib(-1, QRECL.M); q.addData(text); q.make();
+  const n = q.getModuleCount(), s = 5, pad = 4; let r = '';
+  for(let y=0;y<n;y++) for(let x=0;x<n;x++) if(q.isDark(y,x)) r += `M${(x+pad)*s} ${(y+pad)*s}h${s}v${s}h-${s}z`;
+  const W = (n+pad*2)*s;
+  return `<svg width="200" height="200" viewBox="0 0 ${W} ${W}" role="img" aria-label="내 방식 QR"><rect width="${W}" height="${W}" fill="#fff"/><path d="${r}" fill="#000"/></svg>`;
+}
+function stepsBar(i){ return `<div class="steps">${[0,1,2,3,4].map(k=>`<i class="${k<=i?'on':''}"></i>`).join('')}</div>`; }
+
+function renderPhone(){
+  const el = $('phone'); const d = P.draft; let h = `<div class="pbar"><span>9:41</span><span>내 방식 패스</span></div>`;
+  switch(P.step){
+    case 'intro':
+      h += `<p class="ptitle">키오스크가 어려우세요?<br>30초쯤이면 ‘내 방식’을 만들어 드려요.</p>
+        <p>글씨, 소리, 시간, 말로 주문까지. 한 번 만들면 어느 키오스크에서나 QR만 보여주면 돼요.</p>
+        <button class="btn primary pbtn" data-p="font">내 방식 만들기</button>
+        ${P.profile? `<button class="btn pbtn" data-p="result">저장된 내 방식 보기</button>`:''}
+        <p class="label" style="margin-top:6px">시연용 예시로 바로 해 보기</p>
+        <div class="presets">${Object.entries(PRESETS).map(([k,v])=>`<button data-preset="${k}">${v.label}</button>`).join('')}</div>
+        <p class="note">이름·연락처·장애 정보는 묻지 않아요. 필요한 방식만 기억해요.</p>`;
+      break;
+    case 'font': {
+      const px = FONT_STEPS[P.fontIdx];
+      h += stepsBar(0) + `<p class="ptitle">1. 이 글씨가 또렷하게 보이세요?</p>
+        <div class="sample" style="font-size:${px}px">따뜻한 유자차<br>4,000원</div>
+        <button class="btn primary pbtn" data-p="fontok">네, 잘 보여요</button>
+        <button class="btn pbtn" data-p="fontbig" ${P.fontIdx>=FONT_STEPS.length-1?'disabled':''}>잘 안 보여요 (더 크게)</button>`;
+      break; }
+    case 'touch':
+      h += stepsBar(1) + `<p class="ptitle">2. 초록 동그라미를 눌러 주세요 (${Math.min(P.taps.length+1,3)}/3)</p>
+        <p class="note">누르는 속도와 정확도를 보고 버튼 크기와 시간을 정해요.</p>
+        <div class="tarea" id="tarea"><button class="target" id="target" aria-label="동그라미"></button></div>`;
+      break;
+    case 'listen':
+      h += stepsBar(2) + `<p class="ptitle">3. 화면 내용을 소리로 읽어 드릴까요?</p>
+        <button class="btn pbtn" data-p="hear">🔊 들어 보기</button>
+        <button class="btn primary pbtn" data-p="v1">네, 읽어 주세요</button>
+        <button class="btn pbtn" data-p="v0">아니요, 괜찮아요</button>`;
+      break;
+    case 'easy':
+      h += stepsBar(3) + `<p class="ptitle">4. 어려운 말을 쉬운 말로 바꿔 드릴까요?</p>
+        <div class="sample" style="font-size:16px;font-weight:500">Café Latte (HOT/ICE)<br>↓<br><b style="font-size:20px">우유 커피 (카페라떼)<br>따뜻하게 / 차갑게</b></div>
+        <button class="btn primary pbtn" data-p="e1">네, 쉽게 바꿔 주세요</button>
+        <button class="btn pbtn" data-p="e0">아니요</button>`;
+      break;
+    case 'more':
+      h += stepsBar(4) + `<p class="ptitle">5. 더 필요한 게 있으면 골라 주세요</p>
+        <label class="toggle">진한 화면 (검은 바탕·노란 글씨)<input type="checkbox" data-d="h" ${d.h?'checked':''}></label>
+        <label class="toggle">버튼을 화면 아래쪽에 (휠체어)<input type="checkbox" data-d="w" ${d.w?'checked':''}></label>
+        <label class="toggle">말로 주문하기<input type="checkbox" data-d="s" ${d.s!==0?'checked':''}></label>
+        <label class="toggle">화면이 안 보여요 (한 번 누르면 읽고, 두 번 누르면 선택)<input type="checkbox" data-d="r" ${d.r?'checked':''}></label>
+        <label class="toggle">화면 언어<select data-d="l">${Object.entries(LANG_NAME).map(([k,v])=>`<option value="${k}" ${d.l===k?'selected':''}>${v}</option>`).join('')}</select></label>
+        <button class="btn primary pbtn" data-p="finish">완성하기</button>`;
+      break;
+    case 'result': {
+      const p = P.profile;
+      h += `<p class="ptitle">내 방식이 준비됐어요</p>
+        <div class="chips">${profileChips(p).map(c=>`<span class="chip">${c}</span>`).join('')}</div>
+        <div class="qrbox">${qrSVG(encodeProfile(p))}</div>
+        <div style="text-align:center"><div class="note">카메라가 없는 키오스크에서는 이 번호를 누르세요</div><div style="font:900 30px/1.2 ui-monospace,Menlo,monospace;letter-spacing:3px">${codeOf(p)}</div></div>
+        ${P.updated? `<p class="note" style="color:var(--accent);font-weight:700">✓ 키오스크에서 배운 대로 내 방식을 고쳤어요: ${P.updated}</p>`:''}
+        <button class="btn primary pbtn" data-p="show">키오스크에 보여주기</button>
+        <button class="btn pbtn" data-p="card">🖨 종이 카드로 뽑기 (스마트폰 없는 분)</button>
+        <p class="note">QR 안에는 <b>${encodeProfile(p)}</b> 처럼 설정값만 들어 있어요. 이름·연락처·장애 여부는 담지 않고, 키오스크는 주문이 끝나면 바로 지워요.</p>
+        <button class="btn pbtn" data-p="intro">처음으로</button>`;
+      break; }
+  }
+  el.innerHTML = h;
+  if(P.step==='touch') placeTarget();
+}
+function placeTarget(){
+  const a = $('tarea'), t = $('target'); if(!a||!t) return;
+  const W = a.clientWidth - 44, H = a.clientHeight - 44;
+  t.style.left = Math.round(Math.random()*W)+'px'; t.style.top = Math.round(Math.random()*H)+'px';
+  P.tStart = performance.now();
+}
+function codeOf(p){ return MBP.toCode(p).replace(/(...)(...)/,'$1-$2'); }
+function finishTouch(){
+  const avg = P.taps.reduce((a,c)=>a+c,0)/P.taps.length;
+  let b=1, t=1;
+  if(avg>1600 || P.misses>=2){ b=1.6; t=0; } else if(avg>1000 || P.misses>=1){ b=1.3; t=2; }
+  Object.assign(P.draft, {b, t, _avg:Math.round(avg), _miss:P.misses});
+  P.step='listen'; renderPhone();
+}
+$('phone').addEventListener('click', e=>{
+  const b = e.target.closest('button');
+  if(e.target.id==='tarea' && P.step==='touch'){ P.misses++; return; }
+  if(!b) return;
+  if(b.id==='target'){ P.taps.push(performance.now()-P.tStart); if(P.taps.length>=3) finishTouch(); else { renderPhone(); } return; }
+  if(b.dataset.preset){ P.updated = null; P.profile = {...PRESETS[b.dataset.preset].p}; store('mbp-profile', P.profile); P.step='result'; renderPhone(); return; }
+  const a = b.dataset.p; if(!a) return;
+  if(a==='font'){ P.fontIdx=0; P.taps=[]; P.misses=0; P.draft={s:1,l:'ko',h:0,w:0}; P.step='font'; }
+  else if(a==='fontbig'){ P.fontIdx = Math.min(FONT_STEPS.length-1, P.fontIdx+1); }
+  else if(a==='fontok'){ P.draft.f = FONT_LV[P.fontIdx]; P.step='touch'; }
+  else if(a==='hear'){ const o=speakOn; speakOn=true; speakLang='ko-KR'; speakRate=.9; say('따뜻한 유자차, 4천 원. 담을까요?'); speakOn=o; return; }
+  else if(a==='v1'||a==='v0'){ P.draft.v = a==='v1'?1:0; P.step='easy'; }
+  else if(a==='e1'||a==='e0'){ P.draft.e = a==='e1'?1:0; P.step='more'; }
+  else if(a==='finish'){
+    const d = P.draft; P.profile = {f:d.f||1, b:d.b||1, t:d.t??1, v:(d.v||d.r)?1:0, e:d.e||0, h:d.h?1:0, w:d.w?1:0, s:d.s===0?0:1, r:d.r?1:0, l:d.l||'ko'};
+    store('mbp-profile', P.profile); P.step='result';
+  }
+  else if(a==='show'){ if(DEV==='gov') govScan(P.profile); else kioskScan(P.profile); return; }
+  else if(a==='card'){ showCard(P.profile); return; }
+  else P.step = a;
+  renderPhone();
+});
+$('phone').addEventListener('change', e=>{
+  const k = e.target.dataset.d; if(!k) return;
+  P.draft[k] = e.target.type==='checkbox' ? (e.target.checked?1:0) : e.target.value;
+});
+
+/* =================== 키오스크 =================== */
+const K = { prof:null, screen:'home', cat:'coffee', page:0, cart:[], sel:null, opt:{}, qty:1, timer:null, left:0, idle:0, helpShown:false,
+  sess:null, voiceOpen:false, pending:null, orderNo: 26, miss:0, backs:0, adapt:null };
+let DEV = 'cafe';
+const TLIM = 40;
+const t = k => (TX[K.prof?.l||'ko']||TX.ko)[k] || TX.ko[k];
+function itemName(m){ const p = K.prof; if(!p) return m.name; if(p.l!=='ko') return m[p.l]; return p.e ? m.easy : nameKo(m); }
+function nameKo(m){ return m.easy.replace(/.*\((.*)\)/,'$1'); }
+function newSession(){ K.sess = {start:performance.now(), touches:0, resets:0, voice:0, mode: K.prof?'내 방식':'기본', dev:'카페'}; K.miss=0; K.backs=0; K.adapt=null; }
+function touch(){ if(!K.sess) newSession(); K.sess.touches++; K.idle=0; if(!K.prof) K.left = TLIM; else if(K.prof.t>0) K.left = Math.round(TLIM*Math.max(1,K.prof.t)); }
+
+function applyLook(){
+  const ks = $('ks'), p = K.prof;
+  ks.style.setProperty('--fs', p? p.f : 1); ks.style.setProperty('--bs', p? p.b : 1);
+  ks.classList.toggle('hc', !!(p&&p.h)); ks.classList.toggle('low', !!(p&&p.w)); ks.classList.toggle('mine', !!p);
+  if(DEV==='cafe') $('kmode').textContent = p ? '내 방식 화면' : '기본 화면';
+  speakOn = !!(p&&p.v); speakLang = SPEECH_LANG[p?.l||'ko']; speakRate = p&&p.v ? 0.88 : 1;
+}
+function kioskScan(p){
+  K.prof = {...p}; applyLook();
+  const ks = $('ks'); const ov = document.createElement('div'); ov.className='kapply';
+  ov.innerHTML = `QR을 읽었어요<br><span style="font-size:16px;font-weight:600">${profileChips(p).join(' · ')}</span>`;
+  ks.appendChild(ov);
+  setTimeout(()=>{ ov.remove(); newSession(); K.sel=null; K.voiceOpen=false; K.pending=null; K.helpShown=false; K.cart=[]; K.page=0; K.screen='menu'; touch(); renderK(); }, 1300);
+}
+function resetKiosk(keepProf){
+  if(!keepProf){ K.prof=null; applyLook(); }
+  K.screen='home'; K.cart=[]; K.page=0; K.sel=null; K.sess=null; K.helpShown=false; K.voiceOpen=false; K.pending=null; K.miss=0; K.backs=0; K.idle=0; K.adapt=null; renderK();
+}
+function logSession(result){
+  if(!K.sess) return;
+  const s = K.sess, sec = Math.round((performance.now()-s.start)/1000);
+  const rows = store('mbp-log') || []; rows.push({dev:s.dev||'카페', mode:s.mode, result, sec, touches:s.touches, resets:s.resets, voice:s.voice});
+  store('mbp-log', rows.slice(-50)); renderLog();
+}
+function cartTotal(){ return K.cart.reduce((a,c)=>a + (M[c.id].price + (c.size==='L'?500:0) + (c.shot?500:0))*c.qty, 0); }
+function addToCart(id, temp, qty){
+  const m = M[id]; if(m.temp==='ice') temp='ice'; if(m.temp==='none') temp=null;
+  const ex = K.cart.find(c=>c.id===id && c.temp===temp && !c.size && !c.shot);
+  if(ex) ex.qty += qty; else K.cart.push({id, temp, qty});
+}
+function lineText(c){
+  const m = M[c.id]; const tp = c.temp ? (c.temp==='hot'?t('hot'):t('ice'))+' ' : '';
+  return `${tp}${itemName(m)}${c.size==='L'?' (L)':''}${c.shot?' +샷':''} × ${c.qty}`;
+}
+
+function renderK(){
+  const ks = $('ks'), p = K.prof; let top='', body='', foot='', modal='';
+  const timerTxt = !p ? `남은 시간 ${K.left}초` : (p.t===0 ? t('notime') : `${K.left}s`);
+  top = `<div class="ktop"><span class="kbrand">ONGI CAFE</span>${K.screen!=='home'&&K.screen!=='done'? `<span class="ktimer">${timerTxt}</span>`:''}${!p? `<span style="font-size:.85em">KOR | ENG | 中文</span>`:''}</div>`;
+  const help = (!p && K.helpShown) ? `<div class="khelp"><b>주문이 어려우신가요?</b><span>${K.helpWhy||'멈춰 계신 것 같아'} 도와드릴게요.</span><div class="krow"><button class="kb main" data-k="quick">큰 글씨·쉬운 말·소리로 바꾸기</button><button class="kb" data-k="staff">직원 부르기</button><button class="kb ghost" data-k="nohelp">괜찮아요</button></div></div>` : '';
+
+  if(K.screen==='home'){
+    body = `<div style="flex:1;display:grid;place-items:center;text-align:center;gap:12px">
+      <div><div style="font-size:${p?'2.4em':'2em'};font-weight:900">${p? t('pick') : 'WELCOME'}</div><div style="color:var(--kmuted)">${t('start')}</div></div>
+      <button class="kb main" data-k="begin" style="font-size:1.3em;padding:14px 28px">${p? t('pick') : 'ORDER / 주문하기'}</button>
+      <div class="kqr"><span style="font-size:1.6em">▣</span><span>${t('qr')}<br><small>QR이 없으면 위의 ‘🔢 번호로 적용’</small></span></div>
+    </div>`;
+  }
+  else if(K.screen==='menu'){
+    if(!p){
+      const cats = [['coffee','COFFEE'],['tea','NON-COFFEE'],['dessert','DESSERT']];
+      body = help + `<div class="ktabs">${cats.map(([k,v])=>`<button class="kb ${K.cat===k?'on':''}" data-cat="${k}">${v}</button>`).join('')}<button class="kb">NEW</button><button class="kb">SEASON</button></div>
+        <div class="kgrid">${MENU.filter(m=>m.cat===K.cat).map(m=>`<button class="kitem" data-item="${m.id}"><span class="ic">${m.ic}</span><span class="nm">${m.name}</span><span class="pr">${won(m.price)}</span></button>`).join('')}
+        ${[1,2,3,4,5].map(i=>`<button class="kitem" data-k="soldout"><span class="ic" style="opacity:.3">🥤</span><span class="nm" style="color:#999">SOLD OUT</span></button>`).slice(0, 8-MENU.filter(m=>m.cat===K.cat).length).join('')}</div>
+        <p style="color:var(--kmuted);font-size:.85em">* HOT/ICE 및 사이즈는 옵션에서 선택 가능합니다. 일부 메뉴 TAKE-OUT 불가.</p>`;
+    } else {
+      const per = 4, pages = Math.ceil(MENU.length/per); K.page = Math.min(K.page, pages-1);
+      const list = MENU.slice(K.page*per, K.page*per+per);
+      const adapt = K.adapt==='ask' ? `<div class="khelp"><b>버튼 옆을 자꾸 누르셨어요.</b><span>버튼과 글씨를 더 크게 할까요? 다음부터도 이렇게 해 드려요.</span><div class="kbig"><button class="kb" data-k="adno">괜찮아요</button><button class="kb main" data-k="adyes">더 크게</button></div></div>` : '';
+      body = adapt + `<div style="font-size:1.35em;font-weight:900">${t('pick')}</div>
+        <div class="kgrid">${list.map(m=>`<button class="kitem" data-item="${m.id}"><span class="ic">${m.ic}</span><span class="nm">${itemName(m)}</span>${p.e&&p.l==='ko'?`<span class="ds">${m.desc}</span>`:''}<span class="pr">${won(m.price)}${t('won')==='원'?'원':' '+t('won')}</span></button>`).join('')}</div>
+`;
+      K.pagerHtml = `<div class="kpager"><button class="kb" data-k="prev" ${K.page===0?'disabled':''}>◀ ${t('prev')}</button><span style="font-weight:700">${K.page+1} / ${pages}</span><button class="kb" data-k="next" ${K.page>=pages-1?'disabled':''}>${t('next')} ▶</button></div>`;
+    }
+  }
+  else if(K.screen==='cart'){
+    body = `<div style="font-size:${p?'1.35em':'1.1em'};font-weight:900">${p? t('cart') : 'ORDER LIST'}</div>
+      <div class="kcart">${K.cart.length? K.cart.map((c,i)=>`<div class="line"><span>${lineText(c)}</span><span class="krow"><span>${won((M[c.id].price+(c.size==='L'?500:0)+(c.shot?500:0))*c.qty)}</span><button class="kb" data-rm="${i}">${p?t('remove'):'X'}</button></span></div>`).join('') : `<p>${t('empty')}</p>`}</div>
+      <div style="font-weight:900;font-size:1.15em">${t('total')} ${won(cartTotal())}${p&&p.l==='ko'?'원':''}</div>
+      ${p? `<div class="kbig"><button class="kb" data-k="tomenu">${t('more')}</button><button class="kb main" data-k="paystart" ${K.cart.length?'':'disabled'}>${t('pay')}</button></div>`
+          : `<div class="krow"><button class="kb" data-k="tomenu">+ 메뉴 추가</button><button class="kb main" data-k="point" ${K.cart.length?'':'disabled'}>결제하기</button></div>`}`;
+  }
+  else if(K.screen==='point'){ // 기본 화면만: 포인트 적립 단계
+    body = `<div style="font-weight:900">포인트 적립 / 쿠폰 사용</div><p>휴대폰 번호를 입력하시면 STAMP가 적립됩니다. 쿠폰 번호가 있으시면 입력해 주세요.</p>
+      <div class="krow"><button class="kb" data-k="paymethod">적립 안 함</button><button class="kb" data-k="soldout">번호 입력</button><button class="kb" data-k="soldout">쿠폰 사용</button></div>`;
+  }
+  else if(K.screen==='paymethod'){
+    body = `<div style="font-weight:900">결제 수단을 선택해 주세요</div>
+      <div class="krow"><button class="kb" data-k="paycard">신용/체크카드</button><button class="kb" data-k="soldout">간편결제</button><button class="kb" data-k="soldout">모바일 상품권</button><button class="kb" data-k="soldout">선불카드</button></div>`;
+  }
+  else if(K.screen==='payq'){
+    body = `<div style="font-size:1.4em;font-weight:900">${t('payQ')}</div><div class="kcart">${K.cart.map(c=>`<div class="line"><span>${lineText(c)}</span></div>`).join('')}</div>
+      <div style="font-weight:900;font-size:1.2em">${t('total')} ${won(cartTotal())}${p.l==='ko'?'원':''}</div>
+      <div class="kbig"><button class="kb" data-k="tocart">${t('no')}</button><button class="kb main" data-k="paycard">${t('yes')}</button></div>`;
+  }
+  else if(K.screen==='card'){
+    body = `<div style="flex:1;display:grid;place-items:center;text-align:center;gap:14px"><div style="font-size:${p?'1.5em':'1.1em'};font-weight:900">${t('card')}</div><div style="font-size:3em">💳</div><button class="kb main" data-k="paid">${t('cardBtn')}</button></div>`;
+  }
+  else if(K.screen==='done'){
+    body = `<div style="flex:1;display:grid;place-items:center;text-align:center;gap:10px"><div style="font-size:${p?'1.6em':'1.2em'};font-weight:900">${t('done')}</div>
+      <div>${t('num')}</div><div style="font-size:3.4em;font-weight:900">${K.orderNo}</div>
+      ${K.lastSec!=null? `<div style="color:var(--kmuted)">걸린 시간 ${K.lastSec}초 · 터치 ${K.lastTouch}번</div>`:''}
+      ${p? `<div style="color:var(--kmuted)">${t('wiped')}</div>`:''}
+      <button class="kb" data-k="home">처음 화면</button></div>`;
+  }
+  else if(K.screen==='staff'){
+    body = `<div style="flex:1;display:grid;place-items:center;text-align:center;gap:12px"><div style="font-size:3em">🙋</div><div style="font-size:${p?'1.5em':'1.15em'};font-weight:900">${t('staffMsg')}</div><p style="color:var(--kmuted)">실제 매장에서는 직원 단말·호출벨로 알림이 갑니다.</p><button class="kb" data-k="tomenu">${t('back')}</button></div>`;
+  }
+
+  // 아래 막대
+  if(['menu','cart'].includes(K.screen)){
+    const n = K.cart.reduce((a,c)=>a+c.qty,0);
+    foot = p ? (K.screen==='menu'? K.pagerHtml:'') + `<div class="kfoot">${p.s? `<button class="kb main" data-k="voice">🎤 ${t('voice')}</button>`:''}<button class="kb" data-k="tocart">🛒 ${t('cart')} ${n}</button><button class="kb" data-k="staff">🙋 ${t('staff')}</button></div>`
+             : `<div class="kfoot"><span style="font-size:.85em">장바구니 ${n}개 · ${won(cartTotal())}원</span><span class="krow"><button class="kb" data-k="home">처음으로</button><button class="kb main" data-k="tocart">주문하기</button></span></div>`;
+  }
+
+  // 옵션 창
+  if(K.sel){
+    const m = M[K.sel];
+    if(!p){
+      modal = `<div class="kmodal"><div class="kpanel"><b>${m.name} ${won(m.price)}</b>
+        ${m.temp==='both'? `<div>Temperature <span style="color:#B3261E">(필수)</span></div><div class="krow"><button class="kb ${K.opt.temp==='hot'?'main':''}" data-o="temp:hot">HOT</button><button class="kb ${K.opt.temp==='ice'?'main':''}" data-o="temp:ice">ICE</button></div>`:''}
+        ${m.cat!=='dessert'? `<div>Size</div><div class="krow"><button class="kb ${K.opt.size!=='L'?'main':''}" data-o="size:R">Regular</button><button class="kb ${K.opt.size==='L'?'main':''}" data-o="size:L">Large (+500)</button></div>
+        <div>Option</div><div class="krow"><button class="kb ${K.opt.shot?'main':''}" data-o="shot">샷 추가 (+500)</button><button class="kb" data-k="soldout">시럽</button><button class="kb" data-k="soldout">휘핑</button><button class="kb" data-k="soldout">디카페인</button></div>`:''}
+        <div class="krow"><span>수량</span><button class="kb" data-o="q-">-</button><b>${K.qty}</b><button class="kb" data-o="q+">+</button></div>
+        <div class="krow" style="justify-content:flex-end"><button class="kb" data-k="close">취소</button><button class="kb main" data-k="addopt">담기</button></div></div></div>`;
+    } else {
+      const needTemp = m.temp==='both' && !K.opt.temp;
+      modal = `<div class="kmodal"><div class="kpanel"><div style="font-size:1.4em;font-weight:900">${m.ic} ${itemName(m)}</div>
+        ${needTemp? `<div style="font-weight:700">${t('how')}</div><div class="kbig"><button class="kb" data-o="temp:hot">🔥 ${t('hot')}</button><button class="kb" data-o="temp:ice">🧊 ${t('ice')}</button></div>`
+          : `<div style="font-weight:700">${t('qty')}</div><div class="kbig" style="grid-template-columns:1fr auto 1fr;align-items:center"><button class="kb" data-o="q-">－</button><b style="font-size:2em;text-align:center">${K.qty}</b><button class="kb" data-o="q+">＋</button></div>
+             <div class="kbig"><button class="kb" data-k="close">${t('back')}</button><button class="kb main" data-k="addopt">${t('add')}</button></div>`}
+      </div></div>`;
+    }
+  }
+  if(K.voiceOpen) modal = voiceModal();
+  ks.innerHTML = top + `<div class="kbody">${body}</div>` + foot + modal;
+  speakScreen();
+}
+let lastSpoken = '';
+function speakScreen(){
+  if(!speakOn) return; let s = '';
+  if(K.voiceOpen) return;
+  if(K.sel){ const m=M[K.sel]; s = (M[K.sel].temp==='both'&&!K.opt.temp) ? `${itemName(m)}. ${t('how')}` : `${itemName(m)}. ${t('qty')} ${K.qty}`; }
+  else if(K.screen==='menu') s = `${t('pick')} ` + MENU.slice(K.page*4, K.page*4+4).map(m=>itemName(m)).join(', ');
+  else if(K.screen==='cart') s = `${t('cart')}. ` + K.cart.map(lineText).join(', ') + `. ${t('total')} ${cartTotal()} ${t('won')}`;
+  else if(K.screen==='payq') s = t('payQ');
+  else if(K.screen==='card') s = t('card');
+  else if(K.screen==='done') s = `${t('done')}. ${t('num')} ${K.orderNo}`;
+  else if(K.screen==='staff') s = t('staffMsg');
+  if(s && s!==lastSpoken){ lastSpoken = s; say(s); }
+}
+
+/* ---- 말로 주문 ---- */
+const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+let rec = null, listening = false;
+function voiceModal(){
+  const pd = K.pending;
+  return `<div class="kmodal"><div class="kpanel vbox">
+    <div style="font-size:1.3em;font-weight:900">🎤 ${t('voice')}</div>
+    ${SR? `<button class="mic ${listening?'on':''}" data-k="mic" aria-label="${t('listen')}">🎤</button><div style="text-align:center">${listening? t('listen')+'…' : '버튼을 누르고 말씀하세요'}</div>`
+        : `<p class="note" style="color:var(--kmuted)">이 브라우저는 음성 인식을 지원하지 않아요. 아래에 글로 써 보세요(크롬 권장).</p>`}
+    <div class="vtext"><input id="vIn" placeholder="예: 따뜻한 유자차 두 잔이요" aria-label="주문 문장"><button class="kb main" data-k="vsend">보내기</button></div>
+    <div class="vchips">${['따뜻한 유자차 두 잔이요','아이스 아메리카노 하나랑 치즈케이크','라떼 빼 주세요','계산할게요','직원 불러 주세요','뭐 있어요'].map(x=>`<button data-vs="${x}">${x}</button>`).join('')}</div>
+    ${pd? `<div class="heard"><div style="color:var(--kmuted);font-size:.85em">${t('heard')}: “${escapeHtml(pd.text)}”</div>
+       ${pd.kind==='cancelq'? `<div style="font-weight:900;font-size:1.15em">담은 것을 모두 지울까요?</div><div class="kbig"><button class="kb" data-k="vno">${t('no')}</button><button class="kb main" data-k="vyes">${t('yes')}</button></div>` : pd.kind==='clarify'? `<div style="font-weight:900;font-size:1.15em">혹시 ‘${itemName(M[pd.id])}’ 말씀이세요?</div><div class="kbig"><button class="kb" data-k="vno">${t('no')}</button><button class="kb main" data-k="vyes">${t('yes')}</button></div>` : pd.kind==='order'? `<div style="font-weight:900;font-size:1.15em">${pd.items.map(i=>`${i.temp?(i.temp==='hot'?t('hot'):t('ice'))+' ':''}${itemName(M[i.id])} ${i.qty}`).join(', ')}</div><div>${t('confirm')}</div><div class="kbig"><button class="kb" data-k="vno">${t('no')}</button><button class="kb main" data-k="vyes">${t('yes')}</button></div>`
+         : `<div style="font-weight:700">${pd.msg}</div>`}</div>`:''}
+    <button class="kb" data-k="vclose">${t('back')}</button>
+  </div></div>`;
+}
+function escapeHtml(s){ return s.replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+function handleUtter(text){
+  if(!text) return; if(K.sess) K.sess.voice++;
+  const r = NLU.parse(text); showAI(text, r);
+  if(K.pending && ['order','clarify','cancelq'].includes(K.pending.kind) && (r.intent==='yes'||r.intent==='no') && !r.items.length){ voiceConfirm(r.intent==='yes'); return; }
+  if(!r.items.length && (r.intent==='order' || r.conf<0.6) && !['help','checkout','cancel','yes','no'].includes(r.intent)){
+    const sg = NLU.suggest(text);
+    if(sg){ K.pending = {kind:'clarify', text, id:sg.id}; renderK(); say(`혹시 ${itemName(M[sg.id])} 말씀이세요?`); return; }
+    if(r.intent==='order' && r.conf>=0.5){ K.pending = {kind:'info', text, msg:`그 메뉴는 없어요. 있는 메뉴는 ${MENU.map(m=>itemName(m)).join(', ')} 이에요.`}; renderK(); say(K.pending.msg); return; }
+  }
+  // 확신이 낮으면 아무것도 바꾸지 않고 다시 묻는다 (담아 둔 주문을 함부로 지우지 않음)
+  if(!r.items.length && r.conf<0.5){ K.pending = {kind:'info', text, msg:t('unknown')}; renderK(); say(t('unknown')); return; }
+  if(r.intent==='order' && r.items.length){
+    const items = r.items.map(i=>({...i}));
+    const needTemp = items.find(i=>M[i.id].temp==='both' && !i.temp);
+    K.pending = {kind:'order', text, items};
+    renderK();
+    say(items.map(i=>`${i.temp?(i.temp==='hot'?t('hot'):t('ice'))+' ':''}${itemName(M[i.id])} ${i.qty}`).join(', ') + '. ' + t('confirm') + (needTemp? ' (따뜻하게는 다음에 고를 수 있어요)':''));
+    return;
+  }
+  const msgs = {remove:null, checkout:null, cancel:t('cancelDone'), help:t('staffMsg'), repeat:null, menu:t('menuRead'), yes:null, no:null};
+  if(r.intent==='remove' && r.items.length){
+    const before = K.cart.length; K.cart = K.cart.filter(c=>c.id!==r.items[0].id);
+    K.pending = {kind:'info', text, msg: before!==K.cart.length ? `${itemName(M[r.items[0].id])} — ${t('remove')} ✓` : t('empty')};
+  } else if(r.intent==='checkout'){ K.voiceOpen=false; K.pending=null; K.screen = K.cart.length? 'payq':'menu'; renderK(); return; }
+  else if(r.intent==='cancel'){ if(!K.cart.length){ K.pending={kind:'info', text, msg:t('empty')}; } else { K.pending={kind:'cancelq', text}; } }
+  else if(r.intent==='help'){ K.voiceOpen=false; K.pending=null; K.screen='staff'; renderK(); return; }
+  else if(r.intent==='repeat'){ K.pending={kind:'info', text, msg:lastSpoken||t('pick')}; lastSpoken=''; }
+  else if(r.intent==='menu'){ K.pending={kind:'info', text, msg: MENU.map(m=>itemName(m)).join(', ')}; }
+  else K.pending = {kind:'info', text, msg:t('unknown')};
+  renderK(); say(K.pending.kind==='cancelq' ? '담은 것을 모두 지울까요?' : K.pending.msg);
+}
+function voiceConfirm(ok){
+  const pd = K.pending; if(!pd) return;
+  if(pd.kind==='cancelq'){
+    if(ok){ K.cart=[]; K.pending={kind:'info', text:pd.text, msg:t('cancelDone')}; } else K.pending={kind:'info', text:pd.text, msg:'담은 것은 그대로 두었어요.'};
+    renderK(); say(K.pending.msg); return;
+  }
+  if(pd.kind==='clarify'){
+    if(ok){ K.voiceOpen=false; K.pending=null; K.screen='menu'; K.sel=pd.id; K.opt={}; K.qty=1; if(M[pd.id].temp!=='both') K.opt.temp = M[pd.id].temp==='ice'?'ice':'none'; }
+    else K.pending = {kind:'info', text:pd.text, msg:t('unknown')};
+    renderK(); return;
+  }
+  if(ok){ pd.items.forEach(i=>{ if(M[i.id].temp==='both' && !i.temp) i.temp='hot'; addToCart(i.id, i.temp, i.qty); }); K.voiceOpen=false; K.pending=null; K.screen='cart'; }
+  else { K.pending = {kind:'info', text:pd.text, msg:t('unknown')}; }
+  renderK();
+}
+function startListen(){
+  if(!SR) return;
+  try{ speechSynthesis.cancel(); }catch(e){}
+  rec = new SR(); rec.lang = SPEECH_LANG[K.prof?.l||'ko']; rec.interimResults = false; rec.maxAlternatives = 1;
+  rec.onresult = ev => { const txt = ev.results[0][0].transcript; listening=false; handleUtter(txt); };
+  rec.onerror = () => { listening=false; renderK(); };
+  rec.onend = () => { if(listening){ listening=false; renderK(); } };
+  listening = true; renderK(); rec.start();
+}
+
+/* ---- 키오스크 입력 처리 ---- */
+$('ks').addEventListener('click', e=>{
+  const b = e.target.closest('button'); if(!b) return;
+  touch(); K.helpShown = false;
+  const k = b.dataset.k;
+  if(b.dataset.cat){ K.cat = b.dataset.cat; return renderK(); }
+  if(b.dataset.item){ K.sel = b.dataset.item; K.opt = {}; K.qty = 1; if(K.prof && M[K.sel].temp!=='both') K.opt.temp = M[K.sel].temp==='ice'?'ice':'none'; return renderK(); }
+  if(b.dataset.o){
+    const o = b.dataset.o;
+    if(o.startsWith('temp:')) K.opt.temp = o.split(':')[1];
+    else if(o.startsWith('size:')) K.opt.size = o.split(':')[1];
+    else if(o==='shot') K.opt.shot = !K.opt.shot;
+    else if(o==='q+') K.qty = Math.min(20, K.qty+1);
+    else if(o==='q-') K.qty = Math.max(1, K.qty-1);
+    return renderK();
+  }
+  if(b.dataset.rm){ K.cart.splice(+b.dataset.rm,1); return renderK(); }
+  if(b.dataset.vs){ $('vIn').value = b.dataset.vs; handleUtter(b.dataset.vs); return; }
+  switch(k){
+    case 'begin': if(!K.sess) newSession(); K.screen='menu'; break;
+    case 'prev': K.page = Math.max(0, K.page-1); break;
+    case 'next': K.page = K.page+1; break;
+    case 'close': K.sel=null; K.backs++; break;
+    case 'addopt': {
+      const m = M[K.sel];
+      if(!K.prof && m.temp==='both' && !K.opt.temp){ toast('옵션(필수)을 선택해 주세요'); return; }
+      const temp = m.temp==='both' ? K.opt.temp : (m.temp==='ice'?'ice':null);
+      if(K.opt.size==='L' || K.opt.shot) K.cart.push({id:m.id, temp, qty:K.qty, size:K.opt.size, shot:K.opt.shot}); else addToCart(m.id, temp, K.qty);
+      K.sel=null; if(K.prof) K.screen='cart'; else toast('장바구니에 담았습니다');
+      break; }
+    case 'tocart': K.screen='cart'; K.sel=null; break;
+    case 'tomenu': K.screen='menu'; K.backs++; break;
+    case 'adyes': {
+      const up = (lv,v)=>lv.find(x=>x>v+0.01) ?? lv[lv.length-1];
+      K.prof.b = up(BTN_LV, K.prof.b); K.prof.f = up(FONT_LV, K.prof.f); K.adapt='done'; applyLook();
+      if(P.profile){ P.profile = {...K.prof}; P.updated = `버튼 ${Math.round(K.prof.b*100)}%, 글씨 ${Math.round(K.prof.f*100)}%`; store('mbp-profile', P.profile); P.step='result'; renderPhone(); }
+      break; }
+    case 'adno': K.adapt='done'; break;
+    case 'point': K.screen='point'; break;
+    case 'paymethod': K.screen='paymethod'; break;
+    case 'paystart': K.screen='payq'; break;
+    case 'paycard': K.screen='card'; break;
+    case 'paid': {
+      K.orderNo++; const s = K.sess; K.lastSec = s? Math.round((performance.now()-s.start)/1000) : null; K.lastTouch = s? s.touches : null;
+      logSession('완료'); K.screen='done'; K.cart=[]; K.sess=null; break; }
+    case 'home': resetKiosk(false); return;
+    case 'staff': K.screen='staff'; K.sel=null; break;
+    case 'soldout': toast('지금은 선택할 수 없는 항목입니다'); return;
+    case 'quick': K.prof = {f:1.6,b:1.5,t:0,v:1,e:1,h:0,w:0,s:1,l:'ko'}; applyLook(); if(K.sess) K.sess.mode='기본→바꿈'; break;
+    case 'nohelp': K.helpShown=false; K.idle=-30; K.miss=0; K.backs=0; break;
+    case 'voice': K.voiceOpen=true; K.pending=null; break;
+    case 'vclose': K.voiceOpen=false; K.pending=null; try{rec&&rec.abort();}catch(err){} listening=false; break;
+    case 'mic': if(!listening) startListen(); return;
+    case 'vsend': handleUtter($('vIn').value.trim()); return;
+    case 'vyes': voiceConfirm(true); return;
+    case 'vno': voiceConfirm(false); return;
+  }
+  renderK();
+});
+$('ks').addEventListener('keydown', e=>{ if(e.target.id==='vIn' && e.key==='Enter'){ handleUtter(e.target.value.trim()); } });
+function toast(msg){ const d = document.createElement('div'); d.className='ktoast'; d.textContent=msg; $('ks').appendChild(d); setTimeout(()=>d.remove(), 1800); }
+
+// 1초마다: 시간 제한(기본 화면), 멈춤 감지
+setInterval(()=>{
+  if(['home','done','staff'].includes(K.screen) || K.voiceOpen) return;
+  const p = K.prof;
+  if(!p || p.t>0){
+    K.left--;
+    const el = document.querySelector('.ktimer'); if(el) el.textContent = p? `${K.left}s` : `남은 시간 ${K.left}초`;
+    if(K.left<=0){
+      if(K.sess) K.sess.resets++;
+      const keep = K.sess; K.screen='home'; K.cart=[]; K.sel=null; K.helpShown=false; renderK(); K.sess = keep;
+      toast('시간이 지나 처음 화면으로 돌아갔어요'); return;
+    }
+  }
+  K.idle++;
+  const sc = struggle();
+  if(!p && sc.score>=1 && !K.helpShown && ['menu','cart'].includes(K.screen) && !K.sel){ K.helpShown=true; K.helpWhy=sc.why; renderK(); say2('주문이 어려우신가요? 도와드릴게요.'); }
+}, 1000);
+function say2(t){ try{ speechSynthesis.cancel(); const u=new SpeechSynthesisUtterance(t); u.lang='ko-KR'; speechSynthesis.speak(u);}catch(e){} }
+// 망설임 지수: 여러 행동 신호를 합친 점수 (규칙 기반, 실사용 기록이 쌓이면 학습 모델로 교체할 자리)
+function struggle(){
+  const idleS = Math.max(0, K.idle)/12, missS = K.miss*0.35, backS = K.backs*0.25, timeS = (!K.prof && K.left<=10 && K.screen!=='home') ? 0.3 : 0;
+  const score = idleS + missS + backS + timeS;
+  const why = [K.idle>=8?'한참 멈춰 계셔서':'', K.miss? `버튼 옆을 ${K.miss}번 누르셔서`:'', K.backs>=2? '뒤로 가기를 반복하셔서':''].filter(Boolean)[0] || '시간이 얼마 안 남아서';
+  if(DEV==='cafe' && $('mBar')){
+    $('mBar').style.width = Math.min(100, score*100)+'%'; $('mVal').textContent = score.toFixed(2);
+    $('mSig').innerHTML = `<span>멈춤 ${Math.max(0,K.idle)}초 → ${idleS.toFixed(2)}</span><span>버튼 옆 누름 ${K.miss}번 → ${missS.toFixed(2)}</span><span>뒤로·닫기 ${K.backs}번 → ${backS.toFixed(2)}</span><span>시간 촉박 → ${timeS.toFixed(2)}</span>`;
+  }
+  return {score, why};
+}
+// 버튼 바로 옆을 누른 것(빗나간 터치) 감지
+function nearMiss(root, e){
+  if(e.target.closest('button,input,select,.mbp-kp,.kmodal')) return false;
+  let best = 1e9;
+  root.querySelectorAll('button').forEach(b=>{ const r=b.getBoundingClientRect(); if(!r.width) return;
+    const dx = Math.max(r.left-e.clientX, 0, e.clientX-r.right), dy = Math.max(r.top-e.clientY, 0, e.clientY-r.bottom); best = Math.min(best, Math.hypot(dx,dy)); });
+  return best <= 36;
+}
+$('ks').addEventListener('pointerdown', e=>{
+  if(!nearMiss($('ks'), e)) return;
+  K.miss++; if(K.sess) K.sess.touches++;
+  if(K.prof && K.miss>=2 && !K.adapt && K.screen==='menu'){ K.adapt='ask'; renderK(); say('버튼과 글씨를 더 크게 할까요?'); }
+});
+// 시각장애인: 한 번 누르면 읽고, 같은 것을 한 번 더 누르면 선택
+let exploreKey = null, exploreT = 0;
+$('ks').addEventListener('click', e=>{
+  if(!K.prof || !K.prof.r || e.target.closest('.mbp-kp')) return;
+  const b = e.target.closest('button'); if(!b) return;
+  const key = JSON.stringify(b.dataset) + b.textContent;
+  if(key===exploreKey && Date.now()-exploreT < 6000){ exploreKey=null; return; }
+  e.preventDefault(); e.stopImmediatePropagation();
+  document.querySelectorAll('#ks .mbp-focus').forEach(x=>x.classList.remove('mbp-focus'));
+  b.classList.add('mbp-focus'); exploreKey = key; exploreT = Date.now();
+  const lab = (b.getAttribute('aria-label')||b.innerText).replace(/\s+/g,' ').trim();
+  const o = speakOn; speakOn = true; say(lab + '. 선택하려면 한 번 더 누르세요.'); speakOn = o;
+}, true);
+
+/* =================== 카메라로 QR 읽기 (지원 브라우저만) =================== */
+(function(){
+  if(!('BarcodeDetector' in window)) return;
+  const b = document.createElement('button'); b.className='btn'; b.style.padding='4px 10px'; b.style.fontSize='12px'; b.textContent='카메라로 QR 읽기';
+  $('kscanbtnwrap').appendChild(b);
+  b.addEventListener('click', async ()=>{
+    try{
+      const det = new BarcodeDetector({formats:['qr_code']});
+      const st = await navigator.mediaDevices.getUserMedia({video:{facingMode:'user'}});
+      const v = document.createElement('video'); v.srcObject = st; v.playsInline = true; await v.play();
+      const ov = document.createElement('div'); ov.className='kapply'; ov.textContent='QR을 카메라에 보여 주세요'; $('ks').appendChild(ov);
+      const stop = ()=>{ st.getTracks().forEach(x=>x.stop()); ov.remove(); };
+      const end = Date.now()+20000;
+      (async function loop(){
+        if(Date.now()>end){ stop(); return; }
+        const r = await det.detect(v).catch(()=>[]);
+        const hit = r.map(x=>decodeProfile(x.rawValue)).find(Boolean);
+        if(hit){ stop(); kioskScan(hit); return; }
+        requestAnimationFrame(loop);
+      })();
+    }catch(err){ toast('카메라를 쓸 수 없어요. 휴대폰 화면의 버튼을 눌러 주세요.'); }
+  });
+})();
+
+/* =================== AI 확인 패널 =================== */
+const INTENT_KO = {order:'주문', remove:'빼기', checkout:'계산', cancel:'전부 취소', help:'도움 요청', repeat:'다시 말해 달라', yes:'네', no:'아니요', menu:'메뉴 문의'};
+function showAI(text, r){
+  r = r || NLU.parse(text); const pr = NLU.intent(text).probs;
+  const top = Object.entries(pr).sort((a,b)=>b[1]-a[1]).slice(0,4);
+  $('aiOut').innerHTML = `<div class="bars">${top.map(([k,v])=>`<div class="bar"><span>${INTENT_KO[k]}</span><span class="t"><b style="width:${(v*100).toFixed(1)}%"></b></span><span class="v">${(v*100).toFixed(1)}%</span></div>`).join('')}</div>
+    <p style="margin-top:8px"><b>판단:</b> ${INTENT_KO[r.intent]} ${r.items.length? '· ' + r.items.map(i=>`${nameKo(M[i.id])} ${i.qty}개${i.temp? ' ('+(i.temp==='hot'?'따뜻하게':'차갑게')+')':''}`).join(', ') : ''}</p>`;
+  $('aiIn').value = text;
+}
+$('aiGo').addEventListener('click', ()=>showAI($('aiIn').value));
+$('aiIn').addEventListener('keydown', e=>{ if(e.key==='Enter') showAI($('aiIn').value); });
+['따뜻한 유자차 두 잔이요','아메리카로 한잔요','케이크는 안 먹을래','이거 어떻게 하는 거예요','다 됐으니 계산','카페인 없는 거 있나요'].forEach(x=>{
+  const b = document.createElement('button'); b.textContent = x; b.addEventListener('click', ()=>showAI(x)); $('aiChips').appendChild(b);
+});
+
+/* =================== 시험 기록 =================== */
+function renderLog(){
+  const rows = store('mbp-log') || [];
+  $('logBody').innerHTML = rows.length ? rows.map((r,i)=>`<tr><td>${i+1}</td><td>${r.dev||'카페'}</td><td>${r.mode}</td><td>${r.result}</td><td>${r.sec}초</td><td>${r.touches}</td><td>${r.resets}</td><td>${r.voice? r.voice+'회':'-'}</td></tr>`).join('') : `<tr><td colspan="8" class="note">아직 기록이 없어요. 키오스크에서 주문을 끝까지 해 보세요.</td></tr>`;
+}
+$('logCopy').addEventListener('click', async ()=>{
+  const rows = store('mbp-log') || [];
+  const txt = ['#\t기기\t화면\t결과\t시간(초)\t터치\t튕김\t말로 주문'].concat(rows.map((r,i)=>[i+1,r.dev||'카페',r.mode,r.result,r.sec,r.touches,r.resets,r.voice].join('\t'))).join('\n');
+  try{ await navigator.clipboard.writeText(txt); $('logMsg').textContent='복사했어요.'; }catch(e){ $('logMsg').textContent='복사가 막혀 있어요. 표를 직접 선택해 복사해 주세요.'; }
+});
+$('logClear').addEventListener('click', ()=>{ store('mbp-log', []); renderLog(); });
+
+/* =================== 무인 민원발급기: 원래 화면 그대로 + 연동 도구(SDK) 한 줄 =================== */
+// 이 화면 코드는 '내 방식'을 전혀 모릅니다. 아래 MBP.attach 한 줄과, 화면을 다시 그린 뒤 MBP.refresh() 호출만 붙였습니다.
+const G = {screen:'home', n:1, opt:{addr:'미포함', why:'미포함', rrn:'미포함'}, left:60, factor:1, sess:null, rrn:false};
+MBP.attach($('gov'), { onTimeLimit: f => { G.factor = f; G.left = f===Infinity ? 0 : Math.round(60*f); } });
+const DOCS = ['주민등록표 등본','주민등록표 초본','가족관계증명서','건강보험 자격득실확인서','지방세 납세증명서','토지대장','건축물대장','자동차등록원부','병적증명서','국세 납세증명서','어린이집 입소대기','장애인증명서'];
+function gTouch(){ if(!G.sess) G.sess = {start:performance.now(), touches:0, resets:0, voice:0, mode: MBP.profile()?'내 방식':'기본', dev:'민원'}; G.sess.touches++; if(G.factor!==Infinity) G.left = Math.round(60*G.factor); }
+function renderG(){
+  const el = $('gov'); const tm = G.factor===Infinity ? '시간 제한 없음' : `남은 시간 ${G.left}초`;
+  let bd = '';
+  if(G.screen==='home') bd = `<div class="gq">원하시는 민원서류를 선택하십시오</div><div class="ggrid">${DOCS.map((d,i)=>`<button data-g="${i===0?'doc':'na'}">${d}</button>`).join('')}</div><div class="gnote">※ 본인 인증이 필요한 서류는 지문 인식 후 발급됩니다. 수수료는 서류별로 다릅니다.</div>`;
+  else if(G.screen==='opt') bd = `<div class="gq">발급 옵션을 선택하십시오 (주민등록표 등본)</div>
+    ${[['addr','과거 주소 변동사항'],['why','세대구성 사유'],['rrn','세대원의 주민등록번호 뒷자리']].map(([k,l])=>`<div class="gbox"><div>${l}</div><div class="grow"><button data-g="opt:${k}:포함" class="${G.opt[k]==='포함'?'gp':''}">포함</button><button data-g="opt:${k}:미포함" class="${G.opt[k]==='미포함'?'gp':''}">미포함</button></div></div>`).join('')}
+    <div class="gbox"><div>발급 매수</div><div class="grow"><button data-g="n-">－</button><b>${G.n} 부</b><button data-g="n+">＋</button></div></div>
+    <div class="gnote">※ 선택하신 내용을 확인하시고 [확인] 버튼을 누르십시오.</div>`;
+  else if(G.screen==='auth') bd = `<div class="gq">본인 인증을 진행하십시오</div>
+    <div class="gbox"><div>주민등록번호를 입력하십시오</div><div style="font-size:16px;letter-spacing:2px">${G.rrn?'960225-1******':'______-_______'}</div><button data-g="rrn">주민등록번호 자동 입력 (시연)</button></div>
+    <div class="gbox"><div>지문 인식기에 오른손 엄지손가락을 올려 주십시오</div><button data-g="finger" ${G.rrn?'':'disabled'}>지문 인식 (시연)</button></div>`;
+  else if(G.screen==='pay') bd = `<div class="gq">수수료 ${won(200*G.n)}원을 결제하십시오</div><div class="gbox"><div>결제수단을 선택하십시오</div><div class="grow"><button data-g="paid">현금</button><button data-g="paid">신용/체크카드</button></div></div><div class="gnote">※ 시연용 금액입니다.</div>`;
+  else if(G.screen==='done') bd = `<div class="gq">서류를 출력하고 있습니다</div><div class="gbox"><div>출력된 서류를 가져가십시오. 이용해 주셔서 감사합니다.</div>${G.lastSec!=null?`<div>걸린 시간 ${G.lastSec}초 · 터치 ${G.lastTouch}번</div>`:''}${G.wiped?'<div>내 방식 정보는 발급기에서 지웠습니다.</div>':''}</div>`;
+  else if(G.screen==='staff') bd = `<div class="gq">담당 공무원을 호출했습니다</div><div class="gbox">잠시만 기다려 주십시오.</div>`;
+  el.innerHTML = `<div class="ghd"><b>무인민원발급기</b><span class="gtm">${G.screen==='home'||G.screen==='done'?'':tm}</span></div><div class="gbd">${bd}</div>
+    <div class="gft"><span class="grow"><button data-g="home">처음으로</button><button data-g="back">이전</button></span><span class="grow"><button data-g="staff">직원 호출</button>${G.screen==='opt'?'<button class="gp" data-g="ok">확인</button>':''}</span></div>`;
+  MBP.refresh();
+}
+$('gov').addEventListener('click', e=>{
+  const b = e.target.closest('button'); if(!b) return; gTouch(); const g = b.dataset.g;
+  if(g==='na'){ toastG('시연에서는 주민등록표 등본만 발급할 수 있습니다'); return; }
+  if(g==='doc') G.screen='opt';
+  else if(g.startsWith('opt:')){ const [,k,v] = g.split(':'); G.opt[k]=v; }
+  else if(g==='n+') G.n=Math.min(10,G.n+1); else if(g==='n-') G.n=Math.max(1,G.n-1);
+  else if(g==='ok') G.screen='auth';
+  else if(g==='rrn') G.rrn=true;
+  else if(g==='finger') G.screen='pay';
+  else if(g==='paid'){ const s=G.sess; G.lastSec = s? Math.round((performance.now()-s.start)/1000):null; G.lastTouch = s? s.touches:null;
+    if(s){ const rows = store('mbp-log')||[]; rows.push({dev:'민원', mode:s.mode, result:'완료', sec:G.lastSec, touches:s.touches, resets:s.resets, voice:0}); store('mbp-log', rows.slice(-50)); renderLog(); }
+    G.wiped = !!MBP.profile(); G.screen='done'; G.sess=null; renderG(); if(G.wiped){ MBP.say('서류를 출력하고 있습니다. 출력된 서류를 가져가세요.'); MBP.reset(); updateMode(); } return; }
+  else if(g==='home'){ G.screen='home'; G.rrn=false; G.n=1; G.sess=null; G.wiped=false; MBP.reset(); updateMode(); }
+  else if(g==='back') G.screen = {opt:'home', auth:'opt', pay:'auth', staff:'home'}[G.screen] || 'home';
+  else if(g==='staff') G.screen='staff';
+  renderG();
+  const P2 = MBP.profile(); if(P2 && P2.v && !P2.r){ const q = $('gov').querySelector('.gq'); if(q) MBP.say(q.innerText); }
+});
+function toastG(msg){ const d=document.createElement('div'); d.className='ktoast'; d.textContent=msg; d.setAttribute('data-mbp-skip',''); $('gov').style.position='relative'; $('gov').appendChild(d); setTimeout(()=>d.remove(),1800); }
+function govScan(p){
+  const ov = document.createElement('div'); ov.className='kapply'; ov.setAttribute('data-mbp-skip','');
+  ov.innerHTML = `QR을 읽었어요<br><span style="font-size:16px;font-weight:600">연동 도구가 이 화면을 바꿉니다</span>`;
+  $('gov').style.position='relative'; $('gov').appendChild(ov);
+  setTimeout(()=>{ G.screen='home'; G.rrn=false; G.n=1; G.sess=null; G.wiped=false; renderG(); MBP.apply(p); G.sess=null; gTouch(); G.sess.touches=0; updateMode(); }, 1300);
+}
+setInterval(()=>{
+  if(DEV!=='gov' || G.factor===Infinity || ['home','done','staff'].includes(G.screen)) return;
+  G.left--; const el = $('gov').querySelector('.gtm'); if(el) el.textContent = `남은 시간 ${G.left}초`;
+  if(G.left<=0){ if(G.sess) G.sess.resets++; const keep=G.sess; G.screen='home'; G.rrn=false; renderG(); G.sess=keep; toastG('시간이 지나 처음 화면으로 돌아갔습니다'); }
+}, 1000);
+
+/* =================== 기기 탭 =================== */
+function updateMode(){
+  const on = DEV==='cafe' ? !!K.prof : !!MBP.profile();
+  $('kmode').textContent = on ? '내 방식 화면' : '기본 화면';
+}
+document.querySelectorAll('[data-kt]').forEach(b=>b.addEventListener('click', ()=>{
+  DEV = b.dataset.kt;
+  document.querySelectorAll('[data-kt]').forEach(x=>x.setAttribute('aria-selected', x===b?'true':'false'));
+  $('ks').hidden = DEV!=='cafe'; $('gov').hidden = DEV!=='gov';
+  $('ktabnote').textContent = DEV==='cafe' ? '카페 주문기는 ‘내 방식’에 맞춰 처음부터 설계한 화면입니다(말로 주문 포함).'
+    : '민원발급기(시연용 모형 웹 화면)는 화면 코드를 고치지 않았습니다. 연동 도구(MBP.attach)만 붙여서, QR을 보여주면 글씨·버튼·쉬운 말·소리·시간 제한이 자동으로 바뀝니다. 기존 키오스크도 이렇게 바로 쓸 수 있습니다.';
+  if(DEV==='gov') renderG(); updateMode();
+  const other = DEV==='gov' ? !!MBP.profile() : !!K.prof;
+  if(P.profile && !other){
+    const host = DEV==='cafe' ? $('ks') : $('gov'); const d = document.createElement('div'); d.className='ktoast'; d.setAttribute('data-mbp-skip','');
+    d.style.top='45%'; d.style.fontSize='15px'; d.style.padding='12px 16px'; d.textContent='이 기기는 아직 기본 화면이에요. 휴대폰의 ‘키오스크에 보여주기’(또는 🔢 번호)로 같은 QR을 보여 주세요.';
+    host.style.position='relative'; host.appendChild(d); setTimeout(()=>d.remove(), 3500);
+    const sb = document.querySelector('[data-p=show]'); if(sb){ sb.classList.add('tourhl'); setTimeout(()=>sb.classList.remove('tourhl'), 3500); }
+  }
+}));
+
+$('kpadBtn').addEventListener('click', ()=>{
+  const host = DEV==='cafe' ? $('ks') : $('gov');
+  MBP.openKeypad(host, prof => { if(DEV==='cafe') kioskScan(prof); else govScan(prof); });
+});
+
+/* =================== 1분 자동 시연 =================== */
+let tourOn = false;
+async function tour(){
+  if(tourOn) return; tourOn = true;
+  const bar = document.createElement('div'); bar.className='tourcap'; bar.innerHTML = `<p id="tourTxt"></p><button id="tourStop">멈추기</button>`; document.body.appendChild(bar);
+  bar.querySelector('#tourStop').onclick = ()=>{ tourOn=false; };
+  const W = ms => new Promise((res,rej)=>setTimeout(()=> tourOn? res(): rej('stop'), ms));
+  const cap = (t,sm) => { $('tourTxt').innerHTML = t + (sm? `<small>${sm}</small>`:''); };
+  const hit = async (sel, ms=900) => {
+    const el = typeof sel==='string' ? document.querySelector(sel) : sel; if(!el) return;
+    el.scrollIntoView({block:'center', behavior:'smooth'}); await W(500);
+    el.classList.add('tourhl'); await W(450); el.classList.remove('tourhl'); el.click(); await W(ms);
+  };
+  try{
+    if(DEV!=='cafe') document.querySelector('[data-kt=cafe]').click();
+    resetKiosk(false); P.step='intro'; renderPhone();
+    cap('① 지금의 키오스크: 작은 글씨, 영어 메뉴, 40초 시간 제한','어르신·장애인·외국인에게는 여기서부터 벽입니다');
+    await hit('#ks [data-k=begin]', 1200); await hit('#ks [data-item=latte]', 2200); await hit('#ks [data-k=close]', 600);
+    resetKiosk(false);
+    cap('② 휴대폰에서 ‘내 방식’ 고르기 (예: 78세 어르신)','실제로는 약 30초 진단으로 만들어요. 이름·장애 정보는 묻지 않아요');
+    await hit('[data-preset=elder]', 1800);
+    cap('③ QR을 보여주면 키오스크가 그 사람에게 맞춰집니다','큰 글씨·쉬운 말·사진·소리 안내·시간 제한 없음');
+    await hit('[data-p=show]', 3200);
+    cap('④ 말로 주문: “따뜻한 유자차 두 잔이요”','직접 학습시킨 AI가 서버 없이 이 화면 안에서 알아들어요');
+    await hit('#ks [data-k=voice]', 600); $('vIn').value='따뜻한 유자차 두 잔이요'; await hit('#ks [data-k=vsend]', 2600);
+    await hit('#ks [data-k=vyes]', 2000);
+    cap('⑤ “계산할게요” → 큰 “네 / 아니요” → 끝','주문이 끝나면 내 방식 정보는 키오스크에서 지워요');
+    await hit('#ks [data-k=voice]', 500); $('vIn').value='계산할게요'; await hit('#ks [data-k=vsend]', 1800);
+    await hit('#ks [data-k=paycard]', 900); await hit('#ks [data-k=paid]', 2600);
+    cap('⑥ 같은 QR로 다른 키오스크도: 무인 민원발급기','원래 화면은 그대로 두고 연동 도구(스크립트 한 줄)만 붙였어요');
+    await hit('[data-kt=gov]', 1800);
+    P.step='result'; renderPhone(); await hit('[data-p=show]', 3000);
+    await hit('#gov [data-g=doc]', 3000);
+    cap('⑦ QR 카메라가 없는 키오스크는 6자리 번호로','휴대폰·종이 카드에 적힌 번호를 누르면 똑같이 바뀌어요');
+    await hit('#gov [data-g=home]', 800);
+    await hit('#kpadBtn', 800);
+    for(const d of MBP.toCode(P.profile)) await hit(`#gov .mbp-kp [data-n="${d}"]`, 150);
+    await hit('#gov .mbp-kp [data-n=ok]', 3000);
+    cap('⑧ 스마트폰이 없는 분은 종이 카드로','자녀·복지관이 만들어 지갑에 넣고 다니면 돼요');
+    await hit('[data-p=card]', 3500); document.querySelector('.cardov')?.remove();
+    cap('이제 직접 해 보세요!','왼쪽 휴대폰에서 예시를 고르거나 ‘내 방식 만들기’부터');
+    await W(3500);
+  }catch(e){}
+  tourOn=false; bar.remove(); document.querySelector('.cardov')?.remove();
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+$('tourBtn').addEventListener('click', tour);
+
+/* =================== 종이 카드 =================== */
+function showCard(p){
+  const ov = document.createElement('div'); ov.className='cardov';
+  ov.innerHTML = `<div class="cardbox" role="dialog" aria-label="종이 카드"><h2>종이 카드로 뽑기</h2>
+    <div class="pcard"><div class="qr">${qrSVG(encodeProfile(p))}</div><div><h4>내 방식 카드</h4><p class="big">키오스크 카메라에<br>보여 주세요</p><p>${profileChips(p).join(' · ')}</p><p style="font:900 16px ui-monospace,Menlo,monospace;letter-spacing:2px;margin-top:4px">번호 ${codeOf(p)}</p><p style="color:#555;margin-top:2px">이름·장애 정보 없음 · 잃어버려도 괜찮아요</p></div></div>
+    <p class="note" style="text-align:center">스마트폰이 없거나 앱이 어려운 어르신은 자녀·주민센터·복지관에서 만들어 지갑에 넣고 다니면 됩니다. 효도폰 사진첩에 저장해도 됩니다. (신용카드 크기 85.6×54mm)</p>
+    <div class="krow"><button class="btn primary" id="cardPrint">인쇄하기</button><button class="btn" id="cardClose">닫기</button></div></div>`;
+  document.body.appendChild(ov);
+  ov.querySelector('#cardPrint').onclick = ()=>window.print();
+  ov.querySelector('#cardClose').onclick = ()=>ov.remove();
+  ov.addEventListener('click', e=>{ if(e.target===ov) ov.remove(); });
+}
+
+/* =================== 시작 =================== */
+renderPhone(); applyLook(); renderK(); renderLog(); showAI($('aiIn').value);
+</script>
